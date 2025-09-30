@@ -79,14 +79,16 @@ weight: 2
 
 <br />
 
-{{< bs/collapse heading="點我看提示" expand=false >}}
+::: {.callout-note collapse="true"}
+### 點我看提示
+
 為了幫助您的受眾理解您的文件，請應用這些基本編輯原則：
 
 * 使用主動語態而不是被動語態。
 * 考慮使用更簡單的同義詞。
 * 包含背景資訊的連結。
 * 將長句拆解為較短的句子或清單項目。
-{{< /bs/collapse >}}
+:::
 
 ---
 

@@ -119,7 +119,9 @@ weight: 4
 
 <br />
 
-{{< bs/collapse heading="點我看答案" expand=false >}}
+::: {.callout-note collapse="true"}
+### 點我看答案
+
 1. **[主動]** MutableInput provides read-only access.
 2. **[被動]** Read-only access is provided by MutableInput.
 3. **[被動]** Performance was measured.
@@ -128,7 +130,7 @@ weight: 4
 6. **[被動]** This information is used by the policy enforcement team.
 7. **[主動]** Click the Submit button.
 8. **[被動]** The orbit was calculated by Katherine Johnson.
-{{< /bs/collapse >}}
+:::
 
 <br/>
 
@@ -168,11 +170,13 @@ weight: 4
 
 <br />
 
-{{< bs/collapse heading="點我看答案" expand=false >}}
+::: {.callout-note collapse="true"}
+### 點我看答案
+
 1. **[主動, 主動]** The QA team loves ice cream, but the writers prefer sorbet.
 2. **[被動, 主動]** Performance metrics are required by the team, though I prefer wild guesses.
 3. **[主動, 被動]** When software engineers attempt something new and innovative, a reward should be given.
-{{< /bs/collapse >}}
+:::
 
 <br/>
 
@@ -213,12 +217,14 @@ weight: 4
 
 <br />
 
-{{< bs/collapse heading="點我看答案" expand=false >}}
+::: {.callout-note collapse="true"}
+### 點我看答案
+
 1. The Mungifier didn't parse the flags.
 2. The Op registration process generates a wrapper.
 3. The Frombus system selects only one experiment per layer.
 4. Asterisks identify quality metrics; ampersands identify bad metrics.
-{{< /bs/collapse >}}
+:::
 
 <br /><br />
 

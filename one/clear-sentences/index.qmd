@@ -42,7 +42,9 @@ weight: 5
 
 <br>
 
-{{< bs/collapse heading="點我看答案" expand=false >}}
+::: {.callout-note collapse="true"}
+### 點我看答案
+
 (1) 幾種可能的答案：
 
 * When a variable declaration doesn't **specify** a datatype, the compiler **generates** an error message.
@@ -52,7 +54,7 @@ weight: 5
 
 * Compilers **issue** errors when you **omit** a semicolon at the end of a statement.
 * A missing semicolon at the end of a statement **triggers** compiler errors.
-{{< /bs/collapse >}}
+:::
 <br/>
 
 ## 減少使用 there is / there are
@@ -103,12 +105,14 @@ weight: 5
 
 <br>
 
-{{< bs/collapse heading="點我看答案" expand=false >}}
+::: {.callout-note collapse="true"}
+### 點我看答案
+
 1. X and Y overlap a lot.
 2. The main thread does not provide a creator stack.
 3. TensorFlow provides a low-level Python interface to load a saved model.
 4. The distribute sharding function assigns keys.
-{{< /bs/collapse >}}
+:::
 
 <br/>
 

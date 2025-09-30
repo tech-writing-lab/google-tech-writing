@@ -65,9 +65,11 @@ weight: 5
 
 <br />
 
-{{< bs/collapse heading="點我看答案" expand=false >}}
+::: {.callout-note collapse="true"}
+### 點我看答案
+
 這題的最佳答案是選項 3。雖然將範例程式碼寫得越短越好很有吸引力，但省略參數名稱會讓初學者更難理解學習內容。
-{{< /bs/collapse >}}
+:::
 
 ## 註解
 
@@ -93,12 +95,14 @@ mystream = br.openstream(pathname="/tmp/myfile", mode="z")
 
 <br />
 
-{{< bs/collapse heading="點我看答案" expand=false >}}
+::: {.callout-note collapse="true"}
+### 點我看答案
+
 此註解有以下缺點：
 
 * 註解詳細說明了程式碼中相當直觀的部分。
 * 此程式碼片段並未解釋不直觀的部分。也就是說， `mode` 參數是什麼，以及參數值為 `z` 意味著什麼？
-{{< /bs/collapse >}}
+:::
 
 <br />
 
@@ -154,9 +158,11 @@ s = "The rain in Maine."
 
 <br />
 
-{{< bs/collapse heading="點我看答案" expand=false >}}
+::: {.callout-note collapse="true"}
+### 點我看答案
+
 最佳答案是 1。提供涵蓋不同複雜度的範例通常是最明智的選擇——尤其是對新手而言。請避免急於跳過新手和中階範例而直接進入非常複雜的範例程式，因為新手正需要這些基礎範例。
-{{< /bs/collapse >}}
+:::
 
 ## 下一步？
 

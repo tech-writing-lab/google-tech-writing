@@ -108,7 +108,9 @@ weight: 9
 
 <br />
 
-{{< bs/collapse heading="點我看答案" expand=false >}}
+::: {.callout-note collapse="true"}
+### 點我看答案
+
 (1) 這段文字嚴重受到知識詛咒的影響。目標讀者從未寫過程式，因此以下術語對他們來說不適當或不熟悉：
 
 * 語言
@@ -122,7 +124,9 @@ weight: 9
 * 指標
 
 (2) 這段文字對於另一類讀者來說也遭遇了知識詛咒。一般的 Python 程式設計師並不熟悉記憶體操作或指標。更好的入門段落應該比較並對照 C 與 Python。
-{{< /bs/collapse >}}
+:::
+
+<br />
 
 ### 簡單用詞
 
@@ -155,12 +159,14 @@ weight: 9
 
 <br />
 
-{{< bs/collapse heading="點我看答案" expand=false >}}
+::: {.callout-note collapse="true"}
+### 點我看答案
+
 1. 在世界某些地方，kosher 已成為「可接受使用」的俚語。然而，許多讀者會好奇宗教飲食法規如何與軟體相關。
 2. 「A sticky wicket」是英國俚語，不易被其他地區理解。可以用「challenging problem」取代它。
 * 「Be that as it may」是一個慣用語，可用轉折詞「However」來取代。
-{{< /bs/collapse >}}
+:::
 
-<br/><br />
+<br/>
 
 **下一單元：** [文件]({{< relref "documents/index.md" >}})

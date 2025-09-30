@@ -52,11 +52,13 @@ weight: 12
 
 <br />
 
-{{< bs/collapse heading="點我看答案" expand=false >}}
+::: {.callout-note collapse="true"}
+### 點我看答案
+
 參考答案：
 
 > Protocol Buffers, sometimes known as protobufs, are our team's main structured data format. Use Protocol Buffers to represent, store, and transfer structured data. Unlike XML, Protocol Buffers are compiled. Consequently, clients transmit Protocol Buffers efficiently, which has led to rapid adoption.
-{{< /bs/collapse >}}
+:::
 
 ## 分號
 
@@ -108,11 +110,13 @@ weight: 12
 
 <br />
 
-{{< bs/collapse heading="點我看答案" expand=false >}}
+::: {.callout-note collapse="true"}
+### 點我看答案
+
 1. 你不能將第 1 句的句號改成分號，因為這兩句話的關聯僅是模糊的。
 2. 你可以將第 2 句的句號改成分號，因為這兩句話的關聯非常密切。
 3. 你不能將第 3 句的逗號改成分號。這裡使用逗號來分隔各個項目是正確的。
-{{< /bs/collapse >}}
+:::
 
 ## 破折號
 

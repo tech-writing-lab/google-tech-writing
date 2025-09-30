@@ -43,7 +43,9 @@ weight: 2
 
 <br>
 
-{{< bs/collapse heading="點我看答案" expand=false >}}
+::: {.callout-note collapse="true"}
+### 點我看答案
+
 <br>**C** enables **programmers** to control **pointers** and **memory**. Great **power** brings great **responsibility**.
 
 現在假設第二個句子如下：
@@ -53,7 +55,7 @@ weight: 2
 這裡的「control」是動詞還是名詞？
 
 在這種情況下，「control」是名詞，即使在第一個句子中「to control」是動詞。英語中的許多單字在某些情況下是名詞，在其他情況下是動詞。
-{{< /bs/collapse >}}
+:::
 
 <br>
 
@@ -83,9 +85,11 @@ weight: 2
 
 <br />
 
-{{< bs/collapse heading="點我看答案" expand=false >}}
+::: {.callout-note collapse="true"}
+### 點我看答案
+
 The cafeteria featured peanut butter and plum jam on rye toast. Employees found **it** awesome and wished **they** could eat **this** every day.
-{{< /bs/collapse >}}
+:::
 
 <br>
 
@@ -121,9 +125,11 @@ The cafeteria featured peanut butter and plum jam on rye toast. Employees found 
 
 <br>
 
-{{< bs/collapse heading="點我看答案" expand=false >}}
+::: {.callout-note collapse="true"}
+### 點我看答案
+
 Samantha **is coding** Operation Bullwinkle in C++. This project currently **consumes** over 80,000 lines of code. She previously **used** Python, but recently **gravitated** to C++. Samantha **leads** a team of four software engineers, which will **grow** to six software engineers next quarter.
-{{< /bs/collapse >}}
+:::
 
 <br>
 
@@ -155,9 +161,11 @@ Samantha **is coding** Operation Bullwinkle in C++. This project currently **con
 
 <br>
 
-{{< bs/collapse heading="點我看答案" expand=false >}}
+::: {.callout-note collapse="true"}
+### 點我看答案
+
 Engineering is a **great** career for a **brilliant** mind. I know a **clever** engineer who could excel at any **intellectual** task.
-{{< /bs/collapse >}}
+:::
 
 <br>
 
@@ -191,9 +199,11 @@ Engineering is a **great** career for a **brilliant** mind. I know a **clever** 
 
 <br>
 
-{{< bs/collapse heading="點我看答案" expand=false >}}
+::: {.callout-note collapse="true"}
+### 點我看答案
+
 Parameters may optionally appear **within** a URL, **after** the path.
-{{< /bs/collapse >}}
+:::
 
 <br>
 
@@ -235,11 +245,13 @@ Parameters may optionally appear **within** a URL, **after** the path.
 
 <br>
 
-{{< bs/collapse heading="點我看答案" expand=false >}}
+::: {.callout-note collapse="true"}
+### 點我看答案
+
 這種情況下最好的轉折語如下：
 
 **However** (然而)
-{{< /bs/collapse >}}
+:::
 
 <br/><br/>
 

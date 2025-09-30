@@ -40,11 +40,13 @@ weight: 6
 
 <br>
 
-{{< bs/collapse heading="點我看答案" expand=false >}}
+::: {.callout-note collapse="true"}
+### 點我看答案
+
 In bash, use an if, then, and fi statement to implement a simple conditional branching block. The if statement evaluates an expression. The then statement introduces a block of statements to run when the if expression is true. The fi statement marks the end of the conditional branching block. (The resulting paragraph remains unclear but is still much easier to read than the original sentence.)
 
 在 bash 中，可以使用 `if`、`then` 和 `fi` 指令來實作一個簡單的條件分支區塊。`if` 會判斷一個條件式。`then` 則用來引入當條件成立時要執行的程式碼區塊。`fi` 表示這個條件分支區塊的結尾。（雖然整段文字仍不夠清楚，但相較於原本的長句，已經更容易閱讀了。）
-{{< /bs/collapse >}}
+:::
 
 ## 將冗長句子改寫成清單
 
@@ -68,7 +70,9 @@ In bash, use an if, then, and fi statement to implement a simple conditional bra
 
 <br>
 
-{{< bs/collapse heading="點我看答案" expand=false >}}
+::: {.callout-note collapse="true"}
+### 點我看答案
+
 **句子 1**
 
 請依照下列步驟開始使用 Frambus 應用程式：
@@ -84,7 +88,7 @@ In bash, use an if, then, and fi statement to implement a simple conditional bra
 - Stephen Bourne 在 1977 年發明了 Bourne Shell。
 - David Korn 在 1983 年發明了 KornShell。
 KornShell 是 Bourne Shell 的向下相容超集合，包含了許多對舊版 shell 的改進。
-{{< /bs/collapse >}}
+:::
 
 ## 消除或減少無關的詞語
 
@@ -132,7 +136,9 @@ KornShell 是 Bourne Shell 的向下相容超集合，包含了許多對舊版 s
 
 <br>
 
-{{< bs/collapse heading="點我看答案" expand=false >}}
+::: {.callout-note collapse="true"}
+### 點我看答案
+
 以下是一些可能的解答：
 
 1. Although Arnold writes buggy code, he writes error-free documentation. <br />
@@ -141,7 +147,7 @@ KornShell 是 Bourne Shell 的向下相容超集合，包含了許多對舊版 s
 4. Determine whether Rikona can code in COBOL.
 5. Frambus produces bugs, which the LogGenerator method logs.
 
-{{< /bs/collapse >}}
+:::
 
 ## 減少從屬子句 (選修)
 
@@ -185,14 +191,16 @@ KornShell 是 Bourne Shell 的向下相容超集合，包含了許多對舊版 s
 
 <br>
 
-{{< bs/collapse heading="點我看答案" expand=false >}}
+::: {.callout-note collapse="true"}
+### 點我看答案
+
 以下答案已將從屬子句以<mark>馬克筆</mark>或**粗體字**標示出來。
 
 1. Python is an interpreted language, <mark>which means that the language can execute source code directly.</mark> <br />備註：這句中的從屬子句是用來延伸主句意思，句子本身沒問題。
 2. Bash is a modern shell scripting language <mark>that takes many of its features from KornShell 88,</mark> **which was developed at Bell Labs.** <br/> 備註：這句的第一個從屬子句是用來延伸主句，但第二個從屬子句偏離主題太遠。建議拆成兩句。
 3. Lisp is a programming language <mark>that relies on Polish prefix notation,</mark> **which is one of the systems invented by the Polish logician Jan Łukasiewicz.** <br />備註：這句的第一個從屬子句對句子非常重要，但第二個從屬子句讓讀者偏離主句太遠。建議拆成兩句。
 4. I don't want to say that Fortran is old, <mark>but only radiocarbon dating can determine its true age.</mark> <br />備註：這句的從屬子句對句子很關鍵，因此句子本身沒問題。
-{{< /bs/collapse >}}
+:::
 
 ## 區分 that 和 which
 

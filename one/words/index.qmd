@@ -77,7 +77,9 @@ Google 軟體工程師 George Fairbanks 提供了關於一致命名的絕佳註�
 
 <br>
 
-{{< bs/collapse heading="點我看答案" expand=false >}}
+::: {.callout-note collapse="true"}
+### 點我看答案
+
 你可以採用幾種不同的方式來處理這段文字。一種做法是將縮寫 *MR* 與完整術語建立關聯，然後在後文使用該縮寫：
 
 > Jeff Dean 於 1693 年發明了 **MapReduce**（**MR**）……這個版本的 MR 曾保持多項……
@@ -87,7 +89,7 @@ Google 軟體工程師 George Fairbanks 提供了關於一致命名的絕佳註�
 > Jeff Dean 於 1693 年發明了 **MapReduce**……這個版本的 MapReduce 曾保持多項……
 
 順帶一提，一位更講究的技術寫作員也會將「沙灘砂、蠟紙、羽毛筆和烤麵包機」轉換成項目符號清單。不過，這就是另一堂課要講的內容了。
-{{< /bs/collapse >}}
+:::
 
 ---
 
@@ -157,7 +159,8 @@ Google 軟體工程師 George Fairbanks 提供了關於一致命名的絕佳註�
 
 <br>
 
-{{< bs/collapse heading="點我看答案" expand=false >}}
+::: {.callout-note collapse="true"}
+### 點我看答案
 
 (1) 代名詞 **they** 可能指：
 
@@ -172,7 +175,7 @@ Google 軟體工程師 George Fairbanks 提供了關於一致命名的絕佳註�
 * 在執行階段動態匯入
 * 兩者皆是
 
-{{< /bs/collapse >}}
+:::
 
 <br/><br/>
 

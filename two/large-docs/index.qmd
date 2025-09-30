@@ -89,7 +89,9 @@ weight: 3
 
 <br />
 
-{{< bs/collapse heading="點我看答案" expand=false >}}
+::: {.callout-note collapse="true"}
+### 點我看答案
+
 以下是參考答案：
 
 ```markdown
@@ -109,7 +111,7 @@ weight: 3
 
 列出讀者為了理解教學內容所需要了解的術語定義。
 ```
-{{< /bs/collapse >}}
+:::
 
 ### 介紹一份文件
 
@@ -151,7 +153,9 @@ F@ 是一個於 2011 年由開源社群開發的程式語言。本指南
 
 <br />
 
-{{< bs/collapse heading="點我看答案" expand=false >}}
+::: {.callout-note collapse="true"}
+### 點我看答案
+
 以下為參考答案：
 
 ```text
@@ -162,7 +166,7 @@ F@ 是一個於 2011 年由開源社群開發的程式語言。本指南
 並對程式碼執行檢查。如果您有建議可補充至本指南的最佳實務
 清單，歡迎在 F@ 的文件儲存庫中提交 issue。
 ```
-{{< /bs/collapse >}}
+:::
 
 <br/>
 
@@ -246,7 +250,9 @@ F@ 是一個於 2011 年由開源社群開發的程式語言。本指南
 
 <br />
 
-{{< bs/collapse heading="點我看答案" expand=false >}}
+::: {.callout-note collapse="true"}
+### 點我看答案
+
 以下為參考答案：
 
 ```text
@@ -304,7 +310,7 @@ F@ 是一個於 2011 年由開源社群開發的程式語言。本指南
 
 ## 下一步
 ```
-{{< /bs/collapse >}}
+:::
 
 ## 逐步揭露資訊
 
