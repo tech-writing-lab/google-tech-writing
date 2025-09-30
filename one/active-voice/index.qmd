@@ -13,7 +13,9 @@ weight: 4
 
 ## 區分簡單句中的主動與被動語態
 
-{{< youtube id="nG6DhoFt938" class="youtube" >}}
+<div style="text-align: center;">
+{{< video https://www.youtube.com/watch?v=nG6DhoFt938 width=540 height=370 >}}
+</div>
 
 在主動語態的句子中，一個動作者（actor）對一個目標採取行動。也就是說，一個主動語態的句子遵循以下公式：
 

@@ -18,7 +18,9 @@ weight: 9
 
 正如以下影片所示，鎖定*錯誤的*讀者會造成混亂：
 
-{{< youtube id="eFtXIrmsMwI" class="youtube" >}}
+<div style="text-align: center;">
+{{< video https://www.youtube.com/watch?v=eFtXIrmsMwI width=540 height=370 >}}
+</div>
 
 ## 定義你的讀者
 
