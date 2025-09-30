@@ -144,7 +144,7 @@ weight: 4
 >
 > (程式碼由 Python 解譯，但程式碼由 C++ 編譯。)
 
-![](images/passive-passive.svg){fig-align="center"}
+![](images/passive-passive.svg){fig-align="center" width=730}
 
 以下是相同句子，部分轉換為主動語態：
 
@@ -152,7 +152,8 @@ weight: 4
 >
 > (Python 解譯程式碼，但程式碼由 C++ 編譯。)
 
-![](images/active-passive.svg){fig-align="center"}
+![](images/active-passive.svg){fig-align="center" width=710}
+
 
 以下是相同句子，現在完全轉換為主動語態：
 
@@ -160,7 +161,7 @@ weight: 4
 >
 > (Python 解譯程式碼，但 C++ 編譯程式碼。)
 
-![](images/all-active.svg){fig-align="center"}
+![](images/all-active.svg){fig-align="center" width=710}
 
 ### 練習
 
