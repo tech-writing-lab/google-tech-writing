@@ -224,4 +224,4 @@ KornShell 是 Bourne Shell 的向下相容超集合，包含了許多對舊版 s
 
 <br /><br />
 
-**下一單元：** [清單與表格]({{< relref "../lists-and-tables/index.md" >}})
+**下一單元：** [清單與表格](../lists-and-tables/index.qmd)

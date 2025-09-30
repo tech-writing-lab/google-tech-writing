@@ -69,4 +69,4 @@ weight: 1
 
 <br/><br />
 
-**下一單元：** [夠用的文法]({{< relref "../just-enough-grammar/index.md" >}}) (選修單元)
+**下一單元：** [夠用的文法](../just-enough-grammar/index.qmd) (選修單元)

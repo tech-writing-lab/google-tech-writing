@@ -34,4 +34,4 @@ Markdown 解析器會將 Markdown 檔案轉換成 HTML。瀏覽器接著可以�
 
 如果你的組織提供《技術寫作一》的課堂部分，請務必參加。如果你想要擔任《技術寫作一》課堂部分（in-class）的講師，請參閱[講師指南](https://developers.google.com/tech-writing/for-instructors/one/instructors-guide)。
 
-《技術寫作一》課程所有主題的重點都已彙整在[總結]({{< relref "summary/" >}})頁面。
+《技術寫作一》課程所有主題的重點都已彙整在[總結](summary/index.qmd)頁面。

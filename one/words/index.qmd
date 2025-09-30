@@ -179,4 +179,4 @@ Google 軟體工程師 George Fairbanks 提供了關於一致命名的絕佳註�
 
 <br/><br/>
 
-**下一單元：** [主動語態 vs. 被動語態]({{< relref "active-voice.md" >}})
+**下一單元：** [主動語態 vs. 被動語態](active-voice.qmd)

@@ -231,4 +231,4 @@ weight: 4
 
 <br /><br />
 
-**下一單元：** [清晰的句子]({{< relref "../clear-sentences/index.md" >}})
+**下一單元：** [清晰的句子](../clear-sentences/index.qmd)
