@@ -222,6 +222,6 @@ KornShell 是 Bourne Shell 的向下相容超集合，包含了許多對舊版 s
 
 「**which**」前面要加逗號，「**that**」前面則不加逗號。
 
-<br /><br />
+<br />
 
 **下一單元：** [清單與表格](../lists-and-tables/index.qmd)

@@ -159,8 +159,6 @@ weight: 9
 > * Deciding which BlogResource constraints are combinable is a sticky wicket.
 > * Be that as it may, you still have to write unit tests.
 
-<br />
-
 ::: {.callout-note collapse="true"}
 ### 點我看答案
 
@@ -171,4 +169,4 @@ weight: 9
 
 <br/>
 
-**下一單元：** [文件](documents/index.qmd)
+**下一單元：** [文件](../documents/index.qmd)

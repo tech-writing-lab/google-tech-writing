@@ -229,6 +229,6 @@ weight: 4
 4. Asterisks identify quality metrics; ampersands identify bad metrics.
 :::
 
-<br /><br />
+<br />
 
 **下一單元：** [清晰的句子](../clear-sentences/index.qmd)

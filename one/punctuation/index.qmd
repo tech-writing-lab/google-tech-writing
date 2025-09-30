@@ -197,6 +197,6 @@ weight: 12
 >
 > Binary mode relies on the more compact native form (described later in this document).
 
-<br /><br />
+<br />
 
-**下一單元：** [Markdown](markdown/index.qmd) （選修）
+**下一單元：** [Markdown](../markdown/index.qmd) （選修）

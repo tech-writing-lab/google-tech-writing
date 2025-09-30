@@ -229,8 +229,6 @@ weight: 7
 | C++ | Bjarne Stroustrup | 1979 | 物件導向程式設計 |
 | Python | Guido van Rossum | 1994 | 簡潔性 |
 
-<br />
-
 ::: {.callout-note collapse="true"}
 ### 點我看答案
 
@@ -241,6 +239,6 @@ weight: 7
 > 下表標識了三種流行程式語言的發明者、發明年份和主要特點：
 :::
 
-<br /><br />
+<br />
 
 **下一單元：** [段落](../paragraphs/index.qmd)

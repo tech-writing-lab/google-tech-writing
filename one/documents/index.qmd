@@ -27,13 +27,13 @@ cspell: disable
 
 > 本文件說明如何使用 Frambus API 來建立、更新與發布 Fwidgets。本文件不說明如何使用 Frambus API 刪除 Fwidgets，也不涵蓋 Linux 作業系統的歷史。
 
-<br />
-
 ::: {.callout-note collapse="true"}
 ### 點我看答案
 
 非範圍部分僅應包含使用者合理期待本文件會涵蓋的資訊。沒有合理的使用者會期待本文件會涉及 Linux 的歷史。
 :::
+
+<br />
 
 ## 指出目標讀者
 
@@ -74,13 +74,13 @@ cspell: disable
 
 > Frambus 天氣應用程式 v2 推出十項功能，是 v1 所不具備的。最重要的是，v2 提供兩週天氣預報，而 v1 只有一週預報。潮汐資訊不會改變。
 
-<br />
-
 ::: {.callout-note collapse="true"}
 ### 點我看答案
 
 最後一句（關於潮汐的部分）不夠重要，不應出現在開頭。因為第一句提到有十項新功能，讀者自然會期待聽到更多，然而最後一句卻談及不是新功能的內容。
 :::
+
+<br />
 
 ## 為讀者而寫
 
@@ -121,6 +121,6 @@ cspell: disable
    * 邊緣案例（edge cases）
    * 已知的未知（known unknowns）
 
-<br /><br />
+<br />
 
 **下一單元：** [標點符號](../punctuation/index.qmd) （選修）

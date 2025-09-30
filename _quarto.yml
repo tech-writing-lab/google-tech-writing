@@ -64,4 +64,5 @@ format:
     css: styles.css
     code-copy: true
     code-overflow: wrap
-    mainfont: "Noto Sans TC, Microsoft JhengHei"
+    mainfont: Noto Sans TC, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif
+    monofont: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
