@@ -14,10 +14,12 @@ Google 技術寫作課程包含四個部分，而這個繁體中文版僅提供 
 | [Tech Writing for Accessibility](https://developers.google.com/tech-writing/accessibility) | 「無障礙」寫作相關議題。此處未提供翻譯。 |
 | [Writing Helpful Error Messages](https://developers.google.com/tech-writing/error-messages) | 如何撰寫清楚有用的錯誤訊息。此處未提供翻譯。 |
 
-> [!NOTE] 授權條款
-> 以下為原課程的授權條款（此中文版亦同）：
->
+::: {.callout-note}
+### 授權條款
+以下為原課程的授權條款（此中文版亦同）：
+
 > Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
+:::
 
 ## 為何要學習技術寫作？
 
@@ -78,8 +80,10 @@ Google 技術寫作課程包含四個部分，而這個繁體中文版僅提供 
 
 此中文版的製作時間為 2025 年 7 月，而且每個頁面的最底下都有顯示最近一次的更新日期。原文課程的每一個頁面下方也都有標註最近更新日期，故只要比對兩邊的更新日期，就能大致判斷中文版內容是否需要更新。
 
-> [!NOTE] Feedback
-> 如對此中文版有任何建議或指正，歡迎[至 GitHub Issues 提交問題單](https://github.com/huanlin/huanlin.github.io/issues/new?title=Google%20%e6%8a%80%e8%a1%93%e5%af%ab%e4%bd%9c%e8%aa%b2%e7%a8%8b%ef%bc%88%e4%b8%ad%e6%96%87%e7%89%88%ef%bc%89)。
+::: {.callout-note}
+### Feedback
+如對此中文版有任何建議或指正，歡迎[至 GitHub Issues 提交問題單](https://github.com/tech-writing-lab/google-tech-writing/issues){target="_blank"}。
+:::
 
 ## 開始課程
 
