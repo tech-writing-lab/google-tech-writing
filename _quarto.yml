@@ -1,0 +1,55 @@
+project:
+  type: website
+
+website:
+  title: "Google 技術寫作課程（中文版）"
+  sidebar:
+    - id: one
+      title: "技術寫作一"
+      contents:
+        - href: one/index.qmd
+          text: "技術寫作一"
+        - href: one/introduction/index.qmd
+          text: "簡介 (3 分鐘)"
+        - href: one/just-enough-grammar/index.qmd
+          text: "夠用的文法（選修）(10 分鐘)"
+        - href: one/words/index.qmd
+          text: "字詞 (10 分鐘)"
+        - href: one/active-voice/index.qmd
+          text: "主動語態 vs. 被動語態 (15 分鐘)"
+        - href: one/clear-sentences/index.qmd
+          text: "清晰的句子 (10 分鐘)"
+        - href: one/short-sentences/index.qmd
+          text: "簡短的句子 (20 分鐘)"
+        - href: one/lists-and-tables/index.qmd
+          text: "清單與表格 (15 分鐘)"
+        - href: one/paragraphs/index.qmd
+          text: "段落 (10 分鐘)"
+        - href: one/audience/index.qmd
+          text: "目標讀者 (10 分鐘)"
+        - href: one/documents/index.qmd
+          text: "文件 (10 分鐘)"
+        - href: one/punctuation/index.qmd
+          text: "標點符號（選修）(5 分鐘)"
+        - href: one/markdown/index.qmd
+          text: "Markdown (選修)"
+        - href: one/summary/index.qmd
+          text: "總結 (1 分鐘)"
+
+    - id: two
+      title: "技術寫作二"
+      contents:
+        - href: two/index.qmd
+          text: "技術寫作二"
+        - href: two/introduction/index.qmd
+          text: "簡介 (2 分鐘)"
+        - href: two/editing/index.qmd
+          text: "自我編輯 (10 分鐘)"
+        - href: two/large-docs/index.qmd
+          text: "組織大型文件 (20 分鐘)"
+        - href: two/illustrations/index.qmd
+          text: "製作插圖 (10 分鐘)"
+        - href: two/sample-code/index.qmd
+          text: "建立範例程式碼 (10 分鐘)"
+        - href: two/summary/index.qmd
+          text: "總結 (1 分鐘)"
