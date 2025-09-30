@@ -26,6 +26,8 @@ weight: 5
 | This error message **happens** when... <br/>(當...時，這個錯誤訊息會**發生**。) | The system **generates** this error message when... <br/>(當...時，系統會**產生**這個錯誤訊息。) |
 | We **are** very careful to ensure... <br/>(我們**是**很小心的來確保...) | We carefully **ensure**... <br/>(我們小心地**確保**...) |
 
+: {.striped .hover}
+
 許多作者依賴 be 的各種形式，好像它們是調味架上唯一的香料。不妨在文章裡撒上一些不同的動詞，讓它更可口。話雖如此，be 的形式有時是動詞的最佳選擇，所以也不用覺得必須在寫作時完全避開 be 的每一種形式。
 
 請注意，通用動詞通常表示有其他問題，例如：

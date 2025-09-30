@@ -1,0 +1,6 @@
+/* 調整所有表格下方距離，以免跟後續段落文字太靠近。 */
+table, table.table {
+  margin-top: 2.5em;
+  margin-bottom: 3em;
+}
+

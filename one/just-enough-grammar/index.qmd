@@ -23,6 +23,8 @@ weight: 2
 | **連接詞** | 連接兩個名詞或片語的單字 | Sam's trophies **and** ribbons live only in his imagination. |
 | **轉折語** | 連接兩個句子的單字或片語 | Sam runs races weekly. **However**, he finishes races weakly. |
 
+: {.striped .hover tbl-colwidths="[15,45,40]"}
+
 ## 名詞
 
 名詞代表人、地或事物。**Judy**、**Antarctica** 和 **hammers** 都是名詞，但像 **robustness** 和 **perfection** 等無形的概念也是名詞。在下面的範例段落中，我們將名詞以粗體格式顯示：
