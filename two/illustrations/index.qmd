@@ -36,27 +36,25 @@ weight: 4
 
 <br />
 
-![Multicolored chain](images/caption_exercise_chain_a.png?width=500)
+![Multicolored chain](images/caption_exercise_chain_a.png){width=500}
 
 **圖說 A. 單向鏈結串列的節點會儲存資料內容，以及指向下一個節點的參考。**
 
 <br /><br />
 
-![Four boxes connected by three arrows](images/caption_exercise_drawing_b.png?width=480)
+![Four boxes connected by three arrows](images/caption_exercise_drawing_b.png){width=480}
 
 **圖說 B. 單向鏈結串列的節點會儲存資料內容，以及指向下一個節點的參考。**
 
 <br />
 
-![Four boxes (each with content and a pointer) connected by three arrows.](images/caption_exercise_drawing_c.svg?width=700)
+![Four boxes (each with content and a pointer) connected by three arrows.](images/caption_exercise_drawing_c.svg){width=700}
 
 **圖說 C. 單向鏈結串列的節點會儲存資料內容，以及指向下一個節點的參考。**
 
 <br />
 
 上述三張圖中，哪一張最能清楚表現其圖說？
-
-<br />
 
 ::: {.callout-note collapse="true"}
 ### 點我看答案
@@ -65,6 +63,8 @@ weight: 4
 * **圖 B** 還可以。插圖幫助學生理解第一個節點指向第二個，第二個節點指向第三個，依此類推。但雖然圖說提到節點包含內容和指標，這張圖只顯示了指標，卻沒有呈現內容。
 * **圖 C** 是最佳且最具教學意義的選擇。插圖清楚區分每個節點的內容部分與指標部分。
 :::
+
+<br />
 
 ## 限制單張圖中的資訊量
 
@@ -89,7 +89,7 @@ weight: 4
 
 將視覺雜亂化繁為簡、變得有條理且有幫助的秘訣，是把複雜系統拆解成子系統，就像下面這張圖所示：
 
-![](images/subsystems.svg?width=640)
+![](images/subsystems.svg){width=640}
 
 **圖 4. 一個複雜系統被拆解成三個子系統。**
 
@@ -97,7 +97,7 @@ weight: 4
 
 在展示「整體架構」之後，請分別提供各個子系統的獨立插圖。
 
-![](images/subsystems_zoomed.svg?width=840)
+![](images/subsystems_zoomed.svg){width=840}
 
 **圖 5. 複雜系統中某個子系統的詳細展開圖。**
 
@@ -107,7 +107,7 @@ weight: 4
 
 當面對像以下這種複雜的截圖時，讀者往往難以判斷哪些部分是重點：
 
-![](images/unfocused_screenshot.png?width=540)
+![](images/unfocused_screenshot.png){width=540}
 
 **圖 6. 讀者不知道該聚焦在哪裡。**
 
@@ -115,7 +115,7 @@ weight: 4
 
 加入視覺提示，例如下面圖中的紅色橢圓，有助於引導讀者聚焦截圖中的重點區域：
 
-![](images/focused_screenshot.png?width=540)
+![](images/focused_screenshot.png){width=540}
 
 **圖 7. 讀者會聚焦在打破既有模式的形狀上。**
 
@@ -125,7 +125,7 @@ weight: 4
 
 如以下範例圖，標註與箭頭能迅速引導讀者理解該部分的用途。
 
-![](images/moon_with_callout.svg?width=600)
+![](images/moon_with_callout.svg){width=600}
 
 **圖 8. 標註能引導讀者的視線。** <br/>
 來源：[NASA / JPL-Caltech / University of Arizona [Public domain]](https://commons.wikimedia.org/wiki/File:Phobos_colour_2008.jpg)
@@ -153,7 +153,7 @@ weight: 4
 
 請看以下這張原始插圖：
 
-![](images/recursion1.svg?width=360)
+![](images/recursion1.svg){width=360}
 
 **圖 10. 一張複雜的圖表。**
 
@@ -164,8 +164,6 @@ weight: 4
 > 對於遞迴解法，在 `return` 敘述中呼叫函式本身，直到達到基礎情況為止。
 
 圖表的複雜性是如何掩蓋這個重點的？你可以如何解決這些問題？
-
-<br />
 
 ::: {.callout-note collapse="true"}
 ### 點我看答案
@@ -184,19 +182,19 @@ weight: 4
 此外，這張圖表中還有其他未被指出的問題。
 :::
 
+<br />
+
 ---
 
 以下是一張改良後的插圖：
 
-![](images/recursion2.svg?width=360)
+![](images/recursion2.svg){width=360}
 
 **圖 11. 前述圖表的簡化版本。**
 
 <br/>
 
 你在改良後的插圖中看到了哪些缺點？
-
-<br />
 
 ::: {.callout-note collapse="true"}
 ### 點我看答案
@@ -206,6 +204,8 @@ weight: 4
 * 這張圖仍然過於複雜，解釋它可能需要超過一段文字。可以考慮移除多餘資訊或增加說明標籤，以簡化理解。
 * 雖然將箭頭分開有助於呈現函式何時呼叫與回傳資料，但回傳箭頭若能加上標籤說明回傳值內容，會更有幫助。
 :::
+
+<br />
 
 ---
 
@@ -219,6 +219,6 @@ weight: 4
 
 欲在文件中使用從這些工具匯出的圖片時，通常建議匯出為[可縮放向量圖形](https://wikipedia.org/wiki/Scalable_Vector_Graphics)（SVG）格式。SVG 格式能依據空間大小調整圖像比例，不論尺寸如何，都能保持高品質。
 
-<br/><br/>
+<br/>
 
 **下個單元：** [建立範例程式碼]({{< relref "../sample-code/index.md" >}})
