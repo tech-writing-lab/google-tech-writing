@@ -174,13 +174,15 @@ F@ 是一個於 2011 年由開源社群開發的程式語言。本指南
 
 提供導覽（navigation）與提示語（signposting）可確保讀者能夠找到他們需要的資訊，並解決手邊的問題。
 
-> [!NOTE] 譯註
-> Signposting 也常譯為導引語、路標詞，指的是在寫作或口語中，經常用來引導讀者或聽眾理解文章結構和內容的詞語或句子。其作用類似路標，指示著接下來的內容將如何展開。以下是幾個導引語的例子：
-> * 本文首先探討背景，其次說明研究方法，最後討論研究結果。
-> * 接下來，我們將討論……
-> * 在這裡，我想要特別強調……
->
-> 延伸閱讀：[What Is Signposting in English and Why Does It Matter?](https://www.leonardoenglish.com/blog/signposting)
+::: {.callout-note}
+### 譯註
+Signposting 也常譯為導引語、路標詞，指的是在寫作或口語中，經常用來引導讀者或聽眾理解文章結構和內容的詞語或句子。其作用類似路標，指示著接下來的內容將如何展開。以下是幾個導引語的例子：
+* 本文首先探討背景，其次說明研究方法，最後討論研究結果。
+* 接下來，我們將討論……
+* 在這裡，我想要特別強調……
+
+延伸閱讀：[What Is Signposting in English and Why Does It Matter?](https://www.leonardoenglish.com/blog/signposting)
+:::
 
 清楚的導覽包含：
 

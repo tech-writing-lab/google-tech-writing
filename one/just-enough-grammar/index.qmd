@@ -188,8 +188,10 @@ Engineering is a **great** career for a **brilliant** mind. I know a **clever** 
 
 - The C Programming Language **by** Kernighan and Richie remains popular.
 
-> [!NOTE]
-> **注意：** 英語中的一些單字屬於多個文法類別。例如，雖然 **under** 通常是介係詞，但根據上下文，**under** 也可以用作副詞或形容詞。
+::: {.callout-note}
+### 注意：
+英語中的一些單字屬於多個文法類別。例如，雖然 **under** 通常是介係詞，但根據上下文，**under** 也可以用作副詞或形容詞。
+:::
 
 ### 練習 {#ex4}
 
