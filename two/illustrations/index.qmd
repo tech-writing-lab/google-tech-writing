@@ -8,9 +8,9 @@ weight: 4
 
 還記得老師曾經指定你閱讀一整大章的課本內容嗎？你翻著那段指定的課文，心裡懇求著……沒錯，要有圖！看插圖總是比讀文字有趣多了。事實上，當我們在閱讀技術內容時，大多數的大人其實就像小孩一樣——依然期待圖片，而不是一大堆文字。
 
-![Three children read a book while pointing at the pictures.](images/book_readers.jpg)
+![圖 1. 好的圖像能以文字無法達到的方式吸引讀者。](images/book_readers.jpg){fig-alt="Three children read a book while pointing at the pictures."}
 
-**圖 1. 好的圖像能以文字無法達到的方式吸引讀者。** 來源：Nirmal Dulal [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+圖片來源：Nirmal Dulal [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
 
 <br />
 
@@ -36,19 +36,19 @@ weight: 4
 
 <br />
 
-![Multicolored chain](images/caption_exercise_chain_a.png){width=500}
+![](images/caption_exercise_chain_a.png){width=500 fig-alt="Multicolored chain"}
 
 **圖說 A. 單向鏈結串列的節點會儲存資料內容，以及指向下一個節點的參考。**
 
 <br /><br />
 
-![Four boxes connected by three arrows](images/caption_exercise_drawing_b.png){width=480}
+![](images/caption_exercise_drawing_b.png){width=480 fig-alt="Four boxes connected by three arrows"}
 
 **圖說 B. 單向鏈結串列的節點會儲存資料內容，以及指向下一個節點的參考。**
 
 <br />
 
-![Four boxes (each with content and a pointer) connected by three arrows.](images/caption_exercise_drawing_c.svg){width=700}
+![](images/caption_exercise_drawing_c.svg){width=700 fig-alt="Four boxes (each with content and a pointer) connected by three arrows."}
 
 **圖說 C. 單向鏈結串列的節點會儲存資料內容，以及指向下一個節點的參考。**
 
@@ -70,7 +70,7 @@ weight: 4
 
 很少有智力活動能像欣賞一幅優秀畫作那樣令人滿足，隨著時間推移，逐步發掘出層層的洞見與意涵。人會花大錢專程到世界各地的美術館去做這件事。
 
-![Portrait of Pere Tanguy By Vincent van Gogh - Musée Rodin](images/van_gogh.jpg)
+![](images/van_gogh.jpg){fig-alt="Portrait of Pere Tanguy By Vincent van Gogh - Musée Rodin"}
 
 **圖 2. 你會很樂意細細品味這幅梵谷的畫作。**<br />
 來源：Portrait of Pere Tanguy By Vincent van Gogh - Musée Rodin [Public domain](https://commons.wikimedia.org/w/index.php?curid=119599)
@@ -79,9 +79,11 @@ weight: 4
 
 相較之下，像以下這種高度複雜的技術插圖，往往會讓大多數讀者感到卻步：
 
-![A schematic, filled with lines and small print](images/overly_complex_diagram.svg)
+![](images/overly_complex_diagram.svg){fig-alt="A schematic, filled with lines and small print"}
 
+::: {.center}
 **圖 3. 複雜的方塊圖會讓讀者感到負擔過重。**
+:::
 
 <br />
 

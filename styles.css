@@ -1,3 +1,8 @@
+/* 預設的 h3 會太靠近下方段落文字，這裡稍微加大一點，使用跟 h2 一樣的間距。 */
+h3, .h3 {
+  padding-bottom: 0.5rem;
+}
+
 /* 調整所有表格下方距離，以免跟後續段落文字太靠近。 */
 table, table.table {
   margin-top: 2.5em;
@@ -7,4 +12,10 @@ table, table.table {
 :root {
   --bs-body-font-family: Noto Sans TC, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/* 圖片標題預設靠左，以下樣式可以改成置中。 */
+figcaption {
+  font-weight: 600;
+  /* text-align: center; */
 }
