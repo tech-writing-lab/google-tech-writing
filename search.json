@@ -1,0 +1,1037 @@
+[
+  {
+    "objectID": "two/summary/index.html",
+    "href": "two/summary/index.html",
+    "title": "總結",
+    "section": "",
+    "text": "預估時間： 1 分鐘\n《技術寫作二》涵蓋了以下技術寫作的中級課程：\n\n採用風格指南。\n站在受眾的角度思考。\n大聲朗讀文件（給自己聽）。\n在撰寫完草稿後，過一段時間再回頭看文件。\n尋找一位好的同儕編輯。\n撰寫文件大綱。或者，自由寫作然後再組織。\n介紹文件的範圍和任何先決條件。\n偏好以任務為基礎的標題。\n逐步揭露資訊（在某些情況下）。\n考慮在建立插圖之前先寫圖說。\n限制單一圖形中的資訊量。\n透過在圖說中描述重點或在圖片中添加視覺提示，將讀者的注意力集中在圖片或圖表的相關部分。\n建立簡潔易懂的範例程式碼。\n程式碼註解應簡短，但清晰優先於簡潔。\n避免對明顯的程式碼撰寫註解。\n將您的註解精力集中在程式碼中任何不直觀的部分。\n不僅提供範例，還提供反例。\n提供展示不同複雜程度的程式碼範例。\n養成持續修訂的習慣。\n為不同類型的使用者提供不同類型的文件。\n與讀者已經熟悉的事物進行比較和對比。\n在教學中，透過範例強化概念。\n在教學中，註明讀者可能遇到的問題。\n\n恭喜你完成《技術寫作二》的課前自學內容！\n《技術寫作二》的課堂部分將幫助您練習技術寫作原則：\n\n如果您的組織提供《技術寫作二》的課堂部分，您現在已準備好上這門課。\n如果您的組織沒有提供《技術寫作二》的課堂部分，請考慮參加「公告頁面」上列出的免費公開課程之一。",
+    "crumbs": [
+      "總結 (1 分鐘)"
+    ]
+  },
+  {
+    "objectID": "two/large-docs/index.html",
+    "href": "two/large-docs/index.html",
+    "title": "組織大型文件",
+    "section": "",
+    "text": "預估時間： 20 分鐘\n您如何將大量資訊組織成一份連貫的文件或網站？或者，您如何將現有雜亂的文件或網站重新組織成易於理解且有用的內容？以下策略可以提供幫助：",
+    "crumbs": [
+      "組織大型文件 (20 分鐘)"
+    ]
+  },
+  {
+    "objectID": "two/large-docs/index.html#何時撰寫大型文件",
+    "href": "two/large-docs/index.html#何時撰寫大型文件",
+    "title": "組織大型文件",
+    "section": "何時撰寫大型文件",
+    "text": "何時撰寫大型文件\n你可以將一組資訊組織成較長的獨立文件，或一系列較短且相互關聯的文件。一系列較短且相互關聯的文件通常會以網站、wiki、或類似的結構化格式發布。\n有些讀者對較長的文件反應較為正面，有些則不然。請考慮以下兩位假想讀者的觀點，他們是你撰寫文件的對象：\n\n洪先生覺得閱讀長文件很困難且容易迷失方向。他偏好使用網站搜尋功能來尋找問題的答案。\n羅小姐習慣瀏覽大型文件。她經常使用網頁瀏覽器內建的頁面搜尋功能來尋找當前頁面上的有用資訊。\n\n那麼，你應該將你的資料組織成單一文件，還是網站中的一組文件呢？請考慮以下指導原則：\n\n如果是對某個主題全然陌生的讀者，那麼 how-to 指南、入門概述、和概念介紹這些通常比較適合寫成短文件。例如，對主題完全陌生的讀者可能難以記住大量新的術語、概念和事實。請記住，你的讀者可能是為了快速且大致了解主題而閱讀你的文件。\n進階的教學文件、最佳實踐指南、和命令列參考手冊則適合做成較長的文件，尤其是針對已具備部分工具和主題經驗的讀者。\n一個出色的教學文件可以透過文字敘述來引導讀者在較長的文件中完成一系列相關任務。然而，即使是大型教學，有時也可以從拆分成較小的部分而受益。\n許多較長的文件並非設計成一次閱讀完畢。例如，使用者通常會瀏覽參考手冊來尋找某個指令或參數的說明。\n\n本單元的其餘部分將介紹可用於撰寫較長文件（例如教學和一些概念指南）的技巧。",
+    "crumbs": [
+      "組織大型文件 (20 分鐘)"
+    ]
+  },
+  {
+    "objectID": "two/large-docs/index.html#組織文件",
+    "href": "two/large-docs/index.html#組織文件",
+    "title": "組織大型文件",
+    "section": "組織文件",
+    "text": "組織文件\n本節提供了一些規劃較長文件的技巧，包括建立大綱和撰寫引言。完成文件的初稿後，您可以將大綱和引言進行比對，以確保沒有遺漏原本打算涵蓋的內容。\n\n為文件擬定大綱\n從結構化的高層次大綱開始，可以幫助你將主題分組並判斷哪些部分需要更多細節。大綱能幫助你在開始寫作前調整主題的順序。\n你可能會覺得將大綱視為文件的敘事脈絡很有用。雖然沒有標準的大綱撰寫方法，但以下指引提供一些實用的建議，或許對你有幫助：\n\n在請讀者執行某項任務之前，先向他們說明為什麼要這麼做。例如，以下清單是一個小節的綱要，該小節包含了檢查與改善網頁無障礙支援（accessibility）的教學：\n\n介紹一款瀏覽器外掛程式，用於檢查網頁的無障礙支援；告知讀者將會使用檢查報告的結果來修復多個錯誤。\n列出執行外掛程式和檢查網頁無障礙支援的步驟。\n\n將大綱中的每個步驟限制為描述一個概念或完成一項特定任務。\n組織您的大綱，使文件能在讀者最需要的時候引入相關資訊。例如，讀者在剛開始學習基礎知識時，可能不需要（或不想）在文件前言的部分了解專案的發展歷程。如果你認為專案歷史有其參考價值，則不妨在文件末尾提供指向這類資訊的連結。\n考慮先解釋一個概念，然後示範讀者如何在範例專案或自己的工作中應用它。交替呈現概念性資訊與實務步驟的文件，通常是特別吸引人的學習方式。\n在開始起草之前，先與您的貢獻者分享大綱。如果您正在與一個未來會審閱和測試您的文件的貢獻者團隊合作，大綱特別有用。\n\n\n\n大綱練習\n檢視並更新以下長篇教學引言（introduction）的高階大綱。要完成此練習，你可以採取以下任一方式：\n\n重新排列現有主題。\n添加您認為應包含在引言中的任何遺漏主題。\n刪除您認為與引言無關的任何主題。\n\n## 專案歷史\n\n描述專案的開發歷史。\n\n## 先決條件 (Prerequisites)\n\n列出讀者在開始之前應熟悉的概念，以及任何軟體或硬體要求。\n\n## 系統設計\n\n描述系統如何運作。\n\n## 目標讀者\n\n描述此教學是針對哪些讀者而寫。\n\n## 環境設定\n\n說明如何設定您的環境以便進行本教學的操作。\n\n## 疑難排解\n\n解釋如何診斷和解決在進行本教學的相關步驟時可能發生的問題。\n\n## 相關術語\n\n列出讀者為了理解教學內容所需要了解的術語定義。\n\n\n\n\n\n\n\nNote點我看答案\n\n\n\n\n\n以下是參考答案：\n## 目標讀者\n\n描述此教學是針對哪些讀者而寫。\n\n## 先決條件 (Prerequisites)\n\n列出讀者在開始之前應熟悉的概念，以及任何軟體或硬體要求。\n\n## 環境設定\n\n說明如何設定您的環境以便進行本教學的操作。\n\n## 相關術語\n\n列出讀者為了理解教學內容所需要了解的術語定義。\n\n\n\n\n\n介紹一份文件\n如果讀者覺得當前的主題不是他要找的，可能就會忽略這份文件。為了讓讀者先了解概況，我們建議在文件開頭提供一段介紹，包含以下資訊：\n\n文件涵蓋的內容。\n預期讀者應具備的先備知識。\n文件未涵蓋的內容。\n\n請記住，您應該讓文件容易維護，因此不要試圖在介紹中涵蓋所有內容。\n以下段落以虛構的文件發佈平台 Froobus 為例，示範如何運用前面列出的要點來撰寫概述（overview）。\n本文件說明如何使用 Froobus 系統來發佈 Markdown 檔案。\nFroobus 是一套運行於 Linux 伺服器上的發佈系統，能將\nMarkdown 檔案轉換為 HTML 網頁。本文件適用於熟悉\nMarkdown 語法的使用者。若需了解 Markdown 語法，請參閱\n《Markdown 參考手冊》。您也需要具備在 Linux 終端機中\n執行簡單指令的能力。本文件不包含 Froobus 系統的安裝與設\n定說明。如需安裝相關資訊，請參閱《快速入門》。\n完成初稿後，請將整份文件與您在概述中設定的期望進行比對。您的介紹是否準確說明了接下來會涵蓋的主題？把這個檢查視為文件品質保證（QA）的一種形式，應該會有一些幫助。\n\n\n引言練習\n在此練習中，請檢查並修改以下這段針對虛構程式語言 F@ 所撰寫的最佳實務指南的介紹。請刪除您認為在此情境中不相關的資訊，並補充您認為缺漏的內容。\n本指南列出使用 F@ 程式語言的最佳實務做法。\nF@ 是一個於 2011 年由開源社群開發的程式語言。本指南\n是對 F@ 程式風格指南的補充。除了遵循本指南中的建議外，\n也請務必安裝 F@ 的命令列程式碼檢查工具（linter），並\n對程式碼執行檢查。F@ 在醫療產業中被廣泛採用。如果您\n有建議要補充到本指南的最佳實務清單中，請在 F@ 的文件儲\n存庫中提交 issue。\n\n\n\n\n\n\n\nNote點我看答案\n\n\n\n\n\n以下為參考答案：\n本指南列出使用 F@ 程式語言的最佳實務做法。\n在閱讀本指南之前，請先完成專為 F@ 初學者設計的入門教學。\n本指南是對 F@ 程式風格指南的補充。除了遵循本指南中的建議\n外，也請務必安裝 F@ 的命令列程式碼檢查工具（linter），\n並對程式碼執行檢查。如果您有建議可補充至本指南的最佳實務\n清單，歡迎在 F@ 的文件儲存庫中提交 issue。",
+    "crumbs": [
+      "組織大型文件 (20 分鐘)"
+    ]
+  },
+  {
+    "objectID": "two/large-docs/index.html#加入導覽設計",
+    "href": "two/large-docs/index.html#加入導覽設計",
+    "title": "組織大型文件",
+    "section": "加入導覽設計",
+    "text": "加入導覽設計\n提供導覽（navigation）與提示語（signposting）可確保讀者能夠找到他們需要的資訊，並解決手邊的問題。\n\n\n\n\n\n\nNote譯註\n\n\n\nSignposting 也常譯為導引語、路標詞，指的是在寫作或口語中，經常用來引導讀者或聽眾理解文章結構和內容的詞語或句子。其作用類似路標，指示著接下來的內容將如何展開。以下是幾個導引語的例子： * 本文首先探討背景，其次說明研究方法，最後討論研究結果。 * 接下來，我們將討論…… * 在這裡，我想要特別強調……\n延伸閱讀：What Is Signposting in English and Why Does It Matter?\n\n\n清楚的導覽包含：\n\n介紹與摘要段落\n主題內容清楚且合乎邏輯的鋪陳\n有助讀者理解內容的標題與副標題\n顯示使用者目前所在位置的目錄選單\n指向相關資源或更深入資訊的連結\n指引讀者接下來可學習內容的連結\n\n以下章節的建議可協助您規劃文件中的標題架構。\n\n偏好以任務為導向的標題\n請選擇能描述讀者當前任務的標題，避免使用不熟悉的術語或工具名稱作為標題。舉例來說，假設您正在撰寫文件來說明建立新網站的流程。為了建立網站，讀者需要初始化 Froobus framework，而為了初始化，讀者必須執行 carambola 命令列工具。 乍看之下，您可能會想使用以下其中一個標題：\n\n執行 carambola 命令\n初始化 Froobus framework\n\n除非您的讀者已非常熟悉這些術語和概念，否則更直觀的標題可能會更合適，例如：「建立網站」。\n\n\n每個標題下方都要提供內文\n大多數讀者會希望每個標題下方至少有簡短的介紹來說明內容脈絡。請避免在二級標題後直接接三級標題，例如：\n## 建立網站\n### 執行 carambola 指令\n在此範例中，簡短的介紹能幫助讀者快速進入狀況：\n## 建立網站\n\n要建立網站，請執行 `carambola` 指令。該指令會顯示一連串提示，協助您設定網站。\n\n### 執行 carambola 指令\n\n\n標題練習\n協助讀者在文件中導航，有助他們順利找到所需資訊並成功使用工具。通常，清晰、有組織的目錄或大綱就像一張地圖，能幫助使用者理解工具的功能架構。\n在這個練習中，請改善以下大綱。您可以重新排列、加入、刪除主題，或新增次級項目。\n關於本教學\n進階主題\n建立資產導覽樹\n定義資源路徑\n定義與建置專案\n啟動開發環境\n定義與建置資源\n下一步\n定義映像資源\n目標讀者\n參考資源（See also）\n建立映像資源\n定義一個映像專案\n建立一個映像專案\n教學環境設定\n選擇教學資產根目錄\n關於本指南\n\n\n\n\n\n\n\nNote點我看答案\n\n\n\n\n\n以下為參考答案：\n## 關於本教學\n\n### 目標讀者\n\n### 關於本指南\n\n### 進階主題\n\n## 教學環境設定\n\n### 選擇教學資產根目錄\n\n### 啟動開發環境\n\n### 建立資產導覽樹\n\n### 定義資源路徑\n\n## 定義與建構資源\n\n### 定義圖像資源\n\n### 建構圖像資源\n\n## 定義與建構專案\n\n### 定義圖像專案\n\n### 建構圖像專案\n\n## 定義與建構資料庫\n\n### 定義資料庫\n\n### 建構資料庫\n\n## 推送、發佈與檢視資料庫\n\n### 推送資料庫\n\n### 發佈資料庫\n\n### 檢視資料庫\n\n## 設定點資料的顯示規則\n\n### 定義、設定並建構向量資料\n\n## 參考資源（See also）\n\n### 範例資料檔案\n\n## 下一步",
+    "crumbs": [
+      "組織大型文件 (20 分鐘)"
+    ]
+  },
+  {
+    "objectID": "two/large-docs/index.html#逐步揭露資訊",
+    "href": "two/large-docs/index.html#逐步揭露資訊",
+    "title": "組織大型文件",
+    "section": "逐步揭露資訊",
+    "text": "逐步揭露資訊\n對於習慣自行掌握閱讀節奏的讀者來說，學習新概念、想法與技巧通常很有成就感。但如果一次接觸太多新概念與操作指示，也可能令人感到難以招架。當資訊能夠在適當時機逐步揭露，讀者通常會更願意接受篇幅較長的文件。以下幾項技巧可協助你在文件中有效運用「逐步揭露（progressive disclosure）」的原則：\n\n盡可能在需要使用某術語或概念的指令附近才介紹它們。\n拆解大段文字。為了避免單頁中出現多個長段落，應視時加入圖片、表格、清單與標題。\n拆分冗長的操作步驟。若步驟繁複，試著將其重組為較短的清單，逐步說明如何完成子任務。\n先從簡單的範例與指令開始，然後逐步加入更有趣、更複雜的技巧。例如，在建立表單的教學中，先說明如何處理文字回應，再介紹如何處理選擇題、圖片或其他回應類型。\n\n\n下一單元： 製作插圖",
+    "crumbs": [
+      "組織大型文件 (20 分鐘)"
+    ]
+  },
+  {
+    "objectID": "two/index.html",
+    "href": "two/index.html",
+    "title": "技術寫作二",
+    "section": "",
+    "text": "這是 Google 技術寫作課程（中文版） 的第二部分，旨在協助技術人員提升技術溝通能力。\n請透過左方選單或下方連結清單進入您想要閱讀的章節。",
+    "crumbs": [
+      "技術寫作二"
+    ]
+  },
+  {
+    "objectID": "two/editing/index.html",
+    "href": "two/editing/index.html",
+    "title": "自我編輯",
+    "section": "",
+    "text": "預估時間： 10 分鐘\n想像一下，你剛寫完一份文檔的初稿。該如何改進它呢？在大多數情況下，完成一份最終發布的文件是一個反覆的過程。將空白頁面變成初稿通常是最困難的一步。寫完初稿後，請務必預留充足的時間來潤飾您的文件。\n本單元的編輯技巧可以幫助你將初稿打磨成更清楚傳達讀者所需訊息的文檔。你可以使用其中一種技巧，也可以全部使用；重要的是找到適合你的策略，並將其融入你的寫作日常。\n備註： 本單元的內容是以《技術寫作一》的基礎寫作和編輯技巧為基礎，可說是總結了該課程的實用編輯技巧。本單元包含該課程中有用的編輯技巧摘要。如需更詳細的複習，請參閱《技術寫作一》的自學單元。",
+    "crumbs": [
+      "自我編輯 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "two/editing/index.html#採用風格指南",
+    "href": "two/editing/index.html#採用風格指南",
+    "title": "自我編輯",
+    "section": "採用風格指南",
+    "text": "採用風格指南\n公司、組織和大型開源專案通常會採用現有的文件風格指南，或自行撰寫。 Google 開發者網站上的許多文件項目都遵循 Google 開發者文件風格指南。如果您以前從未依賴過風格指南，那麼乍看之下，Google 開發者文件風格指南可能會讓您望而生畏，因為它提供了語法、標點符號、格式和電腦介面文件編寫等主題的詳細指導。您可能會比較想從風格指南的重點提示（highlights）開始。\n注意： 對於較小的專案，例如團隊文件或小型開源專案，您可能會發現風格指南中列出的那些重點就已足夠。\n風格重點提示列出的一些準則在《技術寫作一》中亦有涵蓋。您可能還記得以下這些技巧：\n\n使用主動語態來明確表示誰在執行該動作。\n將連續步驟格式化為編號清單。\n將大多數其他清單格式化為項目符號清單。\n\n風格指南重點介紹了許多其他在撰寫技術文件時可能很有用的技巧，例如：\n\n使用第二人稱寫作。將您的受眾稱為「您」，而不是「我們」。\n將條件放在說明之前，而不是之後。\n將程式碼相關文字格式化為程式碼字體。",
+    "crumbs": [
+      "自我編輯 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "two/editing/index.html#站在讀者的角度思考",
+    "href": "two/editing/index.html#站在讀者的角度思考",
+    "title": "自我編輯",
+    "section": "站在讀者的角度思考",
+    "text": "站在讀者的角度思考\n您的受眾是誰？退一步，嘗試從他們的角度閱讀您的草稿。確保您的文件目的明確，並為您的讀者可能不熟悉的任何術語或概念提供定義。\n為您的受眾勾勒出一個人物角色會很有幫助。人物角色可以包含以下任何屬性：\n\n角色，例如「系統工程師」或「品管測試員」。\n最終目標，例如「還原資料庫」。\n一組關於人物角色及其知識和經驗的假設。例如，您可能會假設您的人物角色是：\n\n熟悉 Python。\n執行 Linux 作業系統。\n習慣照著命令列的說明文件來操作。\n\n\n然後，您可以根據人物角色來審閱您的草稿。告知您的受眾您所做的任何假設會特別有用。您還可以提供資源連結，如果他們需要複習特定主題，可以在其中了解更多資訊。\n請注意，過度依賴一個（或兩個）人物角色可能會導致文件過於狹隘，無法對大多數讀者有用。\n如需複習和更多關於此主題的資訊，請參閱《技術寫作一》中的「目標讀者」自學單元。",
+    "crumbs": [
+      "自我編輯 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "two/editing/index.html#大聲朗讀",
+    "href": "two/editing/index.html#大聲朗讀",
+    "title": "自我編輯",
+    "section": "大聲朗讀",
+    "text": "大聲朗讀\n根據上下文，您的寫作風格可能會疏遠、吸引讀者，甚至令吳者感到厭倦。一份文件的理想風格在一定程度上取決於目標讀者。例如，一個旨在招募志願者的新開源專案的貢獻者指南可能會採用更非正式、更口語化的風格，而商業企業應用程式的開發者指南可能會採用更正式的風格。\n欲檢查您的寫作是否如口語般流暢，請大聲讀出來。注意是否有尷尬的措辭、過長的句子或任何感覺不自然的地方。或者，考慮使用螢幕閱讀器為您朗讀內容。\n有關調整寫作風格以適應目標讀者的更多資訊，請參閱「風格和作者語氣」。",
+    "crumbs": [
+      "自我編輯 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "two/editing/index.html#稍後再回頭看",
+    "href": "two/editing/index.html#稍後再回頭看",
+    "title": "自我編輯",
+    "section": "稍後再回頭看",
+    "text": "稍後再回頭看\n寫完初稿（或第二稿、第三稿）後，把它放在一邊。過一個小時（或兩三個小時）再回頭讀一遍，並嘗試以全新的眼光去讀。您幾乎總能發現可以改進的地方。",
+    "crumbs": [
+      "自我編輯 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "two/editing/index.html#改變情境",
+    "href": "two/editing/index.html#改變情境",
+    "title": "自我編輯",
+    "section": "改變情境",
+    "text": "改變情境\n有些作者喜歡列印他們的文件並用紅筆審閱紙本。在審閱自己的作品時改變情境可以幫助您找到可以改進的地方。對於這個經典技巧的現代版本，將您的草稿複製到不同的文件中，並更改字體、大小和顏色。",
+    "crumbs": [
+      "自我編輯 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "two/editing/index.html#尋找同儕編輯",
+    "href": "two/editing/index.html#尋找同儕編輯",
+    "title": "自我編輯",
+    "section": "尋找同儕編輯",
+    "text": "尋找同儕編輯\n就像工程師需要同儕審閱他們的程式碼一樣，作者需要編輯來為他們的文件提供回饋。請某人審閱您的文件並給予您具體、建設性的評論。您的同儕編輯不需要是您文件技術主題的領域專家，但他們確實需要熟悉您遵循的風格指南。",
+    "crumbs": [
+      "自我編輯 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "two/editing/index.html#練習",
+    "href": "two/editing/index.html#練習",
+    "title": "自我編輯",
+    "section": "練習",
+    "text": "練習\n如果您正在處理一份文件，請使用本頁面中的一個或多個技巧來改進它。如果您沒有正在進行的文件，請編輯以下段落。\n\nDetermine whether or not you can simplify your document through the use of terminology that is equivalent but relatively shorter in length and therefore more easily comprehensible by your audience. It’s important to make sure your document is edited before it is seen by your audience, which might include people that are less or more familiar with the matter covered by your document. The first thing you need is a rough draft. Some things that can help make your document easier to read are making sure you have links to background information, and also checking for active voice instead of passive voice. If you have long sentences you can consider shortening them or implementing the use of a list to make the information easier to scan.\n判斷您是否可以透過使用等效但相對較短的術語來簡化文件，從而使您的讀者更容易理解。請務必確保文件在被讀者看到之前進行編輯，您的受眾可能對文件所涵蓋的內容不太熟悉，也可能比較熟悉。您首先需要準備一份草稿。一些有助於提高文件易讀性的措施包括：確保文件中包含背景資訊的連結，並檢查是否使用主動語態而非被動語態。如果句子較長，可以考慮縮短句子或改成清單項目，以便快速瀏覽資訊。\n\n\n\n\n\n\n\n\nNote點我看提示\n\n\n\n\n\n為了幫助您的受眾理解您的文件，請應用這些基本編輯原則：\n\n使用主動語態而不是被動語態。\n考慮使用更簡單的同義詞。\n包含背景資訊的連結。\n將長句拆解為較短的句子或清單項目。\n\n\n\n\n\n\n下一單元： 組織大型文件",
+    "crumbs": [
+      "自我編輯 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/summary/index.html",
+    "href": "one/summary/index.html",
+    "title": "總結",
+    "section": "",
+    "text": "《技術寫作一》涵蓋了以下技術寫作的基礎觀念：\n\n一致地使用術語。\n避免模糊不清的代名詞。\n優先使用主動語態，而非被動語態。\n使用具體明確的動詞，取代模糊籠統的動詞。\n每個句子只表達一個重點。\n將部分冗長句子改寫成清單。\n刪除不必要的字詞。\n在需要排序時使用編號清單；無須排序時使用項目符號清單。\n保持清單項目結構一致。\n在編號清單的項目開頭使用命令式動詞。\n適當引導清單與表格的內容。\n為段落設計精彩的開頭句，並清楚表達段落主旨。\n每段聚焦於一個主題。\n釐清讀者需要學習哪些內容。\n根據讀者調整說明文件的呈現方式。\n在文件開頭就點出核心重點。\n\n恭喜你完成《技術寫作一》的課前自學內容！\n《技術寫作一》的課堂活動能幫助你練習這些寫作原則：\n\n如果你的組織有提供《技術寫作一》的課堂課程，現在你已經可以參加。\n如果你的組織沒有提供這門課，建議參加公告頁面上列出的免費公開課程。",
+    "crumbs": [
+      "總結 (1 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/punctuation/index.html",
+    "href": "one/punctuation/index.html",
+    "title": "標點符號（選修）",
+    "section": "",
+    "text": "預估時間： 5 分鐘\n本單元為選修，目的是提供標點符號的快速複習。",
+    "crumbs": [
+      "標點符號（選修）(5 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/punctuation/index.html#逗號",
+    "href": "one/punctuation/index.html#逗號",
+    "title": "標點符號（選修）",
+    "section": "逗號",
+    "text": "逗號\n程式語言對標點符號有明確的規定。相較之下，英語中關於逗號的規則則較為模糊。作為一個指引，只要讀者在句中自然停頓的地方，就插入逗號。對於有音樂背景的人來說，如果句號是全音符（semibreve）的休止符，那麼逗號大概是二分音符（minim）或四分音符（crotchet）的休止符。換句話說，逗號的停頓時間比句號短。例如，當你大聲朗讀以下句子時，可能會在 just 這個字前短暫停頓：\n\nC behaves as a mid-level language, just a couple of steps up in abstraction from assembly language.\n\n有些情況下必須使用逗號。例如，使用逗號來分隔嵌入式清單中的項目，如下所示：\n\nOur company uses C++, Python, Java, and JavaScript.\n\n你可能會好奇清單中的最後一個逗號，也就是插入在第 N-1 項和第 N 項之間的逗號。這個逗號——稱為序列逗號（serial comma）或牛津逗號（Oxford comma）——在使用上是有爭議的。我們建議加上這個最後的逗號，因為技術寫作需要選擇最不模糊的解決方案。話雖如此，我們其實更喜歡透過將內嵌清單轉換成項目符號清單來避開這個爭議。\n在表達條件的句子中，請在條件和結果之間加上逗號。例如，以下兩個句子都在正確的位置加上了逗號：\n\nIf the program runs slowly, try the --perf flag.\nIf the program runs slowly, then try the --perf flag.\n\n你也可以在一對逗號之間插入一個簡短的定義或題外話，如以下範例：\n\n　Python, an easy-to-use language, has gained significant momentum in recent years.\n\n最後，避免使用逗號將兩個獨立的想法連接在一起。例如，以下句子中的逗號犯了一種稱為逗號拼接（comma splice）的標點錯誤：\n 不建議\n\nSamantha is a wonderful coder, she writes abundant tests.\n\n使用句號而非逗號來分隔兩個獨立的想法。例如：\n 推薦\n\nSamantha is a wonderful coder. She writes abundant tests.\n\n\n練習\n請在以下段落中適當添加逗號：\n\nProtocol Buffers sometimes known as protobufs are our team’s main structured data format. Use Protocol Buffers to represent store and transfer structured data. Unlike XML Protocol Buffers are compiled. Consequently clients transmit Protocol Buffers efficiently which has led to rapid adoption.\n\n提示：朗讀這段文字，並在聽到短暫停頓的地方加上逗號。\n\n\n\n\n\n\n\nNote點我看答案\n\n\n\n\n\n參考答案：\n\nProtocol Buffers, sometimes known as protobufs, are our team’s main structured data format. Use Protocol Buffers to represent, store, and transfer structured data. Unlike XML, Protocol Buffers are compiled. Consequently, clients transmit Protocol Buffers efficiently, which has led to rapid adoption.",
+    "crumbs": [
+      "標點符號（選修）(5 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/punctuation/index.html#分號",
+    "href": "one/punctuation/index.html#分號",
+    "title": "標點符號（選修）",
+    "section": "分號",
+    "text": "分號\n句號用來分隔不同的想法；分號則用來連接高度相關的想法。例如，請注意下列句子中分號如何連接第一個和第二個想法：\n 推薦\n\nRerun Frambus after updating your configuration file; don’t rerun Frambus after updating existing source code.\n\n在使用分號之前，請先問自己，如果將分號兩邊的想法對調，句子是否仍然通順。例如，將前面的例子反過來仍然是一個有效的句子：\n\nDon’t rerun Frambus after updating existing source code; rerun Frambus after updating your configuration file.\n\n分號前後的想法必須各自是語法完整的句子。例如，以下的分號用法是不正確的，因為分號後的部分是子句，而非完整句子：\n 不建議\n\nRerun Frambus after updating your configuration file; not after updating existing source code.\n\n 推薦\n\nRerun Frambus after updating your configuration file, not after updating existing source code.\n\n您幾乎應該總是使用逗號，而非分號，來分隔內嵌清單中的項目。例如，以下使用分號的方式是不正確的：\n 不建議\n\nStyle guides are bigger than the moon; more essential than oxygen; and completely inscrutable.\n\n如本課程前面提到的，技術寫作通常偏好使用項目符號清單而非內嵌清單。然而，如果你真的偏好使用內嵌清單，請使用逗號而非分號來分隔項目，如以下範例所示：\n 推薦\n\nStyle guides are bigger than the moon, more essential than oxygen, and completely inscrutable.\n\n許多句子在分號後緊接著放置轉折詞或片語。在這種情況下，轉折詞後面應加逗號。請注意以下兩個例子中轉折詞後的逗號：\n\nFrambus provides no official open source package for string manipulation; however, subsets of string manipulation packages are available from other open source projects.\n\n\nEven seemingly trivial code changes can cause bugs; therefore, write abundant unit tests.\n\n\n練習\n下列哪一個句號或逗號可以用分號取代？\n\nPython is a popular programming language. The C language was developed long before Python.\nModel learning for a low value of X appears in the top illustration. Model learning for a high value of X appears in the bottom illustration.\nI’m thankful for my large monitor, powerful CPU, and blazing bandwidth.\n\n\n\n\n\n\n\n\nNote點我看答案\n\n\n\n\n\n\n你不能將第 1 句的句號改成分號，因為這兩句話的關聯僅是模糊的。\n你可以將第 2 句的句號改成分號，因為這兩句話的關聯非常密切。\n你不能將第 3 句的逗號改成分號。這裡使用逗號來分隔各個項目是正確的。",
+    "crumbs": [
+      "標點符號（選修）(5 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/punctuation/index.html#破折號",
+    "href": "one/punctuation/index.html#破折號",
+    "title": "標點符號（選修）",
+    "section": "破折號",
+    "text": "破折號\n破折號（Em dashes）是引人注目的標點符號，具有豐富的標點可能性。破折號表示比逗號更長的停頓——更大的中斷。對於音樂上熟悉的人來說，可以將逗號視為四分音符（四分休止符）的停頓，而破折號則是二分音符（二分休止符）的停頓。例如：\n\nC++ is a rich language—one requiring extensive experience to fully understand.\n\n作者有時會使用一對長破折號來隔開插入語，如以下範例所示：\n\nProtocol Buffers—often nicknamed protobufs—encode structured data in an efficient yet extensible format.\nProtocol Buffers——常被暱稱為 protobufs——以高效且可擴充的格式編碼結構化資料。\n\n在前面的範例中，我們能否用逗號代替長破折號？當然可以。我們為什麼選擇長破折號而不是逗號？感覺。藝術。經驗。",
+    "crumbs": [
+      "標點符號（選修）(5 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/punctuation/index.html#en-dash-和連字號",
+    "href": "one/punctuation/index.html#en-dash-和連字號",
+    "title": "標點符號（選修）",
+    "section": "En dash 和連字號",
+    "text": "En dash 和連字號\n請參考下表所示的水平標點符號：\n\n\n\n名稱\n符號\n相對寬度\n\n\n\n\n長破折號（em dash）\n—\n最寬（通常為字母 m 的寬度）\n\n\n短破折號（en dash）\n–\n中等（通常為字母 n 的寬度）\n\n\n連字號（hyphen）\n-\n最窄\n\n\n\n\n\n\n\n\n\nNote譯註\n\n\n\n表格中的符號皆為英文半形符號。\n\n\n有些風格指南建議在某些用途中使用 en dash。然而，Google 風格指南對 en dash 提出了以下直白的建議：\n\n請勿使用。\n\n連字號很棘手。在技術寫作中，連字號用於連接某些複合詞，例如：\n\nSelf-attention\nN-gramm\n\n令人困惑的是，三字複合詞通常在第一和第二個字之間會有連字號，但在第二和第三個字之間則沒有。例如：\n\nDecision-making system\nFloating-point feature\n\n對於連字號有疑慮時，請查閱字典、詞彙表或寫作風格指南。\n注意： 如果您查閱多本字典、詞彙表或風格指南關於連字號的用法，可能會遇到不一致的情況。",
+    "crumbs": [
+      "標點符號（選修）(5 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/punctuation/index.html#冒號",
+    "href": "one/punctuation/index.html#冒號",
+    "title": "標點符號（選修）",
+    "section": "冒號",
+    "text": "冒號\n在技術寫作中，使用冒號提醒讀者接下來會有列表或表格。換句話說，介紹列表或表格的句子應以冒號結尾。以下範例中，請注意介紹列表的句子末尾的冒號：\n\n請考慮以下重要的程式語言： * Python * Java * C++\n\n技術寫作偏好使用項目符號清單或編號清單，而非內嵌清單。話雖如此，你仍可以使用冒號來引入內嵌清單，如以下範例所示：\n\nConsider the following important programming languages: Python, Java, and C++.\n\n並非所有內嵌清單都需要冒號。例如：\n\nMy three favorite programming languages are Python, Java, and anything other than C++.",
+    "crumbs": [
+      "標點符號（選修）(5 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/punctuation/index.html#括號",
+    "href": "one/punctuation/index.html#括號",
+    "title": "標點符號（選修）",
+    "section": "括號",
+    "text": "括號\n使用括號來補充次要觀點或插入離題內容。括號會讓讀者知道，括號內的文字不是重點。也因為括號內的內容不是重點，有些編輯認為，如果某段文字適合用括號包起來，那它可能根本不該出現在文件中。作為折衷方案，在技術寫作中應盡量減少使用括號。\n關於句號與括號的規則並不總是明確，以下是一般的標準規則：\n\n如果括號內包含的是完整句子，句號應放在括號內側。\n如果括號只是出現在句子的結尾，但不包含整個句子，句號應放在括號外側。\n\n例如：\n\n(Incidentally, Protocol Buffers make great birthday gifts.)\nBinary mode relies on the more compact native form (described later in this document).\n\n\n下一單元： Markdown （選修）",
+    "crumbs": [
+      "標點符號（選修）(5 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/markdown/index.html",
+    "href": "one/markdown/index.html",
+    "title": "Markdown (選修)",
+    "section": "",
+    "text": "預估時間： 10 分鐘\n\nMarkdown 是一種輕量級標記語言，許多技術專業人士用它來創建和編輯技術文件。使用 Markdown，您可以在純文字編輯器（如 vi 或 Emacs）中撰寫文字，並插入特殊字元來建立標題、粗體、項目符號等。例如，以下範例展示了一個用 Markdown 格式化的簡單技術文件：\n## bash and ksh\n\n**bash** closely resembles an older shell named **ksh**.  The key\n*practical* difference between the two shells is as follows:\n\n* More people know bash than ksh, so it is easier to get help for bash\n  problems than ksh problems.\n前述文件的排版結果如下：\n\nMarkdown 解析器會將 Markdown 檔案轉換成 HTML。瀏覽器接著可以將產生的 HTML 顯示給讀者。\n我們建議透過以下其中一個教學來熟悉 Markdown：\n\nwww.markdowntutorial.com\nMastering Markdown\n\n\n下一步？\n恭喜：您已完成《技術寫作一》的課前研讀（pre-class）。\n如果你的組織提供《技術寫作一》的課堂部分，請務必參加。如果你想要擔任《技術寫作一》課堂部分（in-class）的講師，請參閱 講師指南 (英文)。\n《技術寫作一》課程所有主題的重點都已彙整在總結頁面。",
+    "crumbs": [
+      "Markdown (選修)"
+    ]
+  },
+  {
+    "objectID": "one/just-enough-grammar/index.html",
+    "href": "one/just-enough-grammar/index.html",
+    "title": "夠用的文法（選修）",
+    "section": "",
+    "text": "預估時間： 10 分鐘\n本單元提供了足夠的文法知識，以便您理解本課程的其餘部分。如果您已經了解一些文法，請繼續閱讀〈字詞〉單元。否則，請繼續閱讀。\n為求簡潔，本單元抄了一些捷徑；文法主題實際上比本單元所建議的要複雜得多。\n文法學家對於詞類的數量或類型並非全都意見一致。下表著重於與本課程相關的詞類：",
+    "crumbs": [
+      "夠用的文法（選修）(10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/just-enough-grammar/index.html#名詞",
+    "href": "one/just-enough-grammar/index.html#名詞",
+    "title": "夠用的文法（選修）",
+    "section": "名詞",
+    "text": "名詞\n名詞代表人、地或事物。Judy、Antarctica 和 hammers 都是名詞，但像 robustness 和 perfection 等無形的概念也是名詞。在下面的範例段落中，我們將名詞以粗體格式顯示：\n\nIn the framework, an object must copy any underlying values that the object wants to change. The protocol buffers in the codebase are huge, so copying the protocol buffers is unacceptably expensive.\n在此框架中，物件必須複製物件想要變更的任何底層值。程式庫中的通訊協定緩衝區很大，因此複製通訊協定緩衝區的成本高得令人無法接受。\n\n在程式設計中，您可以將類別和變數視為程式的名詞。\n\n練習\n請找出以下段落中的六個名詞：\n\nC enables programmers to control pointers and memory. Great power brings great responsibility.\nC 讓程式設計師能夠控制指標和記憶體。強大的能力帶來重大的責任。\n\n\n\n\n\n\n\n\nNote點我看答案\n\n\n\n\n\nC enables programmers to control pointers and memory. Great power brings great responsibility.\n現在假設第二個句子如下：\n\nGreat control brings great responsibility.\n\n這裡的「control」是動詞還是名詞？\n在這種情況下，「control」是名詞，即使在第一個句子中「to control」是動詞。英語中的許多單字在某些情況下是名詞，在其他情況下是動詞。",
+    "crumbs": [
+      "夠用的文法（選修）(10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/just-enough-grammar/index.html#代名詞",
+    "href": "one/just-enough-grammar/index.html#代名詞",
+    "title": "夠用的文法（選修）",
+    "section": "代名詞",
+    "text": "代名詞\n代名詞是一個間接層——指向或替代其他名詞或句子的指標。例如，請看以下兩個句子：\n\nJanet writes great code. She is a senior staff engineer.\nJanet 寫出很棒的程式碼。她是一位資深工程師。\n\n在前面的範例中，第一個句子確立了 Janet 作為一個名詞。第二個句子用代名詞 She 取代了名詞 Janet。\n在下面的範例中，代名詞 This 取代了整個句子：\n\nMost applications aren’t sufficiently tested. This is poor engineering.\n大多數應用程式都沒有經過充分的測試。這是糟糕的工程。\n\n\n練習\n請找出以下段落中的三個代名詞：\n\nThe cafeteria featured peanut butter and plum jam on rye toast. Employees found it awesome and wished they could eat this every day.\n餐廳的特色是裸麥吐司配花生醬和李子醬。員工覺得它很棒，希望他們每天都能吃到這個。\n\n\n\n\n\n\n\n\nNote點我看答案\n\n\n\n\n\nThe cafeteria featured peanut butter and plum jam on rye toast. Employees found it awesome and wished they could eat this every day.",
+    "crumbs": [
+      "夠用的文法（選修）(10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/just-enough-grammar/index.html#動詞",
+    "href": "one/just-enough-grammar/index.html#動詞",
+    "title": "夠用的文法（選修）",
+    "section": "動詞",
+    "text": "動詞\n動詞是表示動作的單字或片語。當您想表示兩個名詞（一個執行者和一個目標）之間的關係時，動詞就發揮作用了。動詞標示出執行者對目標做了什麼。\n每個句子都必須至少包含一個動詞。例如，以下每個句子都包含一個動詞：\n\nSakai prefers pasta.\nRick likes the ocean.\nSmurfs are blue.\nJess suffers from allergies.\n\n有些句子，例如以下句子，包含多個動詞：\n\nNala suffers from allergies and sneezes constantly.\nThe program runs slowly but fails quickly.\n\n根據時態和詞形變化，動詞可以由一個或多個單字組成。例如：\n\nTina was eating breakfast a few hours ago.\nTina is eating lunch right now.\nTina will eat dinner tonight at 7:00.\n\n\n練習\n請找出以下段落中的動詞：\n\nSamantha is coding Operation Bullwinkle in C++. This project currently consumes over 80,000 lines of code. She previously used Python, but recently gravitated to C++. Samantha leads a team of four software engineers, which will grow to six software engineers next quarter.\nSamantha 正在用 C++ 編寫 Bullwinkle 行動。這個專案目前消耗了超過 80,000 行程式碼。她以前使用 Python，但最近被 C++ 所吸引。Samantha 領導一個由四名軟體工程師組成的團隊，下一季將增加到六名軟體工程師。\n\n\n\n\n\n\n\n\nNote點我看答案\n\n\n\n\n\nSamantha is coding Operation Bullwinkle in C++. This project currently consumes over 80,000 lines of code. She previously used Python, but recently gravitated to C++. Samantha leads a team of four software engineers, which will grow to six software engineers next quarter.",
+    "crumbs": [
+      "夠用的文法（選修）(10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/just-enough-grammar/index.html#形容詞和副詞",
+    "href": "one/just-enough-grammar/index.html#形容詞和副詞",
+    "title": "夠用的文法（選修）",
+    "section": "形容詞和副詞",
+    "text": "形容詞和副詞\n形容詞修飾名詞。例如，在下面的段落中，請注意形容詞如何修飾後面的名詞：\n\nTom likes red balloons. He prepares delicious food. He fixed eight bugs at work.  Tom 喜歡紅色的氣球。他準備了美味的食物。他在工作上修復了八個錯誤。\n\n大多數副詞修飾動詞。例如，請注意以下句子中的副詞（efficiently）如何修飾動詞（fixes）：\n\nJane efficiently fixes bugs.  Jane 有效率地修復錯誤。\n\n副詞不一定緊鄰其動詞。例如，在以下句子中，副詞（efficiently）與動詞（fixes）之間隔了兩個字：\n\nJane fixes bugs efficiently.\n\n副詞也可以修飾形容詞或其他副詞。\n\n練習\n請找出以下段落中的四個形容詞：\n\nEngineering is a great career for a brilliant mind. I know a clever engineer who could excel at any intellectual task.\n對於一個聰明的人來說，工程是一個很棒的職業。我認識一位聰明的工程師，他可以在任何智力任務中表現出色。\n\n\n\n\n\n\n\n\nNote點我看答案\n\n\n\n\n\nEngineering is a great career for a brilliant mind. I know a clever engineer who could excel at any intellectual task.",
+    "crumbs": [
+      "夠用的文法（選修）(10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/just-enough-grammar/index.html#介係詞",
+    "href": "one/just-enough-grammar/index.html#介係詞",
+    "title": "夠用的文法（選修）",
+    "section": "介係詞",
+    "text": "介係詞\n介係詞指定兩件事物之間的關係。有些介係詞回答「這個東西相對於那個東西在哪裡？」的問題。例如：\n\nThe submenu lies under the menu.\nThe definition appears next to the term.\nThe print function falls within the main routine.\n\n其他介係詞回答「這個事件相對於那個事件是什麼時候？」的問題。例如：\n\nThe program evaluates the addition operation before evaluating the subtraction operation.  程式在評估減法運算之前評估加法運算。\nThe cron daemon executes the script every Tuesday at noon.  cron 服務在每個星期二中午執行該腳本。\n\n一些介係詞（例如，by 和 of）回答有關關係的其他類型的問題。例如，以下句子使用 by 來關聯一本書及其作者：\n\nThe C Programming Language by Kernighan and Richie remains popular.\n\n\n\n\n\n\n\nNote注意：\n\n\n\n英語中的一些單字屬於多個文法類別。例如，雖然 under 通常是介係詞，但根據上下文，under 也可以用作副詞或形容詞。\n\n\n\n練習\n請找出以下段落中的兩個介係詞：\n\nParameters may optionally appear within a URL, after the path.\n\n\n\n\n\n\n\n\nNote點我看答案\n\n\n\n\n\nParameters may optionally appear within a URL, after the path.",
+    "crumbs": [
+      "夠用的文法（選修）(10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/just-enough-grammar/index.html#連接詞和轉折語",
+    "href": "one/just-enough-grammar/index.html#連接詞和轉折語",
+    "title": "夠用的文法（選修）",
+    "section": "連接詞和轉折語",
+    "text": "連接詞和轉折語\n連接詞連接句子中的片語或名詞；轉折語則連接句子本身。\n最重要的連接詞如下：\n\nAnd (和)\nBut (但是)\nOr (或者)\n\n例如，在以下句子中，and 連接了「code」和「documentation」，而 but 則連接了句子的前半部分和後半部分。\n\nOlivia writes great internal code and documentation but seldom works on open-source projects.\nOlivia 寫出很棒的內部程式碼和文件，但是很少從事開源專案。\n\n技術寫作中最重要的轉折語如下：\n\nHowever (然而)\nTherefore (因此)\nFor example (例如)\n\n例如，在下面的段落中，請注意轉折語如何連接和情境化句子：\n\nJuan is a wonderful coder. However, he rarely writes sufficient tests. For example, Juan coded a 5,000 line FFT package that contained only a single 10-line unit test.\nJuan 是一位出色的程式設計師。然而，他很少寫足夠的測試。例如，Juan 編寫了一個 5,000 行的 FFT 套件，其中只包含一個 10 行的單元測試。\n\n\n練習\n請填入最合適的轉折語：\n\nBarbara typically studies problems for a long time before writing the first line of code. _____________, she spontaneously coded a method the other day when she was suddenly inspired.\nBarbara 通常在寫第一行程式碼之前會花很長時間研究問題。_____________，有一天她突然受到啟發，自發地編寫了一個方法。\n\n\n\n\n\n\n\n\nNote點我看答案\n\n\n\n\n\n這種情況下最好的轉折語如下：\nHowever (然而)\n\n\n\n\n下一單元： 字詞",
+    "crumbs": [
+      "夠用的文法（選修）(10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/index.html",
+    "href": "one/index.html",
+    "title": "技術寫作一",
+    "section": "",
+    "text": "這是 Google 技術寫作課程（中文版） 的第一部分。此入門課程會告訴您如何撰寫更清晰的技術文件。\n請透過左方選單或下方連結清單進入您想要閱讀的章節。",
+    "crumbs": [
+      "技術寫作一"
+    ]
+  },
+  {
+    "objectID": "one/clear-sentences/index.html",
+    "href": "one/clear-sentences/index.html",
+    "title": "清晰的句子",
+    "section": "",
+    "text": "預估時間： 10 分鐘\n喜劇作家追求最有趣的效果，恐怖小說作家力求最嚇人的情節，而技術寫作員則以最清晰為目標。在技術寫作中，清晰優先於其他所有規則。本單元將介紹幾種讓句子變得清晰優雅的方法。",
+    "crumbs": [
+      "清晰的句子 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/clear-sentences/index.html#選擇強而有力的動詞",
+    "href": "one/clear-sentences/index.html#選擇強而有力的動詞",
+    "title": "清晰的句子",
+    "section": "選擇強而有力的動詞",
+    "text": "選擇強而有力的動詞\n許多技術寫作員認為動詞是句子中最重要的部分。選對了動詞，句子的其餘部分就能水到渠成。不幸的是，有些作家只是反覆使用少數幾個溫和的動詞，就像每天用不新鮮的餅乾和軟爛的生菜招待客人。挑選正確的動詞需要多花一點時間，但會產生更令人滿意的結果。\n為了吸引讀者並引導他們理解，請選擇精確、有力、具體的動詞。減少使用不精確、弱化、或空泛的動詞，例如：\n\nbe 的各種形式：is、are、am、was、were 等。\noccur (發生)\nhappen (發生)\n\n例如，思考一下如何透過強化以下句子中的弱動詞來點燃一個更引人入勝的句子：\n\n\n\n\n\n\n\n弱動詞\n強動詞\n\n\n\n\nThe exception occurs when dividing by zero. (除以零會發生例外。)\nDividing by zero raises the exception. (除以零會引發例外。)\n\n\nThis error message happens when… (當…時，這個錯誤訊息會發生。)\nThe system generates this error message when… (當…時，系統會產生這個錯誤訊息。)\n\n\nWe are very careful to ensure… (我們是很小心的來確保…)\nWe carefully ensure… (我們小心地確保…)\n\n\n\n許多作者依賴 be 的各種形式，好像它們是調味架上唯一的香料。不妨在文章裡撒上一些不同的動詞，讓它更可口。話雖如此，be 的形式有時是動詞的最佳選擇，所以也不用覺得必須在寫作時完全避開 be 的每一種形式。\n請注意，通用動詞通常表示有其他問題，例如：\n\n句子不精確或少了動作者\n被動語態的句子\n\n\n練習\n請挑選更明確的動詞來釐清下列句子。在此過程中，你可以自由地重新排列句子結構，並加入、修改或刪除詞語：\n\nWhen a variable declaration doesn’t have a datatype, a compiler error happens. 當變數宣告沒有資料型別，編譯器就會發生錯誤。\nCompiler errors occur when you leave off a semicolon at the end of a statement.  如果陳述句結尾少了分號，編譯器就會發生錯誤。\n\n\n\n\n\n\n\n\nNote點我看答案\n\n\n\n\n\n\n幾種可能的答案：\n\n\nWhen a variable declaration doesn’t specify a datatype, the compiler generates an error message.\nIf you declare a variable but don’t specify a datatype, the compiler generates an error message.\n\n\n幾種可能的答案：\n\n\nCompilers issue errors when you omit a semicolon at the end of a statement.\nA missing semicolon at the end of a statement triggers compiler errors.",
+    "crumbs": [
+      "清晰的句子 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/clear-sentences/index.html#減少使用-there-is-there-are",
+    "href": "one/clear-sentences/index.html#減少使用-there-is-there-are",
+    "title": "清晰的句子",
+    "section": "減少使用 there is / there are",
+    "text": "減少使用 there is / there are\n以 There is 或 There are 開頭的句子，就像是平庸名詞與平庸動詞的結合。這種「平庸的婚禮」會讓讀者感到乏味。用真實的主詞和真實的動詞來向您的讀者表達真愛吧。\n在最好的情況下，您可以直接刪除 There is 或 There are（以及句子後面可能的一兩個詞）。例如，思考以下句子：\n\nThere is a variable called met_trick that stores the current accuracy.  (有一個名為 met_trick 的變數，它儲存了當前的準確度。)\n\n移除 There is 會用一個更好的主詞取代通用的主詞。例如，以下任一句子都比原句更清晰：\n\nA variable named met_trick stores the current accuracy.  (一個名為 met_trick 的變數儲存了當前的準確度。)\n\n\nThe met_trick variable stores the current accuracy.  (met_trick 變數儲存了當前的準確度。)\n\n您有時可以透過將真正的動詞和主詞從句尾移到句首來修復 There is 或 There are 的句子。例如，請注意在以下句子中，代名詞 you 出現在句尾附近：\n\nThere are two disturbing facts about Perl you should know.  (關於 Perl，有兩個令人不安的事實你應該知道。)\n\n用 you 取代 There are 可以強化句子：\n\nYou should know two disturbing facts about Perl.  (你應該知道關於 Perl 的兩個令人不安的事實。)\n\n在其他情況下，作者以 There is 或 There are 開頭，以避免創造真正主詞或動詞的麻煩。如果不存在主詞，請考慮創造一個。例如，以下的 There is 句子沒有指明接收實體：\n\nThere is no guarantee that the updates will be received in sequential order.  (無法保證更新將按順序接收。)\n\n用一個有意義的主詞（例如 clients）取代 There is，可以為讀者創造更清晰的體驗： \n\nClients might not receive the updates in sequential order。  (客戶可能不會按順序接收到更新。)\n\n\n練習\n請釐清下列句子，移除 There is，必要時也可以重新排列句子、增刪或修改其他詞語：\n\nThere is a lot of overlap between X and Y.\nThere is no creator stack for the main thread.\nThere is a low-level, TensorFlow, Python interface to load a saved model.\nThere is a sharding function named distribute that assigns keys.\n\n\n\n\n\n\n\n\nNote點我看答案\n\n\n\n\n\n\nX and Y overlap a lot.\nThe main thread does not provide a creator stack.\nTensorFlow provides a low-level Python interface to load a saved model.\nThe distribute sharding function assigns keys.",
+    "crumbs": [
+      "清晰的句子 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/clear-sentences/index.html#盡量少用某些形容詞和副詞-選修",
+    "href": "one/clear-sentences/index.html#盡量少用某些形容詞和副詞-選修",
+    "title": "清晰的句子",
+    "section": "盡量少用某些形容詞和副詞 (選修)",
+    "text": "盡量少用某些形容詞和副詞 (選修)\n形容詞和副詞在小說和詩歌中表現得非常出色。多虧了形容詞，普通的草地變得「碧草如茵」（prodigal and verdant），了無生氣的頭髮則變成了「閃閃動人、生氣勃勃」（lustrous and exuberant）。副詞讓馬兒「自由狂野地」（madly and freely）奔馳，讓小狗「大聲兇猛地」（loudly and ferociously）吠叫。不幸的是，形容詞和副詞有時也會讓技術讀者抓狂大叫。這是因為形容詞和副詞對技術讀者而言往往過於模糊和主觀。更糟的是，他們會讓技術文件聽起來很像是行銷宣傳。例如，請看以下技術文件中的段落：\n\nSetting this flag makes the application run screamingly fast.  設定此旗標可讓應用程式執行得飛快。\n\n誠然，「飛快」（screamingly fast）能吸引讀者注意，但不見得是好事。對技術讀者而言，應提供事實數據，而非行銷術語。請將模糊的副詞與形容詞重構為具體的數值資訊。例如：\n\nSetting this flag makes the application run 225-250% faster.  設定此旗標可讓應用程式執行速度加快 225-250%。\n\n這樣的修改是否讓句子少了一些魅力？的確有一點，但改寫後的句子有了準確性與可信度。\n\n\n\n\n\n\nImportant\n\n\n\n不要把傳授知識（技術寫作）與宣傳或銷售產品（行銷寫作）混淆。當讀者期待的是學習，就應該提供知識性的內容；不要在教學內容中夾帶宣傳或銷售的資訊。\n\n\n\n下一單元： 簡短的句子",
+    "crumbs": [
+      "清晰的句子 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/active-voice/index.html",
+    "href": "one/active-voice/index.html",
+    "title": "主動語態 vs. 被動語態",
+    "section": "",
+    "text": "預估時間： 15 分鐘\n技術寫作中的絕大多數句子都應該使用主動語態。本單元將教您如何做到以下幾點：",
+    "crumbs": [
+      "主動語態 vs. 被動語態 (15 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/active-voice/index.html#區分簡單句中的主動與被動語態",
+    "href": "one/active-voice/index.html#區分簡單句中的主動與被動語態",
+    "title": "主動語態 vs. 被動語態",
+    "section": "區分簡單句中的主動與被動語態",
+    "text": "區分簡單句中的主動與被動語態\n\n\n\n在主動語態的句子中，一個動作者（actor）對一個目標採取行動。也就是說，一個主動語態的句子遵循以下公式：\n主動語態句 = 動作者 + 動詞 + 目標\n被動語態的句子則顛倒了這個公式。也就是說，一個被動語態的句子通常遵循以下公式：\n被動語態句 = 目標 + 動詞 + 動作者\n\n主動語態範例\n例如，這是一個簡短的主動語態句子：\n\nThe cat sat on the mat. (貓坐在墊子上。)\n\n\n動作者： The cat (貓)\n動詞： sat (坐)\n目標： the mat (墊子)\n\n\n\n被動語態範例\n相比之下，這是同一個句子的被動語態形式：\n\nThe mat was sat on by the cat. (墊子被貓坐著。)\n\n\n目標： The mat (墊子)\n被動動詞： was sat (被坐)\n動作者： the cat (貓)\n\n有些被動語態的句子會省略動作者。例如：\n\nThe mat was sat on. (墊子被坐著。)\n\n\n動作者： 未知\n被動動詞： was sat (被坐)\n目標： the mat (墊子)\n\n是誰或什麼東西坐在墊子上？一隻貓？一隻狗？一隻暴龍？讀者只能猜測。好的技術文件會明確指出是誰對誰做了什麼。",
+    "crumbs": [
+      "主動語態 vs. 被動語態 (15 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/active-voice/index.html#辨識被動動詞",
+    "href": "one/active-voice/index.html#辨識被動動詞",
+    "title": "主動語態 vs. 被動語態",
+    "section": "辨識被動動詞",
+    "text": "辨識被動動詞\n被動動詞通常具有以下公式：\n被動動詞 = be 的一種形式 + 過去分詞\n雖然前面的公式看起來令人生畏，但實際上非常簡單：\n\n被動動詞中 be 的形式 通常是以下單詞之一：\n\nis / are\nwas / were\n\n過去分詞動詞通常是一個普通動詞加上後綴 ed。例如，以下是過去分詞動詞：\n\ninterpreted\ngenerated\nformed\n\n\n不幸的是，有些過去分詞動詞是不規則的；也就是說，過去分詞形式不以 ed 結尾。例如：\n\nsat\nknown\nfrozen\n\n將 be 的形式和過去分詞放在一起，就產生了被動動詞，例如：\n\nwas interpreted\nis generated\nwas formed\nis frozen\n\n如果片語中包含動作者，通常會在被動動詞後面跟一個介詞。（該介詞通常是幫助您發現被動語態的關鍵線索。）以下範例結合了被動動詞和介詞：\n\nwas interpreted as\nis generated by\nwas formed by\nis frozen by\n\n\n祈使動詞通常是主動的\n人們很容易將以祈使動詞開頭的句子誤歸類為被動句。祈使動詞 (imperative verb) 是命令。編號列表中的許多項目都以祈使動詞開頭。例如，以下列表中的 Open 和 Set 都是祈使動詞：\n\nOpen the configuration file. (打開設定檔。)\nSet the Frombus variable to False. (將 Frombus 變數設為 False。)\n\n以祈使動詞開頭的句子通常是主動語態，即使它們沒有明確提及動作者。相反，以祈使動詞開頭的句子暗示了一個動作者。這個被暗示的動作者就是你。\n\n\n練習\n將以下每個句子標記為被動語態或主動語態：\n\nMutableInput provides read-only access.\nRead-only access is provided by MutableInput.\nPerformance was measured.\nPython was invented by Guido van Rossum in the twentieth century.\nDavid Korn discovered the KornShell quite by accident.\nThis information is used by the policy enforcement team.\nClick the Submit button.\nThe orbit was calculated by Katherine Johnson.\n\n\n\n\n\n\n\n\nNote點我看答案\n\n\n\n\n\n\n[主動] MutableInput provides read-only access.\n[被動] Read-only access is provided by MutableInput.\n[被動] Performance was measured.\n[被動] Python was invented by Guido van Rossum in the twentieth century.\n[主動] David Korn discovered the KornShell quite by accident.\n[被動] This information is used by the policy enforcement team.\n[主動] Click the Submit button.\n[被動] The orbit was calculated by Katherine Johnson.",
+    "crumbs": [
+      "主動語態 vs. 被動語態 (15 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/active-voice/index.html#區分複雜句子中的主動與被動語態",
+    "href": "one/active-voice/index.html#區分複雜句子中的主動與被動語態",
+    "title": "主動語態 vs. 被動語態",
+    "section": "區分複雜句子中的主動與被動語態",
+    "text": "區分複雜句子中的主動與被動語態\n許多句子包含多個動詞，其中一些是主動的，一些是被動的。例如，以下句子包含兩個動詞，兩者都處於被動語態：\n\nCode is interpreted by Python, but code is compiled by C++.\n(程式碼由 Python 解譯，但程式碼由 C++ 編譯。)\n\n\n\n\n\n\n以下是相同句子，部分轉換為主動語態：\n\nPython interprets code, but code is compiled by C++.\n(Python 解譯程式碼，但程式碼由 C++ 編譯。)\n\n\n\n\n\n\n以下是相同句子，現在完全轉換為主動語態：\n\nPython interprets code, but C++ compiles code.\n(Python 解譯程式碼，但 C++ 編譯程式碼。)\n\n\n\n\n\n\n\n練習\n以下每個句子包含兩個動詞。請將每個動詞分類為主動或被動。例如，如果第一個動詞是主動，第二個是被動，請寫成「主動，被動」。\n\nThe QA team loves ice cream, but the writers prefer sorbet.\nPerformance metrics are required by the team, though I prefer wild guesses.\nWhen software engineers attempt something new and innovative, a reward should be given.\n\n\n\n\n\n\n\n\nNote點我看答案\n\n\n\n\n\n\n[主動, 主動] The QA team loves ice cream, but the writers prefer sorbet.\n[被動, 主動] Performance metrics are required by the team, though I prefer wild guesses.\n[主動, 被動] When software engineers attempt something new and innovative, a reward should be given.",
+    "crumbs": [
+      "主動語態 vs. 被動語態 (15 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/active-voice/index.html#偏好使用主動語態",
+    "href": "one/active-voice/index.html#偏好使用主動語態",
+    "title": "主動語態 vs. 被動語態",
+    "section": "偏好使用主動語態",
+    "text": "偏好使用主動語態\n大多數時候請使用主動語態。謹慎使用被動語態。主動語態具有以下優點：\n\n大多數讀者會在腦中將被動語態轉換為主動語態。為什麼要讓您的讀者花費額外的處理時間呢？堅持使用主動語態，您可以讓讀者跳過預處理階段，直接進入編譯。\n被動語態會混淆您的想法，使句子本末倒置。\n被動語態間接地報告行動。\n一些被動語態的句子完全省略了動作者，這迫使讀者去猜測動作者的身份。\n主動語態通常比被動語態更簡潔。\n\n大膽一點——使用主動語態。\n\n科學研究報告（選修）\n被動語態在某些科學研究報告中氾濫成災。在那些研究報告中，實驗者和他們的設備常常消失不見，導致出現以如下方式開頭的被動句：\n\nIt has been suggested that… (有建議曾被提出…)\nData was taken… (數據被採集…)\nStatistics were calculated… (統計數據被計算…)\nResults were evaluated. (結果已被評估。)\n\n我們知道是誰對誰做了什麼嗎？不知道。被動語態是否以某種方式使資訊更客觀？不是。\n許多科學期刊已經接受了主動語態。我們鼓勵其餘的期刊也加入追求清晰的行列。\n\n\n練習\n將下列被動語態句子改寫為主動語態。某些句子只有部分是被動語態；請確保所有部分皆改為主動語態：\n\nThe flags weren’t parsed by the Mungifier.\nA wrapper is generated by the Op registration process.\nOnly one experiment per layer is selected by the Frombus system.\nQuality metrics are identified by asterisks; ampersands identify bad metrics.\n\n\n\n\n\n\n\n\nNote點我看答案\n\n\n\n\n\n\nThe Mungifier didn’t parse the flags.\nThe Op registration process generates a wrapper.\nThe Frombus system selects only one experiment per layer.\nAsterisks identify quality metrics; ampersands identify bad metrics.\n\n\n\n\n\n下一單元： 清晰的句子",
+    "crumbs": [
+      "主動語態 vs. 被動語態 (15 分鐘)"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Google 技術寫作課程（中文版）",
+    "section": "",
+    "text": "Google 技術寫作課程包含四個部分，而這個繁體中文版僅提供 Technical Writing One 和 Technical Writing Two 這兩個課程的翻譯。如下表所示：\n\n\n\n原文課程\n繁體中文版\n\n\n\n\n🇺🇸 Technical Writing One\n🇹🇼 技術寫作一\n\n\n🇺🇸 Technical Writing Two\n🇹🇼 技術寫作二\n\n\n🇺🇸 Tech Writing for Accessibility\n「無障礙」寫作相關議題。此處未提供翻譯。\n\n\n🇺🇸 Writing Helpful Error Messages\n如何撰寫清楚有用的錯誤訊息。此處未提供翻譯。\n\n\n\n\n\n\n\n\n\nNote授權條款\n\n\n\n以下為原課程的授權條款（此中文版亦同）：\nExcept as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates."
+  },
+  {
+    "objectID": "index.html#簡介",
+    "href": "index.html#簡介",
+    "title": "Google 技術寫作課程（中文版）",
+    "section": "",
+    "text": "Google 技術寫作課程包含四個部分，而這個繁體中文版僅提供 Technical Writing One 和 Technical Writing Two 這兩個課程的翻譯。如下表所示：\n\n\n\n原文課程\n繁體中文版\n\n\n\n\n🇺🇸 Technical Writing One\n🇹🇼 技術寫作一\n\n\n🇺🇸 Technical Writing Two\n🇹🇼 技術寫作二\n\n\n🇺🇸 Tech Writing for Accessibility\n「無障礙」寫作相關議題。此處未提供翻譯。\n\n\n🇺🇸 Writing Helpful Error Messages\n如何撰寫清楚有用的錯誤訊息。此處未提供翻譯。\n\n\n\n\n\n\n\n\n\nNote授權條款\n\n\n\n以下為原課程的授權條款（此中文版亦同）：\nExcept as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates."
+  },
+  {
+    "objectID": "index.html#為何要學習技術寫作",
+    "href": "index.html#為何要學習技術寫作",
+    "title": "Google 技術寫作課程（中文版）",
+    "section": "為何要學習技術寫作？",
+    "text": "為何要學習技術寫作？\n在這個 AI 大時代，技術寫作聽起來好像是一門過時、甚至古老的工匠技藝，對嗎？\n也許表面上看來如此，但以我自己在實務工作上的體會，如果在意文件的品質，便不可能對 AI 產生的內容照單全收，而需要人工判斷、揀選、比較、和修改。對我而言，AI 工具是大幅提升工作效率和品質、以及加速學習的好幫手。\n而且，就如這個 Google 技術寫作課程開頭的第一句話：\n\nEvery engineer is also a writer.\n\n每一位工程師和 IT 從業人員，包括 DevOps、程式設計、系統分析與設計、和專案管理等工作，都免不了需要撰寫技術文件。\n這是一項值得學習和投資的技藝。"
+  },
+  {
+    "objectID": "index.html#關於翻譯",
+    "href": "index.html#關於翻譯",
+    "title": "Google 技術寫作課程（中文版）",
+    "section": "關於翻譯",
+    "text": "關於翻譯\n此中文版是利用 AI 翻譯工具翻譯之後，再經過人工校閱和排版。\n\nWhy?\n我很喜歡這個技術寫作教材，因為它簡潔扼要。我相信只要能自行研讀完《技術寫作一》和《技術寫作二》，一定能從中學到許多改善文件的技巧。即便是已經有一些實務經驗的專職 technical writer，也能從中獲取不少靈感。\n然而，現在瀏覽器幾乎都有內建翻譯功能，使用者大多也能自行安裝瀏覽器的翻譯插件來即時翻譯網頁內容，為什麼還要製作中文版呢？\n主要是因為：\n\n有的電腦環境，瀏覽器的翻譯插件可能無法正常運作，或基於安全政策禁止安裝插件。\n經過自己整理和校對，確保翻譯和排版符合我想要的樣子。\n強迫自己至少細讀一遍，也方便日後複習。\n\n\n\n排版\n在官方的原課程當中，練習題的答案預設是不顯示的（摺疊起來），讀者要點擊「查看答案」才會顯示練習的答案。在這個中文版裡面也保留了這樣的排版，如以下範例：\n\n\n\n\n\n\nNote點我看答案\n\n\n\n\n\n這是練習題的答案。\n\n\n\n\n此外，碰到英文例句時，原則上會保留英文句子，以免失去原意，尤其是討論英文文法的部分。有些地方可能會選擇中英並陳，方便理解句子的意思。\n\n\nTechnical writer 的翻譯\n這裡我選擇把 technical writer 翻譯為「技術寫作員」。底下是其他幾個常見的譯法以及為何我不用它們：\n\n技術作家： 這聽起來有點了不得，容易聯想到一般大眾書籍的作家。\n技術寫手： 儘管我偏好這個名詞，但在這裡似乎顯得有些不夠正式。\n\n此外，我在某些段落可能會看情況使用「文件撰寫者」或「文件作者」。\n\n\n會持續更新嗎？\n是的，當我發現原始文件有發布新版本，便會更新中文版的內容。\n此中文版的製作時間為 2025 年 7 月，而且每個頁面的最底下都有顯示最近一次的更新日期。原文課程的每一個頁面下方也都有標註最近更新日期，故只要比對兩邊的更新日期，就能大致判斷中文版內容是否需要更新。\n\n\n\n\n\n\nNoteFeedback\n\n\n\n如對此中文版有任何建議或指正，歡迎至 GitHub Issues 提交問題單。"
+  },
+  {
+    "objectID": "index.html#開始課程",
+    "href": "index.html#開始課程",
+    "title": "Google 技術寫作課程（中文版）",
+    "section": "開始課程",
+    "text": "開始課程\n接著，請從這裡開始學習這門課程：技術寫作一"
+  },
+  {
+    "objectID": "one/audience/index.html",
+    "href": "one/audience/index.html",
+    "title": "目標讀者",
+    "section": "",
+    "text": "預估時間： 10 分鐘\n此課程的設計者相信你對數學應該很熟悉。因此，本單元從一個方程式開始：\ngood documentation = knowledge and skills your audience needs to do a task − your audience's current knowledge and skills\n換句話說，請確保你的文件提供讀者所需但尚未掌握的資訊。因此，本單元說明如何做到以下幾點：\n正如以下影片所示，鎖定錯誤的讀者會造成混亂：",
+    "crumbs": [
+      "目標讀者 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/audience/index.html#定義你的讀者",
+    "href": "one/audience/index.html#定義你的讀者",
+    "title": "目標讀者",
+    "section": "定義你的讀者",
+    "text": "定義你的讀者\n認真撰寫文件的工作會花費大量時間和精力來定義其讀者群。這些工作可能包括調查、使用者體驗研究、焦點團體以及文件測試。你可能沒有那麼多時間，因此本單元採用較簡單的方法。\n首先從識別你的讀者群角色開始。範例角色包括：\n\n軟體工程師\n技術性非工程師職位（例如技術專案經理）\n科學家\n科學領域專業人士（例如醫師）\n大學工程系學生\n研究所工程系學生\n非技術職位\n\n我們樂見許多非技術職務的人擁有優秀的技術和數學能力。然而，職務仍然是定義讀者群的一個重要初步依據。相同職務的人通常具備某些基本技能和知識。例如：\n\n大多數軟體工程師都知道常見的排序演算法、Big O 表示法，以及至少一種程式語言。因此，你可以依賴軟體工程師知道 O(n) 的意義，但不能指望非技術職位的人了解 O(n)。\n針對醫師的研究報告應該與針對一般大眾的同一研究新聞報導有明顯不同的呈現方式。\n教授向研究所學生解釋一種新的機器學習方法，應該與向大一新生解釋的方式有所不同。\n\n如果同一角色中的每個人都擁有完全相同的知識，寫作會容易許多。不幸的是，同一角色內的知識很快就會分歧。Amal 是 Python 專家，Sharon 擅長 C++，Micah 則精通 Java。Kara 熱愛 Linux，但 David 只懂 iOS。\n僅靠角色本身不足以定義受眾。也就是說，你必須考慮受眾與知識的接近程度。Project Frombus 的軟體工程師對相關的 Project Dingus 有所了解，但對無關的 Project Carambola 一無所知。一般心臟專科醫師比一般軟體工程師更了解耳朵問題，但遠不及聽力學家。\n時間也會影響親近度。例如，幾乎所有軟體工程師都學過微積分。然而，大多數軟體工程師在工作中並不使用微積分，因此他們對微積分的知識會逐漸淡忘。相反地，有經驗的工程師通常比同一專案中的新工程師對目前專案了解得多得多。\n\n範例受眾分析\n以下是虛構專案 Zylmon 的範例受眾分析：\n\n專案 Zylmon 的目標受眾包含以下角色：\n\n軟體工程師\n技術產品經理\n\n目標受眾與知識的接近程度如下：\n\n我的目標受眾已經熟悉 Zyljeune API，這些 API 與 Zylmon API 有些相似。\n我的目標讀者懂得 C++，但通常沒有在新的 Winged Victory 開發環境中建置過 C++ 程式。\n我的目標讀者在大學時修過線性代數，但團隊中許多人需要複習矩陣乘法。",
+    "crumbs": [
+      "目標讀者 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/audience/index.html#判斷你的讀者需要學習什麼",
+    "href": "one/audience/index.html#判斷你的讀者需要學習什麼",
+    "title": "目標讀者",
+    "section": "判斷你的讀者需要學習什麼",
+    "text": "判斷你的讀者需要學習什麼\n寫下你的目標讀者為了達成目標需要學習的所有事項清單。在某些情況下，清單中應包含目標讀者需要執行的任務。例如：\n\n閱讀完文件後，讀者將會知道如何執行以下任務：\n\n使用 Zylmon API 依價格列出飯店。\n使用 Zylmon API 依地點列出飯店。\n使用 Zylmon API 依用戶評分列出飯店。\n\n\n請注意，您的讀者有時必須按照特定順序掌握任務。例如，您的讀者可能需要先學會如何在新的開發環境中建立和執行程式，然後才學習如何撰寫特定類型的程式。\n如果您正在撰寫設計規格，則您的清單應該著重於目標讀者應該學習的資訊，而非掌握特定任務。例如：\n\n閱讀設計規格後，讀者將學習以下內容：\n\nZylmon 優於 Zyljeune 的三個原因。\nZylmon 花費 5.25 個工程年開發的五大原因。",
+    "crumbs": [
+      "目標讀者 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/audience/index.html#讓文件符合你的讀者需求",
+    "href": "one/audience/index.html#讓文件符合你的讀者需求",
+    "title": "目標讀者",
+    "section": "讓文件符合你的讀者需求",
+    "text": "讓文件符合你的讀者需求\n為了滿足讀者的需求而撰寫，需要無私的同理心。你必須創造出能滿足讀者好奇心的說明，而非僅僅是自己的好奇心。你該如何跳脫自我，讓文件符合讀者的需求？很遺憾，我們無法提供簡單的答案，但我們可以提供幾個可聚焦的參數。\n\n詞彙與概念\n將你的用詞與你的受眾相匹配。相關議題：字詞\n注意距離感。你團隊中的人可能了解你們團隊的縮寫，但其他團隊的人是否也能理解這些縮寫呢？隨著目標受眾的擴大，請假設你必須解釋更多內容。\n同樣地，你軟體團隊中有經驗的人可能了解團隊專案的實作細節和資料結構，但幾乎所有其他人（包括團隊中新加入的成員）都不了解。除非你是專門為其他有經驗的團隊成員撰寫，否則通常你必須解釋比預期更多的內容。\n\n\n知識的詛咒\n專家經常會遭遇知識的詛咒（the curse of knowledge），意指他們對某個主題的專業理解反而破壞了對新手的解釋。作為專家，很容易忘記新手並不知道你已經知道的事情。新手可能無法理解那些只稍微提及微妙互動和深層系統，且專家不會停下來解釋的說明。\n從新手的角度來看，知識的詛咒就像是因為模組尚未編譯而出現的「找不到檔案」連結器錯誤。\n\n練習\n\n假設以下段落是針對從未編程過的醫師所撰寫論文的開頭。請指出該段落中存在哪些知識詛咒的部分：\n\n\nC 是一種中階語言，層級高於組合語言，但低於 Python 和 Java。C 語言讓程式設計師能夠對程式的各個方面進行細緻的控制。例如，使用 C 標準函式庫，可以輕鬆地配置和釋放記憶體區塊。在 C 語言中，直接操作指標是很平常的事。\n\n\n假設前述段落的目標讀者是剛接觸 C 語言但已熟悉 Python 的大學電腦科學新生。這段文字是否仍然受到知識詛咒的影響？\n\n\n\n\n\n\n\n\nNote點我看答案\n\n\n\n\n\n\n這段文字嚴重受到知識詛咒的影響。目標讀者從未寫過程式，因此以下術語對他們來說不適當或不熟悉：\n\n\n語言\n中階語言\n組合語言\nPython\nJava\n程式\nC 標準函式庫\n配置與釋放記憶體區塊\n指標\n\n\n這段文字對於另一類讀者來說也遭遇了知識詛咒。一般的 Python 程式設計師並不熟悉記憶體操作或指標。更好的入門段落應該比較並對照 C 與 Python。\n\n\n\n\n\n\n\n\n簡單用詞\n英語已成為全球技術溝通的主要語言。然而，有相當比例的技術讀者在非英語語言中更感舒適。因此，應偏好使用簡單詞彙，避免使用過時或過於複雜的英語詞彙。冗長且罕見的詞彙會讓部分讀者感到排斥。\n\n\n文化中立性與成語\n保持你的寫作文化中立。別要求讀者必須了解 NASCAR、板球或相撲的複雜細節，才能理解一個軟體的運作方式。例如，以下這句充滿美式棒球隱喻的句子，對某些巴黎讀者來說可能會感到困惑：\n\n如果 Frambus 5.0 是一支安打，Frambus 6.0 就是一支站立二壘安打。\n\n慣用語（idioms）是指整體意義與該短語中各個字詞的字面意義不同的片語。例如，以下這些片語就是慣用語：\n\na piece of cake（小事一樁，輕而易舉）\nBob’s your uncle（事情就這麼簡單／搞定了）\n\n蛋糕？Bob？大多數來自美國的讀者會認出第一個慣用語；大多數英國讀者會認出第二個慣用語。如果你是專門為英國觀眾寫作，那麼「Bob’s your uncle」是可以接受的。然而，如果你是為國際觀眾寫作，建議用「this task is done」來替代該慣用語。\n慣用語已深深融入我們的語言之中，以致於我們常常察覺不到它們具有特別的非字面意思。換句話說，慣用語是另一種形式的知識的詛咒。\n請注意，你的部分讀者可能會使用翻譯軟體來閱讀你的文件。翻譯軟體在處理文化相關詞彙和慣用語時，往往比處理簡單、直白的英文更加吃力。\n\n練習\n找出以下句子的問題：\n\n\nAs of Version 3.0, it was still kosher to call the Frambus method.\nDeciding which BlogResource constraints are combinable is a sticky wicket.\nBe that as it may, you still have to write unit tests.\n\n\n\n\n\n\n\n\nNote點我看答案\n\n\n\n\n\n\n在世界某些地方，kosher 已成為「可接受使用」的俚語。然而，許多讀者會好奇宗教飲食法規如何與軟體相關。\n「A sticky wicket」是英國俚語，不易被其他地區理解。可以用「challenging problem」取代它。\n\n\n「Be that as it may」是一個慣用語，可用轉折詞「However」來取代。\n\n\n\n\n\n下一單元： 文件",
+    "crumbs": [
+      "目標讀者 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/documents/index.html",
+    "href": "one/documents/index.html",
+    "title": "文件",
+    "section": "",
+    "text": "預估時間： 10 分鐘\n你能寫出句子，也能寫一些段落。那麼，你能否將這些段落整理成一份合乎邏輯的文件？",
+    "crumbs": [
+      "文件 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/documents/index.html#定義你的文件範圍",
+    "href": "one/documents/index.html#定義你的文件範圍",
+    "title": "文件",
+    "section": "定義你的文件範圍",
+    "text": "定義你的文件範圍\n好的文件會在一開始就定義其範圍（scope）。例如：\n\n本文件描述「Frambus 專案」的設計。\n\n更進一步的版本會明確指出非範圍——即那些讀者可能會以為應該包含，但實際不在本文件涵蓋範圍內的內容。例如：\n\n本文件不會說明相關技術 Project Froobus 的設計。\n\n範圍說明與非範圍說明不僅對讀者有幫助，對撰寫文件的你也一樣有益。在撰寫過程中，如果文件內容偏離了範圍說明（或進入了非範圍說明的範圍），那你就必須重新聚焦文件內容，或是修改範圍說明。在審閱初稿時，請刪除任何無助於達成範圍說明目標的段落。\n\n練習\n請指出以下段落有什麼問題：\n\n本文件說明如何使用 Frambus API 來建立、更新與發布 Fwidgets。本文件不說明如何使用 Frambus API 刪除 Fwidgets，也不涵蓋 Linux 作業系統的歷史。\n\n\n\n\n\n\n\nNote點我看答案\n\n\n\n\n\n非範圍部分僅應包含使用者合理期待本文件會涵蓋的資訊。沒有合理的使用者會期待本文件會涉及 Linux 的歷史。",
+    "crumbs": [
+      "文件 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/documents/index.html#指出目標讀者",
+    "href": "one/documents/index.html#指出目標讀者",
+    "title": "文件",
+    "section": "指出目標讀者",
+    "text": "指出目標讀者\n好的文件會明確指出其目標讀者。例如：\n\n本文件針對以下族群：\n\n軟體工程師\n專案經理\n\n\n除了讀者的職位，好的讀者聲明還會指出任何先備知識或經驗。例如：\n\n本文件假設你已理解矩陣乘法與反向傳播的基本原理。\n\n在某些情況下，讀者聲明還應指出先前必讀的資源或課程。例如：\n\n在閱讀本文件之前，你必須先閱讀《Froobus 專案：新希望》。",
+    "crumbs": [
+      "文件 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/documents/index.html#在開頭總結重點",
+    "href": "one/documents/index.html#在開頭總結重點",
+    "title": "文件",
+    "section": "在開頭總結重點",
+    "text": "在開頭總結重點\n工程師和科學家通常很忙，不一定會讀完一份長達 76 頁的設計文件。假設同事們可能只讀第一段，因此務必在文件開頭就回答讀者最重要的問題。\n專業寫作者會將大量精力放在第一頁，以提高讀者願意繼續閱讀的可能性。但第一頁常是最難寫的。因此要準備多次修改第一頁。",
+    "crumbs": [
+      "文件 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/documents/index.html#比較與對比",
+    "href": "one/documents/index.html#比較與對比",
+    "title": "文件",
+    "section": "比較與對比",
+    "text": "比較與對比\n在你的職涯中，很少會撰寫含有真正革命性概念的文件；大部分都是漸進式改良，建立在現有技術與概念之上。因此，請將你的想法與讀者已熟悉的概念進行比較與對比。例如：\n\n這個新應用程式與 Frambus 應用程式相似，但圖形效果更佳。\n\n或者：\n\nFroobus API 處理與 Frambus API 相同的使用案例，但 Froobus API 更易使用。\n\n\n練習\n指出以下這段簡介有什麼問題：\n\nFrambus 天氣應用程式 v2 推出十項功能，是 v1 所不具備的。最重要的是，v2 提供兩週天氣預報，而 v1 只有一週預報。潮汐資訊不會改變。\n\n\n\n\n\n\n\nNote點我看答案\n\n\n\n\n\n最後一句（關於潮汐的部分）不夠重要，不應出現在開頭。因為第一句提到有十項新功能，讀者自然會期待聽到更多，然而最後一句卻談及不是新功能的內容。",
+    "crumbs": [
+      "文件 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/documents/index.html#為讀者而寫",
+    "href": "one/documents/index.html#為讀者而寫",
+    "title": "文件",
+    "section": "為讀者而寫",
+    "text": "為讀者而寫\n本課程反覆強調定義讀者的重要性。本節聚焦於如何運用讀者定義來組織文件。\n\n定義讀者需求\n回答下列問題能幫助你確定文件內容：\n\n你的目標讀者是誰？\n他們的目標是什麼？為何要閱讀這份文件？\n在閱讀之前，他們已經具備什麼知識？\n閱讀之後，他們應該知道或能做什麼？\n\n例如，假設你發明一種新的排序演算法，它與快速排序（quicksort）相似。以下是可能的回答：\n\n你的目標讀者是誰？ 目標讀者：本組織的軟體工程師。\n他們的目標是什麼？ 讀者的目標：想找到更高效的排序方法，並閱讀本文判斷這種方法是否值得實作。\n在閱讀之前，他們已經具備什麼知識？ 讀者的先備知識：會寫程式，曾學習排序演算法，包括快速排序，但多年未實作或評估排序演算法。\n閱讀之後，他們應該知道或能做什麼？ 讀者在閱讀後能做這些：\n\n理解此演算法與快速排序的比較與差異。\n辨識本演算法在兩種類型資料集上的性能優勢。\n以任一編程語言實作此演算法。\n辨識兩種執行效率不佳的邊界情況。\n\n\n\n\n根據讀者需求組織文件\n在定義完讀者需求後，將文件組織得有助讀者取得所需資訊。例如，根據上述答案，文件大綱可如下：\n\n演算法概述\n\n與快速排序比較，包括 Big O 複雜度比較\n\n連結至快速排序法的維基百科文章\n\n演算法適用的最佳資料集\n\n演算法實作\n\n以虛擬碼（pseudocode）實作\n實作建議與常見錯誤\n\n深入分析\n\n邊緣案例（edge cases）\n已知的未知（known unknowns）\n\n\n\n下一單元： 標點符號 （選修）",
+    "crumbs": [
+      "文件 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/introduction/index.html",
+    "href": "one/introduction/index.html",
+    "title": "簡介",
+    "section": "",
+    "text": "這是 Google 技術寫作課程（中文版） 的第一部分。此入門課程會告訴您如何撰寫更清晰的技術文件。",
+    "crumbs": [
+      "簡介 (3 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/introduction/index.html#目標受眾",
+    "href": "one/introduction/index.html#目標受眾",
+    "title": "簡介",
+    "section": "目標受眾",
+    "text": "目標受眾\n您需要具備至少一些英語寫作能力，但您不需要是一位很強的寫作者才能參加本課程。\n如果您從未接受過任何技術寫作培訓，本課程非常適合您。如果您曾接受過技術寫作培訓，本課程將提供有效的複習。",
+    "crumbs": [
+      "簡介 (3 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/introduction/index.html#學習目標",
+    "href": "one/introduction/index.html#學習目標",
+    "title": "簡介",
+    "section": "學習目標",
+    "text": "學習目標\n本課程教您技術寫作的基礎知識。完成本課程後，您將知道如何執行以下操作：\n\n一致地使用術語——包括縮寫和首字母縮略詞。\n識別模糊的代名詞。\n區分主動語態和被動語態。\n將被動語態的句子轉換為主動語態。\n找出主動語態優於被動語態的三個方面。\n發展至少三種策略，使句子更清晰、更引人入勝。\n發展至少四種策略來縮短句子。\n了解項目符號列表和編號列表之間的區別。\n建立有用的列表。\n為段落建立有效的引導句。\n讓每個段落都專注於一個主題。\n在每份文件的開頭陳述要點。\n確定您的目標受眾。\n確定您的目標受眾已經知道什麼以及他們需要學習什麼。\n了解知識的詛咒。\n識別和修改慣用語。\n陳述您文件的範圍（目標）和受眾。\n將長主題分解為適當的部分。\n正確使用逗號、括號、冒號、破折號和分號。\n培養 Markdown 的初學者能力。\n\n成為一名偉大的工程師或偉大的技術寫作人員需要多年的專注練習。本課程將改善您的技術寫作，但不會立即將您轉變為一位偉大的技術寫作人員。",
+    "crumbs": [
+      "簡介 (3 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/introduction/index.html#課前和課堂內組成部分",
+    "href": "one/introduction/index.html#課前和課堂內組成部分",
+    "title": "簡介",
+    "section": "課前和課堂內組成部分",
+    "text": "課前和課堂內組成部分\n本課程包括以下兩個部分：\n\n課前 (pre-class)\n課內 (in-class)\n\n您目前正在查看課前部分的開頭。\n課內部分會加強課前部分所教的課程。話雖如此，單獨的課前課程仍然提供了寶貴的教育經驗。\n\n\n\n\n\n\nNote譯註\n\n\n\n原線上課程提供的就是 pre-class 的內容，是一套自學教材。至於 in-class 的內容，指的是有講師帶領，以投影片介紹，並增加一些課堂練習和小組討論。我覺得光是自行研讀 pre-class 的內容就能學到許多技術寫作的基本功。",
+    "crumbs": [
+      "簡介 (3 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/introduction/index.html#硬體和網路要求",
+    "href": "one/introduction/index.html#硬體和網路要求",
+    "title": "簡介",
+    "section": "硬體和網路要求",
+    "text": "硬體和網路要求\n雖然本課程針對筆記型電腦或桌上型電腦進行了優化，但您也可以在平板電腦或手機上學習本課程。如果您要參加課堂內的部分，請注意您會需要大量打字。\n您需要網路連線才能上課。您無法下載課程。本課程不提供實體媒體。\n本課程包含一些簡短的影片，所有影片均為選擇性觀看。如果您想跳過影片，那麼您可以在低頻寬的網路連線上學習本課程。",
+    "crumbs": [
+      "簡介 (3 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/introduction/index.html#選修單元",
+    "href": "one/introduction/index.html#選修單元",
+    "title": "簡介",
+    "section": "選修單元",
+    "text": "選修單元\n我們已將一些單元標記為選修。這些材料不是必需的，但您可能會發現這些材料很有用。\n\n下一單元： 夠用的文法 (選修單元)",
+    "crumbs": [
+      "簡介 (3 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/lists-and-tables/index.html",
+    "href": "one/lists-and-tables/index.html",
+    "title": "清單與表格",
+    "section": "",
+    "text": "預估時間： 15 分鐘\n好的清單可以將技術上的混亂轉化為井然有序的內容。技術讀者通常喜歡清單。因此，在撰寫時，請尋找機會將段落文字轉換為清單。",
+    "crumbs": [
+      "清單與表格 (15 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/lists-and-tables/index.html#選擇正確的清單類型",
+    "href": "one/lists-and-tables/index.html#選擇正確的清單類型",
+    "title": "清單與表格",
+    "section": "選擇正確的清單類型",
+    "text": "選擇正確的清單類型\n以下類型的清單在技術寫作中佔主導地位：\n\n項目符號清單（Bulleted lists）\n編號清單（Numbered lists）\n內嵌清單（Embedded lists）\n\n對於無序的項目，請使用項目符號清單（bulleted list）；對於有序的項目，請使用編號清單（numbered list）。換句話說：\n\n若重新排列項目符號清單中的項目，整體意思不會改變。\n若重新排列編號清單中的項目，整體意思會改變。\n\n例如，我們將以下內容設為項目符號清單，因為重新排列其項目不會改變清單的含義：\n\nBash 提供以下字串操作機制： * 從字串開頭刪除子字串 * 將整個檔案讀入一個字串變數\n\n相反地，以下這段必須是編號清單，因為項目順序會影響操作流程：\n\n請按照以下步驟重新設定伺服器： 1. 停止伺服器。 2. 編輯設定檔。 3. 重新啟動伺服器。\n\n內嵌清單（有時也稱為「行內清單」［run-in list］）是指將所有項目塞在同一個句子中。例如，下面這句話包含一個有四個項目的內嵌清單：\n\nLlamacatcher API 讓呼叫者可以建立和查詢駱馬、分析羊駝、刪除小羊駝以及追蹤單峰駱駝。\n\n一般來說，內嵌清單不是呈現技術資訊的理想方式。建議將內嵌清單改寫為項目符號清單或編號清單。例如，你應該把前述例句改寫成以下段落：\n\nLlamacatcher API 讓呼叫者可以執行以下操作： * 建立和查詢駱馬。 * 分析羊駝。 * 刪除小羊駝。 * 追蹤單峰駱駝。\n\n\n練習\n請將以下段落改寫成一個或多個清單：\n\n今天上班時，我必須撰寫三個單元測試、寫一份設計文件，還要審閱 Janet 最新的文件。下班後，我必須在不使用任何水的情況下洗車，然後在不使用毛巾的情況下將車子擦乾。\n\n\n\n\n\n\n\n\nNote點我看答案\n\n\n\n\n\n以下提供兩個參考答案，此為其一： &gt; 我今天上班時必須做以下幾件事： &gt; * 撰寫三個單元測試程式碼。 &gt; * 撰寫設計文件。 &gt; * 審閱 Janet 最新的文件。 &gt; &gt; 下班後，我必須做以下幾件事： &gt; 1. 不用水洗車。 &gt; 2. 不用毛巾擦乾車子。\n以下是另一個參考答案：\n\n我今天必須完成以下任務： * 工作時： * 撰寫三個單元測試程式碼。 * 撰寫設計文件。 * 審閱 Janet 最新的文件。\n\n下班後：\n\n不用水洗車。\n不用毛巾擦乾車子。",
+    "crumbs": [
+      "清單與表格 (15 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/lists-and-tables/index.html#保持清單項目一致平行",
+    "href": "one/lists-and-tables/index.html#保持清單項目一致平行",
+    "title": "清單與表格",
+    "section": "保持清單項目一致（平行）",
+    "text": "保持清單項目一致（平行）\n怎樣的清單是有效的？有效的清單具備平行性（parallel）；無效的清單則會包含不平行的項目。所謂平行的清單，是指其中所有項目彼此「相互呼應」，在以下幾個方面保持一致，能讓讀者一眼看出它們是同一類型的資訊：\n\n文法結構（Grammar）\n邏輯分類（Logical category）\n大小寫格式（Capitalization）\n標點符號（Punctuation）\n\n相對地，只要有任一項目在上述其中一個方面不一致，整份清單就屬於非平行清單。\n舉例來說，下面這個清單是平行的，因為所有項目都是複數名詞（文法），都是可以食用的東西（邏輯分類），採用標題式大寫（大小寫格式），且沒有句號或逗號（標點符號）：\n\nCarrots\nPotatoes\nCabbages\n\n相較之下，下面這份清單在各方面都缺乏一致，讀起來很不協調：\n\nCarrots\nPotatoes\nThe summer light obscures all memories of winter.\n\n再看下面這個例子，它是平行的，因為所有項目都是完整的句子，並且具備完整句子的大小寫與標點符號：\n\nCarrots contain lots of Vitamin A.\nPotatoes taste delicious.\nCabbages provide oodles of Vitamin K.\n\n讀者在看到清單的第一個項目時，就會期待後續的項目遵循相同的格式與風格，因此第一個項目等於建立了一種模式。要寫出清楚有效的清單，就必須保持這種平行性。\n\n練習\n以下這份清單是平行的還是非平行的？\n\nBroccoli inspires feelings of love or hate.\nPotatoes taste delicious.\nCabbages.\n\n\n\n\n\n\n\n\nNote點我看答案\n\n\n\n\n\n這份清單是非平行的。前兩個項目是完整的句子，但第三個項目不是句子。（不要被第三項的大小寫與標點所誤導。）\n\n\n\n\n\n練習\n以下這份清單是平行的還是非平行的？\n\nThe red dots represent sick trees.\nImmature trees are represented by the blue dots.\nThe green dots represent healthy trees.\n\n\n\n\n\n\n\n\nNote點我看答案\n\n\n\n\n\n這是一份非平行的清單。第一和第三項使用主動語態，而第二項則使用被動語態。",
+    "crumbs": [
+      "清單與表格 (15 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/lists-and-tables/index.html#編號清單項目以祈使動詞開頭",
+    "href": "one/lists-and-tables/index.html#編號清單項目以祈使動詞開頭",
+    "title": "清單與表格",
+    "section": "編號清單項目以祈使動詞開頭",
+    "text": "編號清單項目以祈使動詞開頭\n建議在編號清單中，讓每個項目都以祈使動詞開頭。祈使動詞（imperative verb）就是用來發出命令的動詞，例如「開啟（open）」、「啟動（start）」等。請看以下這份平行的編號清單，所有項目都以祈使動詞開頭：\n\nDownload the Frambus app from Google Play or iTunes. 下載 Frambus 應用程式（從 Google Play 或 iTunes）。\nConfigure the Frambus app’s settings. 設定 Frambus 應用程式的偏好選項。\nStart the Frambus app. 啟動 Frambus 應用程式。\n\n反之，下列編號清單就不具平行性，因為前三項中只有前兩項是以祈使動詞開頭，第三項不是：\n\nInstantiate the Froobus class.\nInvoke the Froobus.Salmonella() method.\nThe process stalls.\n\n\n練習\n請讓下列清單保持平行結構，並確保清單中的每個項目都以祈使動詞開頭：\n\nStop Frambus\nThe key configuration file is /etc/frambus. Open this file with an ASCII text editor.\nIn this file, you will see a parameter named Carambola, which is currently set to the default value (32). Change this value to 64.\nWhen you are finished setting this parameter, save and close the configuration file\nnow, start Frambus again.\n\n\n\n\n\n\n\n\nNote點我看答案\n\n\n\n\n\n參考答案：\n\nStop Frambus.\nOpen the key configuration file, /etc/frambus, with an ASCII text editor.\nChange the Carambola parameter from its default value (32) to 64.\nSave and close the configuration file.\nRestart Frambus.",
+    "crumbs": [
+      "清單與表格 (15 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/lists-and-tables/index.html#適當為清單項目加上標點符號",
+    "href": "one/lists-and-tables/index.html#適當為清單項目加上標點符號",
+    "title": "清單與表格",
+    "section": "適當為清單項目加上標點符號",
+    "text": "適當為清單項目加上標點符號\n雖然各種風格指南對清單項目的標點符號用法有不同的建議，Google 開發者文件風格指南的建議是每個清單項目都以大寫字母開頭（有一些例外）。例如：\n\nLoops\nConditionals\nVariable declarations\n\n如果清單項目是一個句子，請使用適當的句尾標點符號。例如：\n\nOpen the program.\nClick the settings icon.",
+    "crumbs": [
+      "清單與表格 (15 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/lists-and-tables/index.html#建立實用的表格",
+    "href": "one/lists-and-tables/index.html#建立實用的表格",
+    "title": "清單與表格",
+    "section": "建立實用的表格",
+    "text": "建立實用的表格\n善於分析的人往往喜歡表格。如果一個頁面包含多個段落和一個表格，工程師的目光通常會先掃向那個表格。\n建立表格時，請參考以下準則：\n\n為每一欄加上有意義的標頭。不要讓讀者猜測每一欄的內容是什麼。\n避免在單一儲存格中放入過多文字。如果某儲存格的內容超過兩句話，請思考是否應改用其他格式呈現該資訊。\n雖然不同欄位（columns）可以包含不同類型的資料，但應力求在同一欄內保持一致的寫法。例如，同一欄中的儲存格不應混雜數值與馬戲團表演者的姓名。\n\n\n注意： 有些表格在所有裝置上都無法良好呈現。例如，在筆記型電腦上看起來很清楚的表格，在手機上可能會很難閱讀。",
+    "crumbs": [
+      "清單與表格 (15 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/lists-and-tables/index.html#為每個清單和表格撰寫引言",
+    "href": "one/lists-and-tables/index.html#為每個清單和表格撰寫引言",
+    "title": "清單與表格",
+    "section": "為每個清單和表格撰寫引言",
+    "text": "為每個清單和表格撰寫引言\n我們建議為每個清單和表格加上一個引言句，告訴讀者該清單或表格代表什麼。換句話說，為清單或表格提供上下文。引言句以冒號而不是句點結尾。 我們建議每一個清單或表格前加上一句說明文字，讓讀者了解該清單或表格的用意。換句話說，為清單或表格提供背景說明。這句引言句的結尾應該用冒號而非句號。\n雖然不是硬性規定，但我們建議在引言中使用「以下（following）」這個詞。請參考下列範例引言句：\n\nThe following list identifies key performance parameters: 以下清單標識了關鍵效能參數：\nTake the following steps to install the Frambus package: 請按照以下步驟安裝 Frambus 套件：\nThe following table summarizes our product’s features against our key competitors’ features: 下表總結了我們產品與主要競爭對手產品的功能：\n\n\n練習\n為下表寫一個引言句：\n\n\n\n語言\n發明者\n推出年份\n主要特點\n\n\n\n\nLisp\nJohn McCarthy\n1958\n遞迴\n\n\nC++\nBjarne Stroustrup\n1979\n物件導向程式設計\n\n\nPython\nGuido van Rossum\n1994\n簡潔性\n\n\n\n\n\n\n\n\n\nNote點我看答案\n\n\n\n\n\n這裡提供兩種參考答案：\n\n下表包含一些關於流行程式語言的關鍵事實：\n下表標識了三種流行程式語言的發明者、發明年份和主要特點：\n\n\n\n\n\n下一單元： 段落",
+    "crumbs": [
+      "清單與表格 (15 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/paragraphs/index.html",
+    "href": "one/paragraphs/index.html",
+    "title": "段落",
+    "section": "",
+    "text": "預估時間： 10 分鐘\n本單元提供一些關於構建連貫段落的指導方針。但首先，這裡有一則激勵人心的訊息：",
+    "crumbs": [
+      "段落 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/paragraphs/index.html#寫個精彩的開頭句",
+    "href": "one/paragraphs/index.html#寫個精彩的開頭句",
+    "title": "段落",
+    "section": "寫個精彩的開頭句",
+    "text": "寫個精彩的開頭句\n開頭句是任何段落中最重要的一句話。忙碌的讀者會專注於開頭句，有時甚至會跳過後續的句子。因此，請將你的寫作精力集中在開頭句上。\n好的開頭句能確立段落的核心觀點。例如，以下段落就有一個有效的開頭句：\n\n迴圈會多次執行相同的程式區塊。例如，假設你寫了一段程式碼，用來判斷輸入行是否以句點結尾。若要評估一百萬行輸入，就建立一個執行一百萬次的迴圈。\n\n前面那句開頭語句確立了本段的主題——作為迴圈介紹的引言。相較之下，下面這句開頭語句則會讓讀者走偏方向：\n\n程式區塊是指同一函式內任意一組連續的程式碼。例如，假設你寫了一段程式碼用來判斷輸入行是否以句點結尾。若要評估一百萬行輸入，則建立一個執行一百萬次的迴圈。\n\n\n練習\n以下段落的開頭句是有效還是有缺陷？\n\n畢氏定理指出，直角三角形兩股的平方和等於斜邊的平方。k-means 分群演算法依賴畢氏定理來測量距離。相較之下，k-median 分群演算法則依賴曼哈頓距離。\n\n\n\n\n\n\n\n\nNote點我看答案\n\n\n\n\n\n這個開頭句有缺陷，因為它暗示段落將會聚焦於畢氏定理。事實上，段落的重點其實是群集演算法。以下會是一個更有效的開頭句：\n\n不同的群集演算法對距離的測量方式各不相同。\n\n\n\n\n\n注意： 有效的開頭句可以有多種形式。也就是說，並非所有優秀的段落都以陳述主題的句子開始。例如，以修辭性問題開頭的段落可以吸引讀者。",
+    "crumbs": [
+      "段落 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/paragraphs/index.html#每個段落應聚焦於單一主題",
+    "href": "one/paragraphs/index.html#每個段落應聚焦於單一主題",
+    "title": "段落",
+    "section": "每個段落應聚焦於單一主題",
+    "text": "每個段落應聚焦於單一主題\n段落應該呈現一個獨立的邏輯單元。每個段落都應限制在當前主題，不要描述未來主題會發生的事或過去主題的內容。修訂時，務必刪除（或移到其他段落）任何與當前主題無直接關聯的句子。\n舉例來說，假設下面段落的開頭句確實聚焦在正確主題，你能找出應該從段落中刪除的句子嗎？\n\n畢氏定理指出，直角三角形兩個直角邊平方的和等於斜邊的平方。三角形的周長等於三邊長的總和。你可以用畢氏定理來測量對角線距離。例如，如果你知道乒乓球桌的長度和寬度，就可以用畢氏定理來算出對角線距離。計算乒乓球桌的周長時，先將長度和寬度相加，再將總和乘以 2。\n\n我們將第二句和第五句刪除，得到一個專注於畢氏定理的段落：\n\n畢氏定理指出，直角三角形兩個直角邊平方的和等於斜邊的平方。三角形的周長等於三邊長的總和。 你可以用畢氏定理來測量對角線距離。例如，如果你知道乒乓球桌的長度和寬度，就可以用畢氏定理來算出對角線距離。計算乒乓球桌的周長時，先將長度和寬度相加，再將總和乘以 2。\n\n\n練習\n刪除以下段落中多餘的句子。假設開頭的句子已經確立了段落的主題：\n\n試算表提供了一個很好的方式來組織資料。可以將試算表想像成有列和欄的表格。電子試算表還提供數學函數，例如平均數和標準差。每一列包含一個實體的詳細資料。每一欄包含特定參數的詳細資料。例如，你可以建立一個試算表來整理不同樹木的資料。每一列代表不同種類的樹。每一欄代表不同的特徵，例如樹的高度或樹冠的寬度。\n\n\n\n\n\n\n\nNote點我看答案\n\n\n\n\n\n這段文字的主題是「試算表作為組織資料的工具」，第三句則偏離了主題。請將第三句移到另一段有關「試算表中的數學運算」的段落中。\n\n試算表提供了一個很好的方式來組織資料。可以將電子試算表想像成有列和欄的表格。電子試算表也提供數學函數，例如平均數和標準差。 每一列包含一個實體的詳細資料。每一欄包含特定參數的詳細資料。例如，你可以建立一個電子試算表來整理不同樹木的資料。每一列代表不同種類的樹。每一欄代表不同的特徵，例如樹的高度或樹冠的寬度。",
+    "crumbs": [
+      "段落 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/paragraphs/index.html#不要讓段落太長或太短",
+    "href": "one/paragraphs/index.html#不要讓段落太長或太短",
+    "title": "段落",
+    "section": "不要讓段落太長或太短",
+    "text": "不要讓段落太長或太短\n過長的段落在視覺上令人感到壓迫。非常長的段落會形成令人畏懼的「文字牆」，讀者往往會忽略它們。讀者通常喜歡包含三到五句話的段落，但會避免超過七句話的段落。修訂時，考慮將過長的段落分成兩個獨立的段落。\n相反地，也不要讓段落太短。如果你的文件中充斥著單句段落（one-sentence paragraphs），表示你在組織結構方面有問題。應嘗試將這些單句段落合併成連貫的多句段落，或整理成清單項目。",
+    "crumbs": [
+      "段落 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/paragraphs/index.html#回答什麼為什麼以及如何",
+    "href": "one/paragraphs/index.html#回答什麼為什麼以及如何",
+    "title": "段落",
+    "section": "回答什麼、為什麼以及如何",
+    "text": "回答什麼、為什麼以及如何\n好的段落會回答以下三個問題：\n\nWhat - 你想告訴讀者什麼？\nWhy - 為什麼讓讀者知道這件事很重要？\nHow - 讀者應該如何運用這些知識？或者，讀者應該如何知道你的觀點是真實的？\n\n例如，以下段落回答了什麼、為什麼以及如何：\n\n[Start of What] garp() 函數回傳資料集的平均數與中位數之間的差異。[End of What] [Start of Why] 許多人毫無疑問地相信平均數總是反映真實情況。然而，平均數很容易受到少數極大或極小數據點的影響。[End of Why] [Start of How] 呼叫 garp() 函數可以幫助判斷是否有少數極大或極小的數據點過度影響了平均數。相對較小的 garp() 值表示平均數比起較高的 garp() 值更具意義。[End of Hpw]\n\n\n下一單元： 目標讀者",
+    "crumbs": [
+      "段落 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/short-sentences/index.html",
+    "href": "one/short-sentences/index.html",
+    "title": "簡短的句子",
+    "section": "",
+    "text": "預估時間： 20 分鐘\n軟體工程師通常會基於以下原因，試圖減少程式碼行數：\n事實上，同樣的規則也適用於技術寫作：\n找出最簡潔的文件寫法需要花點時間，但最終是值得的。短句的表達力通常比長句更強，而且短句通常也比長句更容易理解。",
+    "crumbs": [
+      "簡短的句子 (20 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/short-sentences/index.html#讓每個句子專注於單一想法",
+    "href": "one/short-sentences/index.html#讓每個句子專注於單一想法",
+    "title": "簡短的句子",
+    "section": "讓每個句子專注於單一想法",
+    "text": "讓每個句子專注於單一想法\n讓每個句子專注在一個想法、概念或觀念上。就像程式中的每一行陳述只執行一項任務一樣，句子也應該只傳達一個重點。例如，下面這句非常冗長的句子就包含了多個想法：\n\n1950 年代末期是程式語言的一個關鍵時代，因為 IBM 在 1957 年推出了 Fortran，而 John McCarthy 在隔年推出了 Lisp，這給予了程式設計師解決問題的迭代方法和遞迴方法。\n\n將這個長句分解成一連串單一想法的句子，會得到以下結果：\n\n1950 年代末期是程式語言的一個關鍵時代。IBM 在 1957 年推出了 Fortran，John McCarthy 在隔年發明了 Lisp。因此，到了 1950 年代末期，程式設計師可以用迭代或遞迴的方式解決問題。\n\n\n練習\n請將以下過長的句子改寫成幾個較短的句子。無需大幅改寫，只需將原本的一句話分成幾句即可。\n\nIn bash, use the if, then, and fi statements to implement a simple conditional branching block in which the if statement evaluates an expression, the then statement introduces a block of statements to run when the if expression is true, and the fi statement marks the end of the conditional branching block.\n在 bash 中，可以使用 if、then 和 fi 指令來實作簡單的條件分支。if 負責判斷條件式是否成立。then 用來引入當條件為真時要執行的程式碼區塊。fi 則標示條件分支區塊的結尾。\n\n\n\n\n\n\n\n\nNote點我看答案\n\n\n\n\n\nIn bash, use an if, then, and fi statement to implement a simple conditional branching block. The if statement evaluates an expression. The then statement introduces a block of statements to run when the if expression is true. The fi statement marks the end of the conditional branching block. (The resulting paragraph remains unclear but is still much easier to read than the original sentence.)\n在 bash 中，可以使用 if、then 和 fi 指令來實作一個簡單的條件分支區塊。if 會判斷一個條件式。then 則用來引入當條件成立時要執行的程式碼區塊。fi 表示這個條件分支區塊的結尾。（雖然整段文字仍不夠清楚，但相較於原本的長句，已經更容易閱讀了。）",
+    "crumbs": [
+      "簡短的句子 (20 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/short-sentences/index.html#將冗長句子改寫成清單",
+    "href": "one/short-sentences/index.html#將冗長句子改寫成清單",
+    "title": "簡短的句子",
+    "section": "將冗長句子改寫成清單",
+    "text": "將冗長句子改寫成清單\n冗長的技術句子中往往藏著一個渴望掙脫的清單。請看以下例句：\n\n要改變迴圈的常規流程，您可以使用 break 陳述式（它會讓您跳出目前的迴圈）或 continue 陳述式（它會跳過目前迴圈迭代的其餘部分）。\n\n當您在長句中看到連接詞「或」（or）時，可以考慮將該句重構為項目符號清單。當你看到長句中嵌入了一連串項目或步驟時，也可以考慮改寫為項目清ㄑ或編號清單。例如，前面的例子包含了連接詞「或」（or），因此我們可以將原句改寫為以下項目清單：\n\n要改變迴圈的常規流程，請呼叫以下陳述式之一：\n\nbreak，它會讓您跳出目前的迴圈。\ncontinue，它會跳過目前迴圈迭代的其餘部分。\n\n\n\n練習\n請將下列句子重構為更簡短、更清楚的版本，並確保你的答案包含一份清單：\n\n若要開始使用 Frambus 應用程式，你必須先在合適的商店找到該應用程式，使用有效的信用卡或金融卡付款，下載它，在 /etc/Frambus 檔案中設定 Foo 變數的值，然後重複唸兩次啟動咒語來執行它。\nKornShell 是由 David Korn 在 1983 年發明的，當時他是貝爾實驗室的電腦科學家，這個 shell 是對 Bourne Shell 的擴充集合，包含更多功能、加強和改進，而 Bourne Shell 則是由另一位貝爾實驗室的電腦科學家 Stephen Bourne 在 1977 年發明的。\n\n\n\n\n\n\n\n\nNote點我看答案\n\n\n\n\n\n句子 1\n請依照下列步驟開始使用 Frambus 應用程式： 1. 在合適的商店找到該應用程式。 2. 使用有效的信用卡或金融卡付款購買該應用程式。 3. 下載該應用程式。 4. 編輯 /etc/Frambus 檔案，為 Foo 變數指定一個值來設定該應用程式。 5. 唸兩次啟動咒語來執行該應用程式。\n句子 2\n下列兩位貝爾實驗室的電腦科學家發明了廣受歡迎的 shell： - Stephen Bourne 在 1977 年發明了 Bourne Shell。 - David Korn 在 1983 年發明了 KornShell。 KornShell 是 Bourne Shell 的向下相容超集合，包含了許多對舊版 shell 的改進。",
+    "crumbs": [
+      "簡短的句子 (20 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/short-sentences/index.html#消除或減少無關的詞語",
+    "href": "one/short-sentences/index.html#消除或減少無關的詞語",
+    "title": "簡短的句子",
+    "section": "消除或減少無關的詞語",
+    "text": "消除或減少無關的詞語\n許多句子都包含了贅詞──文字世界中的垃圾食物，只占空間又沒營養。例如，你是否能在下面這句話中找出不必要的字：\n\nAn input value greater than 100 causes the triggering of logging.  (輸入值若大於 100，會導致觸發日誌記錄。)\n\n將「導致觸發」（causes the triggering of）改為簡潔有力的動詞「觸發」（triggers），就能得到更簡短的句子：\n\nAn input value greater than 100 triggers logging.  (輸入值若大於 100，會觸發日誌記錄。)\n\n只要多加練習，你就能快速辨識出多餘的字詞，並在刪除或簡化它們時感到無比快樂。例如，請看下列句子：\n\nThis design document provides a detailed description of Project Frambus.  (本設計文件提供了關於 Frambus 專案的詳細描述。)\n\n片語 provides a detailed description of 可以簡化為動詞 describes (或動詞 details)，因此結果句子可以變成：\n\nThis design document describes Project Frambus.  (本設計文件描述了 Frambus 專案。)\n\n下表列出了一些常見冗贅片語的簡化建議：\n\n\n\n冗長 (Wordy)\n簡潔 (Concise)\n\n\n\n\nat this point in time\nnow\n\n\ndetermine the location of\nfind\n\n\nis able to\ncan\n\n\n\n\n練習\n請在不改變意思的前提下，將下列句子縮短：\n\nIn spite of the fact that Arnold writes buggy code, he writes error-free documentation.\nChanging the sentence from passive voice to active voice enhances the clarification of the key points.\nDetermine whether Rikona is able to write code in COBOL.\nFrambus causes the production of bugs, which will be chronicled in logs by the LogGenerator method.\n\n\n\n\n\n\n\n\nNote點我看答案\n\n\n\n\n\n以下是一些可能的解答：\n\nAlthough Arnold writes buggy code, he writes error-free documentation.  另一種寫法： Arnold writes buggy code. However, he writes error-free documentation.\nChanging the sentence from passive voice to active voice clarifies the key points.\nDetermine whether Rikona can code in COBOL.\nFrambus produces bugs, which the LogGenerator method logs.",
+    "crumbs": [
+      "簡短的句子 (20 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/short-sentences/index.html#減少從屬子句-選修",
+    "href": "one/short-sentences/index.html#減少從屬子句-選修",
+    "title": "簡短的句子",
+    "section": "減少從屬子句 (選修)",
+    "text": "減少從屬子句 (選修)\n子句是句子中一個獨立的邏輯片段，包含一個動作者和一個動作。每個句子都包含：\n\n一個主要子句\n零或多個從屬子句\n\n從屬子句（subordinate clause）修飾主要子句中的想法。顧名思義，從屬子句不如主要子句重要。例如，請看以下句子：\n\nPython is an interpreted programming language, which was invented in 1991.  (Python是一種直譯式程式語言，它是在1991年發明的。)\n\n主要子句：Python is an interpreted programming language\n從屬子句：which was invented in 1991\n\n\n你通常可以透過引導詞來辨識從屬子句。以下列出一些常見的從屬子句引導詞（此清單並非完整）：\n\nwhich\nthat\nbecause\nwhose\nuntil\nunless\nsince\n\n有些從屬子句前面會加逗號，有些則不會。以下這句話中標示的從屬子句就是例子，它是以 because 開頭，而且沒有加逗號：\n\nI prefer to code in C++ because I like strong data typing.\n\n在編輯時，請仔細檢查從屬子句。請記住「一個句子 = 一個想法」的單一職責原則。句子中的從屬子句是擴展了單一想法，還是「分支」成一個獨立的想法？如果是後者，請考慮將有問題的從屬子句分割成獨立的句子。\n\n練習\n判斷下列哪些句子中的從屬子句應該拆分成獨立的句子。（不要改寫句子，只要指出哪些句子應該重寫即可。）\n\nPython is an interpreted language, which means that the language can execute source code directly. (Python 是一種直譯式語言，這表示它可以直接執行原始碼。)\nBash is a modern shell scripting language that takes many of its features from KornShell 88, which was developed at Bell Labs. (Bash 是一種現代的 shell 腳本語言，它從 KornShell 88 繼承了許多功能，而 KornShell 88 是在貝爾實驗室開發的。)\nLisp is a programming language that relies on Polish prefix notation, which is one of the systems invented by the Polish logician Jan Łukasiewicz. (Lisp 是一種程式語言，採用波蘭前置符號（Polish prefix notation），這種符號系統是由波蘭邏輯學家 Jan Łukasiewicz 發明的。)\nI don’t want to say that Fortran is old, but only radiocarbon dating can determine its true age. (我不是說 Fortran 很老，但它的真實年齡可能需要用放射性碳定年法來測定。)\n\n\n\n\n\n\n\n\nNote點我看答案\n\n\n\n\n\n以下答案已將從屬子句以馬克筆或粗體字標示出來。\n\nPython is an interpreted language, which means that the language can execute source code directly. 備註：這句中的從屬子句是用來延伸主句意思，句子本身沒問題。\nBash is a modern shell scripting language that takes many of its features from KornShell 88, which was developed at Bell Labs.  備註：這句的第一個從屬子句是用來延伸主句，但第二個從屬子句偏離主題太遠。建議拆成兩句。\nLisp is a programming language that relies on Polish prefix notation, which is one of the systems invented by the Polish logician Jan Łukasiewicz. 備註：這句的第一個從屬子句對句子非常重要，但第二個從屬子句讓讀者偏離主句太遠。建議拆成兩句。\nI don’t want to say that Fortran is old, but only radiocarbon dating can determine its true age. 備註：這句的從屬子句對句子很關鍵，因此句子本身沒問題。",
+    "crumbs": [
+      "簡短的句子 (20 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/short-sentences/index.html#區分-that-和-which",
+    "href": "one/short-sentences/index.html#區分-that-和-which",
+    "title": "簡短的句子",
+    "section": "區分 that 和 which",
+    "text": "區分 that 和 which\nThat 和 which 都可以用來引導從屬子句。它們之間有什麼區別？在某些國家，這兩個字幾乎可以互換使用。但在美國，細心的讀者通常會嚴正指出：你又搞混這兩個字了。\n在美國，which 用於非限定性從屬子句，也就是那種即使刪掉，句子依然通順的子句；that 則用於必要的（限制性）從屬子句，是句子不可或缺的部分。舉例來說，下面這句話的重點是「Python 是一種直譯語言」，而句子即使刪掉「Guido van Rossum invented」仍無損原意：\n\nPython is an interpreted language, which Guido van Rossum invented.  Python 是一種直譯語言，這是 Guido van Rossum 發明的。\n\n相反地，下面這句話就必須保留「don’t involve linear algebra」，否則意思不完整：\n\nFortran is perfect for mathematical calculations that don’t involve linear algebra.  Fortran 非常適合用來做不涉及線性代數的數學運算。\n\n如果你朗讀一句話時，在從屬子句前聽到停頓，通常就要用 which；如果沒有停頓，則用 that。你可以回頭讀前面兩句例句，第一句在從屬子句前有停頓嗎？\n「which」前面要加逗號，「that」前面則不加逗號。\n\n下一單元： 清單與表格",
+    "crumbs": [
+      "簡短的句子 (20 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/words/index.html",
+    "href": "one/words/index.html",
+    "title": "字詞",
+    "section": "",
+    "text": "預估時間： 10 分鐘\n我們對文件進行了廣泛的研究，結果發現，世界上最好的句子主要由字詞（words）組成。",
+    "crumbs": [
+      "字詞 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/words/index.html#定義新的或不熟悉的術語",
+    "href": "one/words/index.html#定義新的或不熟悉的術語",
+    "title": "字詞",
+    "section": "定義新的或不熟悉的術語",
+    "text": "定義新的或不熟悉的術語\n在撰寫或編輯時，要學會辨識目標讀者中某些人或所有人可能不熟悉的術語。當你發現這樣的術語時，請採取以下兩種策略之一：\n\n如果該術語已存在，請連結到一個好的現有解釋。（不要重新發明輪子。）\n如果你的文件是首次介紹該術語，請定義它。如果你的文件介紹了許多術語，請將定義收集到一個詞彙表中。",
+    "crumbs": [
+      "字詞 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/words/index.html#一致地使用術語",
+    "href": "one/words/index.html#一致地使用術語",
+    "title": "字詞",
+    "section": "一致地使用術語",
+    "text": "一致地使用術語\n如果你在方法的中間某處更改了變數的名稱，你的程式碼將無法編譯。同樣，如果你在文件當中重新命名了某個術語，你的想法也將無法（在使用者的腦袋裡）通過編譯。\n重點：在整份文件中始終如一地使用相同的、明確的詞彙或術語。一旦你將一個元件命名為 thingy，就不要將其重新命名為 thingamabob。例如，以下段落錯誤地將 Protocol Buffers 重新命名為 protobufs：\n\nProtocol Buffers (or protobufs for short) provide their own definition language. Blah, blah, blah. And that’s why protobufs have won so many county fairs.\nProtocol Buffers 提供了他們自己的定義語言。……（中間省略），這就是為什麼 protobufs 能在這麼多科技博覽會上勝出的原因。\n\nGoogle 軟體工程師 George Fairbanks 提供了關於一致命名的絕佳註解：\n\n\n\n\n\n\n「當我遇到兩個似乎是同義詞的詞時，我會懷疑作者是否試圖暗示某種細微的差異，要我留意追查和理解。」\n\n\n\n是的，技術寫作確實很殘酷，限制也很多，但至少它提供了一個很好的變通方法。也就是說，在介紹一個冗長的概念名稱或產品名稱時，你可以指定該名稱的縮寫版本。然後，你可以在整個文件中使用該縮寫名稱。例如，以下段落是沒有問題的：\n\nProtocol Buffers（簡稱 protobufs）提供了自己的定義語言。……（中間省略），這就是為什麼 protobufs 能在這麼多科技博覽會上勝出的原因。",
+    "crumbs": [
+      "字詞 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/words/index.html#正確使用首字母縮寫",
+    "href": "one/words/index.html#正確使用首字母縮寫",
+    "title": "字詞",
+    "section": "正確使用首字母縮寫",
+    "text": "正確使用首字母縮寫\n在文件或章節中首次使用不熟悉的首字母縮寫（acronym）時，請先寫出全稱，然後將縮寫放在括號中。全稱和縮寫都以粗體顯示。例如：\n\nThis document is for engineers who are new to the Telekinetic Tactile Network (TTN) or need to understand how to order TTN replacement parts through finger motions.\n本文件適用於剛接觸 Telekinetic Tactile Network (TTN) 的工程師，或需要瞭解如何透過手指動作訂購 TTN 替換零件的人員。\n\n之後你便可以使用該縮寫，如下例所示：\n\nIf no cache entry exists, the Mixer calls the OttoGroup Server (OGS) to fetch Ottos for the request. The OGS is a repository that holds all servable Ottos. The OGS is organized in a logical tree structure, with a root node and two levels of leaf nodes. The OGS root forwards the request to the leaves and collects the responses.\n如果快取中沒有條目，混合器會呼叫 OttoGroup 伺服器 (OGS) 來為請求獲取 Ottos。OGS 是一個存放所有可提供 Ottos 的儲存庫。OGS 以邏輯樹狀結構組織，有一個根節點和兩層葉節點。OGS 根節點將請求轉發到葉節點並收集回應。\n\n不要在同一份文件中來回交替使用縮寫和全稱。\n\n使用縮寫還是全稱？\n當然，你可以正確地介紹和使用首字母縮寫，但你應該使用縮寫嗎？嗯，縮寫確實可以縮短句子長度。例如，TTN 比 Telekinetic Tactile Network 少了兩個詞。然而，縮寫實際上只是一層抽象；讀者必須在腦中將最近學到的縮寫擴展為全名。例如，讀者在腦中將 TTN 轉換為 Telekinetic Tactile Network，所以「較短」的縮寫實際上比全名需要更長的時間來處理。\n大量使用的首字母縮寫會發展出自己的身份。在出現多次後，讀者通常會停止將縮寫擴展為全名。例如，許多網頁開發人員已經忘記 HTML 的全名是什麼。\n以下是首字母縮寫詞的使用準則：\n\n不要定義只會使用幾次的縮寫詞。\n若同時滿足以下兩個條件，便可以定義縮寫詞：\n\n縮寫明顯短於全稱。\n縮寫在文件中出現多次。\n\n\n\n\n練習\n\nJeff Dean invented MapReduce in 1693, implementing the algorithm on a silicon-based computer fabricated from beach sand, wax-paper, a quill pen, and a toaster oven. This version of MR held several world performance records until 2014.\n\n(Please note that the preceding passage is meant to be humorous, not factual.)\n請修正以下段落。假設這是文件中第一次出現 MapReduce，且 MR 是最適合的縮寫：\n\nJeff Dean 於 1693 年發明了 MapReduce（簡稱 MR），並在一台以沙灘砂、蠟紙、羽毛筆和烤麵包機製成的電腦上實作了這個演算法。這個版本的 MR 曾保持多項世界效能紀錄，直到 2014 年為止。\n\n（請注意，以上內容純屬幽默，並非事實。）\n\n\n\n\n\n\n\nNote點我看答案\n\n\n\n\n\n你可以採用幾種不同的方式來處理這段文字。一種做法是將縮寫 MR 與完整術語建立關聯，然後在後文使用該縮寫：\n\nJeff Dean 於 1693 年發明了 MapReduce（MR）……這個版本的 MR 曾保持多項……\n\n另一種做法是，考量在這麼短的段落中定義縮寫會增加讀者的負擔，故每次都使用完整術語 MapReduce：\n\nJeff Dean 於 1693 年發明了 MapReduce……這個版本的 MapReduce 曾保持多項……\n\n順帶一提，一位更講究的技術寫作員也會將「沙灘砂、蠟紙、羽毛筆和烤麵包機」轉換成項目符號清單。不過，這就是另一堂課要講的內容了。",
+    "crumbs": [
+      "字詞 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "one/words/index.html#辨識模稜兩可的代名詞",
+    "href": "one/words/index.html#辨識模稜兩可的代名詞",
+    "title": "字詞",
+    "section": "辨識模稜兩可的代名詞",
+    "text": "辨識模稜兩可的代名詞\n許多代名詞指向先前介紹過的名詞。這樣的代名詞類似於程式設計中的指標。就像程式設計中的指標一樣，代名詞也容易引發錯誤。不當使用代名詞會在讀者的腦中造成相當於空指標錯誤的認知問題。在許多情況下，你應該直接避免使用代名詞，而只是重複使用名詞。然而，有時代名詞的實用性超過了其風險（如此句所示）。\n請考慮以下代名詞指南：\n\n只在介紹了名詞之後才使用代名詞；絕不要在介紹名詞之前使用代名詞。\n將代名詞放置在盡可能靠近其所指的名詞的地方。一般來說，如果你的名詞和代名詞之間相隔超過五個詞，請考慮重複使用名詞而不是使用代名詞。\n如果你在你的名詞和代名詞之間引入了第二個名詞，請重複使用你的名詞而不是使用代名詞。\n\n\nIt 和 they\n以下代名詞在技術文件中最容易引起混淆：\n\nIt\nThey、them、和 their\n\n例如，在下面的句子中，It 是指 Python 還是 C++？\n\nPython is interpreted, while C++ is compiled. It has an almost cult-like following.\nPython 是直譯式的，而 C++ 是編譯式的。它擁有一批近乎狂熱的追隨者。\n\n再舉一個例子，下面句子中的 their 是指什麼？\n\nBe careful when using Frambus or Carambola with HoobyScooby or BoiseFram because a bug in their core may cause accidental mass unfriending.\n當使用 Frambus 或 Carambola 搭配 HoobyScooby 或 BoiseFram 時要小心，因為它們的核心中的一個錯誤可能會導致意外的大規模解除好友關係。\n\n\n\nThis 和 that\n再考慮兩個有問題的代名詞：\n\nThis\nThat\n\n例如，在下面這個模稜兩可的句子中，This 可能指使用者 ID、執行該程序，或兩者皆有：\n\nRunning the process configures permissions and generates a user ID. This lets users authenticate to the app.\n執行該程序會設定權限並產生一個使用者 ID。這讓使用者可以向應用程式進行身份驗證。\n\n為了幫助讀者理解，請避免以不清楚所指為何的寫法來使用 this 或 that。你可以採用以下任一策略來釐清模糊的 this 和 that 用法：\n\n將 this 或 that 替換為適當的名詞。\n在 this 或 that 之後立即接上一個名詞。\n\n請視需要來替換或補充明確的詞語，如以下對範例第二句的改寫：\n\nThis user ID lets users authenticate.\nThe process of configuring permissions lets users authenticate.\nThe combination of permissions and a user ID lets users authenticate.\n\n\n\n練習\n請找出下列段落中所有可能的模糊代名詞所指為何。\n\nAparna and Phil share responsibilities with Maysam and Karan and they are next on call. （Aparna 和 Phil 與 Maysam 及 Karan 共同分擔責任，而他們是下一個待命的人。）\nYou may import Carambola data via your configuration file or dynamically at run time. This may be a security risk.  （您可以透過設定檔匯入 Carambola 資料，或在執行時動態匯入。這可能會帶來安全風險。）\n\n\n\n\n\n\n\n\nNote點我看答案\n\n\n\n\n\n\n代名詞 they 可能指：\n\n\nAparna 和 Phil\nMaysam 和 Karan\nAparna、Phil、Maysam 和 Karan（全部）\n任一個人，作為單數中性的「they」 \n\n\n代名詞 this 可能指：\n\n\n透過設定檔進行匯入\n在執行階段動態匯入\n兩者皆是\n\n\n\n\n\n下一單元： 主動語態 vs. 被動語態",
+    "crumbs": [
+      "字詞 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "two/illustrations/index.html",
+    "href": "two/illustrations/index.html",
+    "title": "製作插圖",
+    "section": "",
+    "text": "預估時間： 10 分鐘\n還記得老師曾經指定你閱讀一整大章的課本內容嗎？你翻著那段指定的課文，心裡懇求著……沒錯，要有圖！看插圖總是比讀文字有趣多了。事實上，當我們在閱讀技術內容時，大多數的大人其實就像小孩一樣——依然期待圖片，而不是一大堆文字。\n圖片來源：Nirmal Dulal CC BY-SA 4.0\n根據 Sung 和 Mayer（2012 年）的研究，不論圖像品質好壞，只要有圖，讀者對文件的好感就會提升；但只有具有教學功能的圖像，才真正有助於學習。本單元將提供幾種方法，幫助你製作出真正「勝過千言萬語」的圖表。",
+    "crumbs": [
+      "製作插圖 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "two/illustrations/index.html#先寫圖說",
+    "href": "two/illustrations/index.html#先寫圖說",
+    "title": "製作插圖",
+    "section": "先寫圖說",
+    "text": "先寫圖說\n在製作插圖之前，先寫出圖說，往往會很有幫助。接著再依照圖說的內容，設計最能呈現其意義的圖像。這樣的流程可以幫助你確認插圖是否符合原本的目的。\n一個好的圖說應該具備以下幾個特點：\n\n簡潔扼要：通常只需要幾個字就夠了。\n說明重點：讀者看完這張圖後，應該記住什麼？\n引導讀者聚焦：尤其當照片或圖表包含大量細節時，圖說可以幫助讀者掌握重點。\n\n注意： 依照慣例，圖說通常放在圖表的下方。\n\n練習\n目標讀者：正在修習「資料結構導論」課程的資工系大學生。\n請看以下三張圖，每一張都使用了相同的圖說。\n\n\n圖說 A. 單向鏈結串列的節點會儲存資料內容，以及指向下一個節點的參考。\n\n\n圖說 B. 單向鏈結串列的節點會儲存資料內容，以及指向下一個節點的參考。\n\n\n圖說 C. 單向鏈結串列的節點會儲存資料內容，以及指向下一個節點的參考。\n\n上述三張圖中，哪一張最能清楚表現其圖說？\n\n\n\n\n\n\nNote點我看答案\n\n\n\n\n\n\n圖 A 很差。鏈條看起來漂亮，但沒有提供任何資訊。而且這條鏈還錯誤地暗示單向鏈結串列同時指向前後節點。\n圖 B 還可以。插圖幫助學生理解第一個節點指向第二個，第二個節點指向第三個，依此類推。但雖然圖說提到節點包含內容和指標，這張圖只顯示了指標，卻沒有呈現內容。\n圖 C 是最佳且最具教學意義的選擇。插圖清楚區分每個節點的內容部分與指標部分。",
+    "crumbs": [
+      "製作插圖 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "two/illustrations/index.html#限制單張圖中的資訊量",
+    "href": "two/illustrations/index.html#限制單張圖中的資訊量",
+    "title": "製作插圖",
+    "section": "限制單張圖中的資訊量",
+    "text": "限制單張圖中的資訊量\n很少有智力活動能像欣賞一幅優秀畫作那樣令人滿足，隨著時間推移，逐步發掘出層層的洞見與意涵。人會花大錢專程到世界各地的美術館去做這件事。\n\n圖 2. 你會很樂意細細品味這幅梵谷的畫作。 來源：Portrait of Pere Tanguy By Vincent van Gogh - Musée Rodin Public domain\n\n相較之下，像以下這種高度複雜的技術插圖，往往會讓大多數讀者感到卻步：\n\n\n圖 3. 複雜的方塊圖會讓讀者感到負擔過重。\n\n\n就像你會避免使用過長的句子一樣，也要盡量避免視覺上的冗長複雜。一般原則是：不要在單一圖表中放入超過一段文字量的資訊。（或者採用此規則：避免使用需要超過五個重點項目才能解釋清楚的插圖。）我聽到你心裡想說：「但真實世界的技術系統通常比圖 3 更複雜得多。」你說得沒錯，不過你也不會期望用一段文字就能解釋清楚現實中複雜的系統。\n將視覺雜亂化繁為簡、變得有條理且有幫助的秘訣，是把複雜系統拆解成子系統，就像下面這張圖所示：\n\n圖 4. 一個複雜系統被拆解成三個子系統。\n\n在展示「整體架構」之後，請分別提供各個子系統的獨立插圖。\n\n圖 5. 複雜系統中某個子系統的詳細展開圖。\n另一種做法是，先從簡單的「整體架構」（big picture）開始，然後在後續的每張插圖中逐步展開細節。",
+    "crumbs": [
+      "製作插圖 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "two/illustrations/index.html#聚焦讀者注意力",
+    "href": "two/illustrations/index.html#聚焦讀者注意力",
+    "title": "製作插圖",
+    "section": "聚焦讀者注意力",
+    "text": "聚焦讀者注意力\n當面對像以下這種複雜的截圖時，讀者往往難以判斷哪些部分是重點：\n\n圖 6. 讀者不知道該聚焦在哪裡。\n\n加入視覺提示，例如下面圖中的紅色橢圓，有助於引導讀者聚焦截圖中的重點區域：\n\n圖 7. 讀者會聚焦在打破既有模式的形狀上。\n\n標註（Callouts） 是另一種引導讀者注意力的好方法。對於照片或線條圖來說，註解能幫助我們的視線精準落在重點位置。標註通常比冗長的文字說明更有效，因為它們直接聚焦在圖中最重要的部分。這樣你在解說時，就能直接針對圖表的相關區域說明，而不用花時間描述你在講的是圖的哪一部分。\n如以下範例圖，標註與箭頭能迅速引導讀者理解該部分的用途。\n\n圖 8. 標註能引導讀者的視線。  來源：NASA / JPL-Caltech / University of Arizona [Public domain]",
+    "crumbs": [
+      "製作插圖 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "two/illustrations/index.html#繪圖就是重繪",
+    "href": "two/illustrations/index.html#繪圖就是重繪",
+    "title": "製作插圖",
+    "section": "繪圖就是重繪",
+    "text": "繪圖就是重繪\n就像寫作一樣，插圖的第一版很少能一次到位。你需要不斷修改，讓圖像內容更清楚。在修訂插圖時，可以問自己以下幾個問題：\n\n我可以怎麼簡化這張圖？\n這張圖是否應該拆成兩張或更多簡單的圖？\n圖中的文字好閱讀嗎？文字與背景的對比是否足夠清楚？\n這張圖的重點是什麼？\n\n舉例來說，可以參考倫敦地鐵圖的演進過程。1931 年以前的地鐵圖是按照實際比例繪製的，包含地面道路，地鐵線也隨著軌道彎曲而彎曲。\n\n圖 9. 1908 年按比例繪製的倫敦地鐵圖，包含地面道路。 來源：[Public domain]\n\n1931 年，Harry Beck 開創了一種全新的大眾運輸地圖風格。他的設計大幅簡化了舊有地圖，移除了地面標示與比例尺，轉而專注於地圖使用者真正關心的事情：如何從 A 站到 B 站。即使 1931 年的地圖已經獲得成功，Beck 仍在接下來多年持續修改圖表，使其更加簡潔明瞭。看看現在的地鐵圖，儘管新增了許多路線與車站，整體設計仍大致延續 Beck 的風格。\n\n練習\n請看以下這張原始插圖：\n\n圖 10. 一張複雜的圖表。\n\n上述圖表的重點應該是：\n\n對於遞迴解法，在 return 敘述中呼叫函式本身，直到達到基礎情況為止。\n\n圖表的複雜性是如何掩蓋這個重點的？你可以如何解決這些問題？\n\n\n\n\n\n\nNote點我看答案\n\n\n\n\n\n這張圖表可能存在以下幾個問題：\n\n問題：亮色過於搶眼，轉移了讀者對圖表其他部分的注意力。 解決方式：謹慎選擇色彩，避免讓顏色主導整張圖表。\n問題：圖表的色彩對比不足，對於視力較弱或某些色盲使用者來說，可能難以辨識。 解決方式：移除不必要的色彩使用，並確保所用顏色符合標準的色彩對比建議。\n問題：箭頭指向雙向，讓圖表的流程方向變得不清楚。 解決方式：將箭頭分成兩組，一組表示函式的呼叫過程，另一組表示函式的回傳過程。\n\n此外，這張圖表中還有其他未被指出的問題。\n\n\n\n\n\n以下是一張改良後的插圖：\n\n圖 11. 前述圖表的簡化版本。\n\n你在改良後的插圖中看到了哪些缺點？\n\n\n\n\n\n\nNote點我看答案\n\n\n\n\n\n以下是仍然存在的兩個缺點：\n\n這張圖仍然過於複雜，解釋它可能需要超過一段文字。可以考慮移除多餘資訊或增加說明標籤，以簡化理解。\n雖然將箭頭分開有助於呈現函式何時呼叫與回傳資料，但回傳箭頭若能加上標籤說明回傳值內容，會更有幫助。",
+    "crumbs": [
+      "製作插圖 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "two/illustrations/index.html#繪圖工具",
+    "href": "two/illustrations/index.html#繪圖工具",
+    "title": "製作插圖",
+    "section": "繪圖工具",
+    "text": "繪圖工具\n市面上有許多繪製圖表的選擇，以下三款是免費或提供免費方案的工具：\n\nGoogle Drawings\ndiagrams.net\nLucidChart\n\n欲在文件中使用從這些工具匯出的圖片時，通常建議匯出為可縮放向量圖形（SVG）格式。SVG 格式能依據空間大小調整圖像比例，不論尺寸如何，都能保持高品質。\n\n下個單元： 建立範例程式碼",
+    "crumbs": [
+      "製作插圖 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "two/introduction/index.html",
+    "href": "two/introduction/index.html",
+    "title": "簡介",
+    "section": "",
+    "text": "這是 Google 技術寫作課程（中文版） 的第二部分，旨在協助技術人員提升技術溝通能力。",
+    "crumbs": [
+      "簡介 (2 分鐘)"
+    ]
+  },
+  {
+    "objectID": "two/introduction/index.html#目標讀者",
+    "href": "two/introduction/index.html#目標讀者",
+    "title": "簡介",
+    "section": "目標讀者",
+    "text": "目標讀者\n本課程針對已完成 《技術寫作一》 且仍渴望進一步技術寫作訓練的人士設計。如果您從未接受過任何技術寫作訓練，建議先完成 技術寫作一 再參加本課程。",
+    "crumbs": [
+      "簡介 (2 分鐘)"
+    ]
+  },
+  {
+    "objectID": "two/introduction/index.html#學習目標",
+    "href": "two/introduction/index.html#學習目標",
+    "title": "簡介",
+    "section": "學習目標",
+    "text": "學習目標\n本課程著重於技術寫作的幾個中階主題。完成本課程後，您將能夠做到以下事項：\n\n選擇多種不同策略來撰寫初稿，以及撰寫第二稿和第三稿的額外策略。\n使用多種技巧來偵測自己寫作中的錯誤。\n組織大型文件。\n介紹文件的範圍及任何先決條件。\n撰寫清晰的圖表說明。\n在技術插圖中選擇適當的資訊密度。\n在插圖中聚焦讀者的注意力。\n透過「大局觀」插圖建立背景。\n有效地修訂技術插圖。\n創建有用、準確、簡潔、清晰、可重複使用且註解完善的範例程式碼，展示各種複雜度。\n識別不同的文件類型。\n描述幾乎任何事物。\n對初學者抱持同理心，為他們撰寫教學文章。\n\n成為優秀的工程師或技術寫作者需要多年的專注練習。本課程將提升你的技術寫作能力，但不會立即讓你成為優秀的技術寫作者。",
+    "crumbs": [
+      "簡介 (2 分鐘)"
+    ]
+  },
+  {
+    "objectID": "two/introduction/index.html#課前與課堂內容",
+    "href": "two/introduction/index.html#課前與課堂內容",
+    "title": "簡介",
+    "section": "課前與課堂內容",
+    "text": "課前與課堂內容\n本課程包含以下兩個部分：\n\n課前（pre-class）\n課內（in-class）\n\n您目前正在觀看課前部分的開始。\n課內部分強化了課前部分所教授的課程。不過，僅靠課前課程本身仍能提供有價值的學習體驗。\n\n\n\n\n\n\nNote譯註\n\n\n\n原線上課程提供的就是 pre-class 的內容，是一套自學教材。至於 in-class 的內容，指的是有講師帶領，以投影片介紹，並增加一些課堂練習和小組討論。我覺得光是自行研讀 pre-class 的內容就能學到許多技術寫作的基本功。",
+    "crumbs": [
+      "簡介 (2 分鐘)"
+    ]
+  },
+  {
+    "objectID": "two/introduction/index.html#硬體與網路需求",
+    "href": "two/introduction/index.html#硬體與網路需求",
+    "title": "簡介",
+    "section": "硬體與網路需求",
+    "text": "硬體與網路需求\n雖然本課程最佳化於筆記型電腦或桌上型電腦，但您也可以使用平板或手機修課。如果您參加課堂內部分，請注意您將會大量打字。\n您需要網路連線才能參加課程。您無法下載課程內容。課程不提供實體媒介。\n課程包含幾段短影片，都是選修內容。如果不看影片，便可以在低頻寬的網路連線下研讀課程內容。\n\n\n下一單元： 自我編輯",
+    "crumbs": [
+      "簡介 (2 分鐘)"
+    ]
+  },
+  {
+    "objectID": "two/sample-code/index.html",
+    "href": "two/sample-code/index.html",
+    "title": "建立範例程式碼",
+    "section": "",
+    "text": "預估時間： 10 分鐘\n好的範例程式碼往往是最好的文件。即使你的段落和清單寫得再清楚，程式設計師仍然偏好優質的範例程式碼。畢竟，文字和程式碼是不同的語言，而讀者真正關心的是程式碼本身。試著用文字解釋程式碼，就像用英文解釋一首義大利詩一樣困難。\n好的範例程式碼應該是正確且簡潔的，讓讀者能夠快速理解、輕鬆重複使用，且帶來的副作用最小。",
+    "crumbs": [
+      "建立範例程式碼 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "two/sample-code/index.html#正確",
+    "href": "two/sample-code/index.html#正確",
+    "title": "建立範例程式碼",
+    "section": "正確",
+    "text": "正確\n範例程式碼應符合以下標準：\n\n能夠正確編譯，不產生錯誤。\n能執行其宣稱要完成的任務。\n盡可能達到生產環境可用的水準（production-ready），例如程式碼不應有安全漏洞。\n遵循語言特有的慣例。\n\n範例程式碼是直接影響使用者如何寫程式的機會。因此，範例程式碼應該展示使用產品的最佳方式。如果針對同一任務有多種寫法，請以團隊共同決定的最佳方法來撰寫。如果團隊尚未討論過各種方法的優缺點，建議花時間進行評估。\n一定要測試你的範例程式碼。隨著時間推移，系統會變動，範例程式碼可能會失效。請準備像維護其他程式碼那樣維護範例程式碼。\n許多團隊會重複使用單元測試作為範例程式，這有時並非好主意。單元測試的主要目標是測試；而範例程式碼的唯一目標是教學。\n程式碼片段（snippet） 是範例程式碼中的一小段，可能只有一行或幾行。大量使用 snippet 的文件通常會隨著時間腐敗，因為團隊往往不會像測試完整範例程式那樣嚴格測試 snippets。\n\n執行範例程式碼\n好的文件會說明如何執行範例程式碼。例如，文件可能需要告訴使用者在執行範例之前，先完成以下操作：\n\n安裝某個函式庫。\n調整特定環境變數的值。\n在整合開發環境（IDE）中進行相關設定。\n\n使用者不一定都能正確執行上述步驟。在某些情況下，使用者更喜歡直接在文件中執行（或實驗）範例程式碼（「點這裡執行程式碼」）。\n文件作者應考慮描述範例程式碼的預期輸出或結果，尤其是那些不易執行的範例。",
+    "crumbs": [
+      "建立範例程式碼 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "two/sample-code/index.html#簡潔",
+    "href": "two/sample-code/index.html#簡潔",
+    "title": "建立範例程式碼",
+    "section": "簡潔",
+    "text": "簡潔\n範例程式碼應該簡短，只包含必要的部分。當一位初學 C 語言的程式設計師想學習如何呼叫 malloc 函式時，給他一段簡短的程式碼片段就好，而不是整個 Linux 原始碼。無關的程式碼會令讀者分散注意力並產生困惑。不過，千萬不要為了簡短而採用不好的寫法；正確永遠比簡潔更重要。",
+    "crumbs": [
+      "建立範例程式碼 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "two/sample-code/index.html#易懂",
+    "href": "two/sample-code/index.html#易懂",
+    "title": "建立範例程式碼",
+    "section": "易懂",
+    "text": "易懂\n請遵循以下建議來撰寫清晰的範例程式碼：\n\n選擇具描述性的類別、方法和變數名稱。\n避免用難以理解的程式技巧來混淆讀者。\n避免過度巢狀的程式碼。\n（非必要）使用粗體或彩色字體來吸引讀者注意範例程式碼中的特定區域。但請謹慎使用強調效果——過多強調反而會讓讀者無法專注於任何特定內容。\n\n\n\n\n\n\n\nNote譯者補充\n\n\n\n關於在文件中加入強調效果，有一句話是這麼說的:「到處都畫重點，就等於沒有重點。」\n\n\n\n練習\n以下哪一行程式碼對於剛接觸 go.so API 的軟體工程師來說更有幫助？\n\nMyLevel = go.so.Level(5, 28, 48)\nMyLevel = go.so.Level(rank=5, 28, 48)\nMyLevel = go.so.Level(rank=5, dimension=28, opacity=48)\n\n\n\n\n\n\n\n\nNote點我看答案\n\n\n\n\n\n這題的最佳答案是選項 3。雖然將範例程式碼寫得越短越好很有吸引力，但省略參數名稱會讓初學者更難理解學習內容。",
+    "crumbs": [
+      "建立範例程式碼 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "two/sample-code/index.html#註解",
+    "href": "two/sample-code/index.html#註解",
+    "title": "建立範例程式碼",
+    "section": "註解",
+    "text": "註解\n關於範例程式碼中的註解，請參考以下建議：\n\n註解要簡短，但始終以清晰優先於簡潔。\n避免為直白的程式碼寫註解，但請記住，你（專家）覺得顯而易見的事，對新手來說可能並不明顯。\n把撰寫註解的心力放在那些不直觀的程式碼上。\n當讀者對某項技術非常熟悉時，不要解釋程式碼「在做什麼」，而是解釋「為什麼這麼做」。\n\n程式碼的說明應該要放在程式碼註解中，還是放在程式碼外的文字區塊（段落或清單）？請注意，讀者在複製貼上程式碼片段時，不僅會複製程式碼，也會複製其中的註解。所以，任何需要在貼上程式碼時一併出現的說明都應該寫在程式註解裡。相反地，當你必須解釋冗長或複雜的概念時，通常應將說明文字放在範例程式碼之前。\n注意： 如果你打算犧牲生產環境的完成度來讓程式碼更簡短且易於理解，請在註解中說明你的考量。\n\n練習\n以下程式碼片段中的註解有哪些問題？假設程式碼是給剛接觸 br API，但已有串流概念的程式設計師看的：\n/* Create a stream from the text file at pathname /tmp/myfile. */\nmystream = br.openstream(pathname=\"/tmp/myfile\", mode=\"z\")\n\n\n\n\n\n\n\nNote點我看答案\n\n\n\n\n\n此註解有以下缺點：\n\n註解詳細說明了程式碼中相當直觀的部分。\n此程式碼片段並未解釋不直觀的部分。也就是說， mode 參數是什麼，以及參數值為 z 意味著什麼？",
+    "crumbs": [
+      "建立範例程式碼 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "two/sample-code/index.html#可重複使用",
+    "href": "two/sample-code/index.html#可重複使用",
+    "title": "建立範例程式碼",
+    "section": "可重複使用",
+    "text": "可重複使用\n為了讓讀者能輕鬆重複使用您的範例程式碼，請提供以下內容：\n\n執行範例程式碼所需的所有資訊，包括相依性與設定步驟。\n具有可擴充或可客製化功能的程式碼。\n\n擁有簡潔、易懂且能通過編譯的範例程式碼是個好開始，但如果程式碼會導致讀者的應用程式崩潰，讀者肯定不會開心。因此，撰寫範例程式碼時，請考慮你的程式碼整合到其他程式中可能產生的任何副作用。沒有人想要不安全或極度低效率的程式碼。",
+    "crumbs": [
+      "建立範例程式碼 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "two/sample-code/index.html#範例與反例",
+    "href": "two/sample-code/index.html#範例與反例",
+    "title": "建立範例程式碼",
+    "section": "範例與反例",
+    "text": "範例與反例\n除了告訴讀者「該怎麼做」之外，有時也應該示範「不該怎麼做」。例如，許多程式語言允許程式設計師在等號兩邊放置空白，但如果你正在寫的語法教學文件是類似 bash 這種不允許等號兩邊有空白的語言，此時同時展示正確與錯誤的範例對讀者會很有幫助。例如：\n\n# 合法的字串賦值。\ns=\"The rain in Maine.\"\n\n# 因為等號兩邊有空白，這是不合法的字串賦值。\ns = \"The rain in Maine.\"",
+    "crumbs": [
+      "建立範例程式碼 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "two/sample-code/index.html#程式碼範例的順序",
+    "href": "two/sample-code/index.html#程式碼範例的順序",
+    "title": "建立範例程式碼",
+    "section": "程式碼範例的順序",
+    "text": "程式碼範例的順序\n一組好的範例程式碼應該展示不同層次的複雜度。\n對某項技術完全陌生的讀者，通常渴望簡單的入門範例。範例程式碼組合中的第一個、且最基本的範例通常稱為 Hello World 程式。掌握基礎後，工程師會想要更複雜的範例。一組好的範例程式會涵蓋簡單、中等和複雜的程式範例。\n\n練習\n以下哪一組範例函式最適合用於教導新手函式概念的教學？\n\n以下函式組合：\n\n一個不帶參數且不回傳任何值的函式。\n一個帶有一個參數但不回傳任何值的函式。\n一個接受一個參數並返回一個值的函式。\n一個接受三個參數並返回一個值的函式。\n\n以下函式組合：\n\n一個接受三個參數並返回一個值的函式。\n\n以下函式組合：\n\n一個接受一個參數並返回一個值的函式。\n一個接受三個參數並返回一個值的函式。\n\n\n\n\n\n\n\n\n\nNote點我看答案\n\n\n\n\n\n最佳答案是 1。提供涵蓋不同複雜度的範例通常是最明智的選擇——尤其是對新手而言。請避免急於跳過新手和中階範例而直接進入非常複雜的範例程式，因為新手正需要這些基礎範例。",
+    "crumbs": [
+      "建立範例程式碼 (10 分鐘)"
+    ]
+  },
+  {
+    "objectID": "two/sample-code/index.html#下一步",
+    "href": "two/sample-code/index.html#下一步",
+    "title": "建立範例程式碼",
+    "section": "下一步？",
+    "text": "下一步？\n恭喜你完成《技術寫作二》的課前研讀。\n如果你的組織有開設《技術寫作二》的實體課程，請務必參加。如果你想協助帶領這門課，請參考 講師指南 (英文)。\n《技術寫作二》課程所有主題的重點都已彙整在總結頁面。",
+    "crumbs": [
+      "建立範例程式碼 (10 分鐘)"
+    ]
+  }
+]

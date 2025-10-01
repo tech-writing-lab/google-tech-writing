@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>夠用的文法（選修） – Google 技術寫作課程（中文版）</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-f51c272a2f4c83fe11dbb6c50710fcd0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-d9187543ecde748190aa88f54bd3410e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-f51c272a2f4c83fe11dbb6c50710fcd0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../one/just-enough-grammar/index.html">夠用的文法（選修）(10 分鐘)</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../../index.html" class="sidebar-logo-link">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../">技術寫作一</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../one/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">技術寫作一</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../one/introduction/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">簡介 (3 分鐘)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../one/just-enough-grammar/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">夠用的文法（選修）(10 分鐘)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../one/words/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">字詞 (10 分鐘)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../one/active-voice/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">主動語態 vs.&nbsp;被動語態 (15 分鐘)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../one/clear-sentences/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">清晰的句子 (10 分鐘)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../one/short-sentences/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">簡短的句子 (20 分鐘)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../one/lists-and-tables/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">清單與表格 (15 分鐘)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../one/paragraphs/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">段落 (10 分鐘)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../one/audience/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">目標讀者 (10 分鐘)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../one/documents/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">文件 (10 分鐘)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../one/punctuation/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">標點符號（選修）(5 分鐘)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../one/markdown/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Markdown (選修)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../one/summary/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">總結 (1 分鐘)</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#名詞" id="toc-名詞" class="nav-link active" data-scroll-target="#名詞">名詞</a>
+  <ul class="collapse">
+  <li><a href="#ex1" id="toc-ex1" class="nav-link" data-scroll-target="#ex1">練習</a></li>
+  </ul></li>
+  <li><a href="#代名詞" id="toc-代名詞" class="nav-link" data-scroll-target="#代名詞">代名詞</a>
+  <ul class="collapse">
+  <li><a href="#ex2" id="toc-ex2" class="nav-link" data-scroll-target="#ex2">練習</a></li>
+  </ul></li>
+  <li><a href="#動詞" id="toc-動詞" class="nav-link" data-scroll-target="#動詞">動詞</a>
+  <ul class="collapse">
+  <li><a href="#練習" id="toc-練習" class="nav-link" data-scroll-target="#練習">練習</a></li>
+  </ul></li>
+  <li><a href="#形容詞和副詞" id="toc-形容詞和副詞" class="nav-link" data-scroll-target="#形容詞和副詞">形容詞和副詞</a>
+  <ul class="collapse">
+  <li><a href="#ex3" id="toc-ex3" class="nav-link" data-scroll-target="#ex3">練習</a></li>
+  </ul></li>
+  <li><a href="#介係詞" id="toc-介係詞" class="nav-link" data-scroll-target="#介係詞">介係詞</a>
+  <ul class="collapse">
+  <li><a href="#ex4" id="toc-ex4" class="nav-link" data-scroll-target="#ex4">練習</a></li>
+  </ul></li>
+  <li><a href="#連接詞和轉折語" id="toc-連接詞和轉折語" class="nav-link" data-scroll-target="#連接詞和轉折語">連接詞和轉折語</a>
+  <ul class="collapse">
+  <li><a href="#ex5" id="toc-ex5" class="nav-link" data-scroll-target="#ex5">練習</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">夠用的文法（選修）</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p><strong>預估時間：</strong> 10 分鐘</p>
+</blockquote>
+<p>本單元提供了足夠的文法知識，以便您理解本課程的其餘部分。如果您已經了解一些文法，請繼續閱讀〈<a href="../../one/words/index.html">字詞</a>〉單元。否則，請繼續閱讀。</p>
+<p>為求簡潔，本單元抄了一些捷徑；文法主題實際上比本單元所建議的要複雜得多。</p>
+<p>文法學家對於詞類的數量或類型並非全都意見一致。下表著重於與本課程相關的詞類：</p>
+<table class="table-striped table-hover caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 45%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">詞類</th>
+<th style="text-align: left;">定義</th>
+<th style="text-align: left;">範例</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>名詞</strong></td>
+<td style="text-align: left;">人、地、概念或事物</td>
+<td style="text-align: left;"><strong>Sam</strong> runs <strong>races</strong>.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>代名詞</strong></td>
+<td style="text-align: left;">取代另一個名詞（或更大結構）的名詞</td>
+<td style="text-align: left;">Sam runs races. <strong>He</strong> likes to compete.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>形容詞</strong></td>
+<td style="text-align: left;">修飾名詞的單字或片語</td>
+<td style="text-align: left;">Sam wears <strong>blue</strong> shoes.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>動詞</strong></td>
+<td style="text-align: left;">動作的單字或片語</td>
+<td style="text-align: left;">Sam <strong>runs</strong> races.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>副詞</strong></td>
+<td style="text-align: left;">修飾動詞、形容詞或其他副詞的單字或片語</td>
+<td style="text-align: left;">Sam runs <strong>slowly</strong>.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>介係詞</strong></td>
+<td style="text-align: left;">指定兩個名詞位置關係的單字或片語</td>
+<td style="text-align: left;">Sam’s sneakers are seldom <strong>on</strong> his shelf.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>連接詞</strong></td>
+<td style="text-align: left;">連接兩個名詞或片語的單字</td>
+<td style="text-align: left;">Sam’s trophies <strong>and</strong> ribbons live only in his imagination.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>轉折語</strong></td>
+<td style="text-align: left;">連接兩個句子的單字或片語</td>
+<td style="text-align: left;">Sam runs races weekly. <strong>However</strong>, he finishes races weakly.</td>
+</tr>
+</tbody>
+</table>
+<section id="名詞" class="level2">
+<h2 class="anchored" data-anchor-id="名詞">名詞</h2>
+<p>名詞代表人、地或事物。<strong>Judy</strong>、<strong>Antarctica</strong> 和 <strong>hammers</strong> 都是名詞，但像 <strong>robustness</strong> 和 <strong>perfection</strong> 等無形的概念也是名詞。在下面的範例段落中，我們將名詞以粗體格式顯示：</p>
+<blockquote class="blockquote">
+<p>In the <strong>framework</strong>, an <strong>object</strong> must copy any underlying <strong>values</strong> that the <strong>object</strong> wants to change. The <strong>protocol buffers</strong> in the <strong>codebase</strong> are huge, so copying the <strong>protocol buffers</strong> is unacceptably expensive.</p>
+<p>在此<strong>框架</strong>中，<strong>物件</strong>必須複製<strong>物件</strong>想要變更的任何底層<strong>值</strong>。<strong>程式庫</strong>中的<strong>通訊協定緩衝區</strong>很大，因此複製<strong>通訊協定緩衝區</strong>的成本高得令人無法接受。</p>
+</blockquote>
+<p>在程式設計中，您可以將類別和變數視為程式的名詞。</p>
+<section id="ex1" class="level3">
+<h3 class="anchored" data-anchor-id="ex1">練習</h3>
+<p>請找出以下段落中的六個名詞：</p>
+<blockquote class="blockquote">
+<p>C enables programmers to control pointers and memory. Great power brings great responsibility.</p>
+<p>C 讓程式設計師能夠控制指標和記憶體。強大的能力帶來重大的責任。</p>
+</blockquote>
+<p><br></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>點我看答案
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><br><strong>C</strong> enables <strong>programmers</strong> to control <strong>pointers</strong> and <strong>memory</strong>. Great <strong>power</strong> brings great <strong>responsibility</strong>.</p>
+<p>現在假設第二個句子如下：</p>
+<blockquote class="blockquote">
+<p>Great control brings great responsibility.</p>
+</blockquote>
+<p>這裡的「control」是動詞還是名詞？</p>
+<p>在這種情況下，「control」是名詞，即使在第一個句子中「to control」是動詞。英語中的許多單字在某些情況下是名詞，在其他情況下是動詞。</p>
+</div>
+</div>
+</div>
+<p><br></p>
+</section>
+</section>
+<section id="代名詞" class="level2">
+<h2 class="anchored" data-anchor-id="代名詞">代名詞</h2>
+<p>代名詞是一個間接層——指向或替代其他名詞或句子的指標。例如，請看以下兩個句子：</p>
+<blockquote class="blockquote">
+<p>Janet writes great code. <strong>She</strong> is a senior staff engineer.</p>
+<p>Janet 寫出很棒的程式碼。<strong>她</strong>是一位資深工程師。</p>
+</blockquote>
+<p>在前面的範例中，第一個句子確立了 Janet 作為一個名詞。第二個句子用代名詞 <strong>She</strong> 取代了名詞 Janet。</p>
+<p>在下面的範例中，代名詞 <strong>This</strong> 取代了整個句子：</p>
+<blockquote class="blockquote">
+<p>Most applications aren’t sufficiently tested. <strong>This</strong> is poor engineering.</p>
+<p>大多數應用程式都沒有經過充分的測試。<strong>這</strong>是糟糕的工程。</p>
+</blockquote>
+<section id="ex2" class="level3">
+<h3 class="anchored" data-anchor-id="ex2">練習</h3>
+<p>請找出以下段落中的三個代名詞：</p>
+<blockquote class="blockquote">
+<p>The cafeteria featured peanut butter and plum jam on rye toast. Employees found it awesome and wished they could eat this every day.</p>
+<p>餐廳的特色是裸麥吐司配花生醬和李子醬。員工覺得它很棒，希望他們每天都能吃到這個。</p>
+</blockquote>
+<p><br></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>點我看答案
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The cafeteria featured peanut butter and plum jam on rye toast. Employees found <strong>it</strong> awesome and wished <strong>they</strong> could eat <strong>this</strong> every day.</p>
+</div>
+</div>
+</div>
+<p><br></p>
+</section>
+</section>
+<section id="動詞" class="level2">
+<h2 class="anchored" data-anchor-id="動詞">動詞</h2>
+<p>動詞是表示動作的單字或片語。當您想表示兩個名詞（一個執行者和一個目標）之間的關係時，動詞就發揮作用了。動詞標示出執行者對目標做了什麼。</p>
+<p>每個句子都必須至少包含一個動詞。例如，以下每個句子都包含一個動詞：</p>
+<ul>
+<li>Sakai <strong>prefers</strong> pasta.</li>
+<li>Rick <strong>likes</strong> the ocean.</li>
+<li>Smurfs <strong>are</strong> blue.</li>
+<li>Jess <strong>suffers</strong> from allergies.</li>
+</ul>
+<p>有些句子，例如以下句子，包含多個動詞：</p>
+<ul>
+<li>Nala <strong>suffers</strong> from allergies and <strong>sneezes</strong> constantly.</li>
+<li>The program <strong>runs</strong> slowly but <strong>fails</strong> quickly.</li>
+</ul>
+<p>根據時態和詞形變化，動詞可以由一個或多個單字組成。例如：</p>
+<ul>
+<li>Tina <strong>was eating</strong> breakfast a few hours ago.</li>
+<li>Tina <strong>is eating</strong> lunch right now.</li>
+<li>Tina <strong>will eat</strong> dinner tonight at 7:00.</li>
+</ul>
+<section id="練習" class="level3">
+<h3 class="anchored" data-anchor-id="練習">練習</h3>
+<p>請找出以下段落中的動詞：</p>
+<blockquote class="blockquote">
+<p>Samantha is coding Operation Bullwinkle in C++. This project currently consumes over 80,000 lines of code. She previously used Python, but recently gravitated to C++. Samantha leads a team of four software engineers, which will grow to six software engineers next quarter.</p>
+<p>Samantha 正在用 C++ 編寫 Bullwinkle 行動。這個專案目前消耗了超過 80,000 行程式碼。她以前使用 Python，但最近被 C++ 所吸引。Samantha 領導一個由四名軟體工程師組成的團隊，下一季將增加到六名軟體工程師。</p>
+</blockquote>
+<p><br></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>點我看答案
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Samantha <strong>is coding</strong> Operation Bullwinkle in C++. This project currently <strong>consumes</strong> over 80,000 lines of code. She previously <strong>used</strong> Python, but recently <strong>gravitated</strong> to C++. Samantha <strong>leads</strong> a team of four software engineers, which will <strong>grow</strong> to six software engineers next quarter.</p>
+</div>
+</div>
+</div>
+<p><br></p>
+</section>
+</section>
+<section id="形容詞和副詞" class="level2">
+<h2 class="anchored" data-anchor-id="形容詞和副詞">形容詞和副詞</h2>
+<p>形容詞修飾名詞。例如，在下面的段落中，請注意形容詞如何修飾後面的名詞：</p>
+<ul>
+<li>Tom likes <strong>red</strong> balloons. He prepares <strong>delicious</strong> food. He fixed <strong>eight</strong> bugs at work. <br> Tom 喜歡<strong>紅色</strong>的氣球。他準備了<strong>美味</strong>的食物。他在工作上修復了<strong>八個</strong>錯誤。</li>
+</ul>
+<p>大多數副詞修飾動詞。例如，請注意以下句子中的副詞（efficiently）如何修飾動詞（fixes）：</p>
+<ul>
+<li>Jane <strong>efficiently</strong> fixes bugs. <br> Jane <strong>有效率地</strong>修復錯誤。</li>
+</ul>
+<p>副詞不一定緊鄰其動詞。例如，在以下句子中，副詞（efficiently）與動詞（fixes）之間隔了兩個字：</p>
+<ul>
+<li>Jane fixes bugs <strong>efficiently</strong>.</li>
+</ul>
+<p>副詞也可以修飾形容詞或其他副詞。</p>
+<section id="ex3" class="level3">
+<h3 class="anchored" data-anchor-id="ex3">練習</h3>
+<p>請找出以下段落中的四個形容詞：</p>
+<blockquote class="blockquote">
+<p>Engineering is a great career for a brilliant mind. I know a clever engineer who could excel at any intellectual task.</p>
+<p>對於一個聰明的人來說，工程是一個很棒的職業。我認識一位聰明的工程師，他可以在任何智力任務中表現出色。</p>
+</blockquote>
+<p><br></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>點我看答案
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Engineering is a <strong>great</strong> career for a <strong>brilliant</strong> mind. I know a <strong>clever</strong> engineer who could excel at any <strong>intellectual</strong> task.</p>
+</div>
+</div>
+</div>
+<p><br></p>
+</section>
+</section>
+<section id="介係詞" class="level2">
+<h2 class="anchored" data-anchor-id="介係詞">介係詞</h2>
+<p>介係詞指定兩件事物之間的關係。有些介係詞回答「這個東西相對於那個東西在哪裡？」的問題。例如：</p>
+<ul>
+<li>The submenu lies <strong>under</strong> the menu.</li>
+<li>The definition appears <strong>next to</strong> the term.</li>
+<li>The print function falls <strong>within</strong> the main routine.</li>
+</ul>
+<p>其他介係詞回答「這個事件相對於那個事件是什麼時候？」的問題。例如：</p>
+<ul>
+<li>The program evaluates the addition operation <strong>before</strong> evaluating the subtraction operation. <br> 程式在評估減法運算<strong>之前</strong>評估加法運算。</li>
+<li>The cron daemon executes the script every Tuesday <strong>at</strong> noon. <br> cron 服務在每個星期二中午執行該腳本。</li>
+</ul>
+<p>一些介係詞（例如，<strong>by</strong> 和 <strong>of</strong>）回答有關關係的其他類型的問題。例如，以下句子使用 <strong>by</strong> 來關聯一本書及其作者：</p>
+<ul>
+<li>The C Programming Language <strong>by</strong> Kernighan and Richie remains popular.</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>注意：
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>英語中的一些單字屬於多個文法類別。例如，雖然 <strong>under</strong> 通常是介係詞，但根據上下文，<strong>under</strong> 也可以用作副詞或形容詞。</p>
+</div>
+</div>
+<section id="ex4" class="level3">
+<h3 class="anchored" data-anchor-id="ex4">練習</h3>
+<p>請找出以下段落中的兩個介係詞：</p>
+<blockquote class="blockquote">
+<p>Parameters may optionally appear within a URL, after the path.</p>
+</blockquote>
+<p><br></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>點我看答案
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Parameters may optionally appear <strong>within</strong> a URL, <strong>after</strong> the path.</p>
+</div>
+</div>
+</div>
+<p><br></p>
+</section>
+</section>
+<section id="連接詞和轉折語" class="level2">
+<h2 class="anchored" data-anchor-id="連接詞和轉折語">連接詞和轉折語</h2>
+<p>連接詞連接句子中的片語或名詞；轉折語則連接句子本身。</p>
+<p>最重要的連接詞如下：</p>
+<ul>
+<li>And (和)</li>
+<li>But (但是)</li>
+<li>Or (或者)</li>
+</ul>
+<p>例如，在以下句子中，<strong>and</strong> 連接了「code」和「documentation」，而 <strong>but</strong> 則連接了句子的前半部分和後半部分。</p>
+<blockquote class="blockquote">
+<p>Olivia writes great internal code <strong>and</strong> documentation <strong>but</strong> seldom works on open-source projects.</p>
+<p>Olivia 寫出很棒的內部程式碼<strong>和</strong>文件，<strong>但是</strong>很少從事開源專案。</p>
+</blockquote>
+<p>技術寫作中最重要的轉折語如下：</p>
+<ul>
+<li>However (然而)</li>
+<li>Therefore (因此)</li>
+<li>For example (例如)</li>
+</ul>
+<p>例如，在下面的段落中，請注意轉折語如何連接和情境化句子：</p>
+<blockquote class="blockquote">
+<p>Juan is a wonderful coder. <strong>However</strong>, he rarely writes sufficient tests. <strong>For example</strong>, Juan coded a 5,000 line FFT package that contained only a single 10-line unit test.</p>
+<p>Juan 是一位出色的程式設計師。<strong>然而</strong>，他很少寫足夠的測試。<strong>例如</strong>，Juan 編寫了一個 5,000 行的 FFT 套件，其中只包含一個 10 行的單元測試。</p>
+</blockquote>
+<section id="ex5" class="level3">
+<h3 class="anchored" data-anchor-id="ex5">練習</h3>
+<p>請填入最合適的轉折語：</p>
+<blockquote class="blockquote">
+<p>Barbara typically studies problems for a long time before writing the first line of code. _____________, she spontaneously coded a method the other day when she was suddenly inspired.</p>
+<p>Barbara 通常在寫第一行程式碼之前會花很長時間研究問題。_____________，有一天她突然受到啟發，自發地編寫了一個方法。</p>
+</blockquote>
+<p><br></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>點我看答案
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>這種情況下最好的轉折語如下：</p>
+<p><strong>However</strong> (然而)</p>
+</div>
+</div>
+</div>
+<p><br></p>
+<p><strong>下一單元：</strong> <a href="../../one/words/index.html">字詞</a></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

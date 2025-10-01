@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>製作插圖 – Google 技術寫作課程（中文版）</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-f51c272a2f4c83fe11dbb6c50710fcd0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-d9187543ecde748190aa88f54bd3410e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-f51c272a2f4c83fe11dbb6c50710fcd0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../two/illustrations/index.html">製作插圖 (10 分鐘)</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../../index.html" class="sidebar-logo-link">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../">技術寫作二</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../two/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">技術寫作二</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../two/introduction/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">簡介 (2 分鐘)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../two/editing/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">自我編輯 (10 分鐘)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../two/large-docs/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">組織大型文件 (20 分鐘)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../two/illustrations/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">製作插圖 (10 分鐘)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../two/sample-code/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">建立範例程式碼 (10 分鐘)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../two/summary/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">總結 (1 分鐘)</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#先寫圖說" id="toc-先寫圖說" class="nav-link active" data-scroll-target="#先寫圖說">先寫圖說</a>
+  <ul class="collapse">
+  <li><a href="#ex1" id="toc-ex1" class="nav-link" data-scroll-target="#ex1">練習</a></li>
+  </ul></li>
+  <li><a href="#限制單張圖中的資訊量" id="toc-限制單張圖中的資訊量" class="nav-link" data-scroll-target="#限制單張圖中的資訊量">限制單張圖中的資訊量</a></li>
+  <li><a href="#聚焦讀者注意力" id="toc-聚焦讀者注意力" class="nav-link" data-scroll-target="#聚焦讀者注意力">聚焦讀者注意力</a></li>
+  <li><a href="#繪圖就是重繪" id="toc-繪圖就是重繪" class="nav-link" data-scroll-target="#繪圖就是重繪">繪圖就是重繪</a>
+  <ul class="collapse">
+  <li><a href="#ex2" id="toc-ex2" class="nav-link" data-scroll-target="#ex2">練習</a></li>
+  </ul></li>
+  <li><a href="#繪圖工具" id="toc-繪圖工具" class="nav-link" data-scroll-target="#繪圖工具">繪圖工具</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">製作插圖</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><strong>預估時間：</strong> 10 分鐘</p>
+<p>還記得老師曾經指定你閱讀一整大章的課本內容嗎？你翻著那段指定的課文，心裡懇求著……沒錯，要有圖！看插圖總是比讀文字有趣多了。事實上，當我們在閱讀技術內容時，大多數的大人其實就像小孩一樣——依然期待圖片，而不是一大堆文字。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/book_readers.jpg" class="img-fluid figure-img" alt="Three children read a book while pointing at the pictures."></p>
+<figcaption>圖 1. 好的圖像能以文字無法達到的方式吸引讀者。</figcaption>
+</figure>
+</div>
+<p>圖片來源：Nirmal Dulal <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a></p>
+<p><br></p>
+<p>根據 <a href="https://www.sciencedirect.com/science/article/pii/S0747563212000921">Sung 和 Mayer（2012 年）的研究</a>，不論圖像品質好壞，只要有圖，讀者對文件的好感就會提升；但只有具有教學功能的圖像，才真正有助於學習。本單元將提供幾種方法，幫助你製作出真正「勝過千言萬語」的圖表。</p>
+<section id="先寫圖說" class="level2">
+<h2 class="anchored" data-anchor-id="先寫圖說">先寫圖說</h2>
+<p>在製作插圖之前，先寫出圖說，往往會很有幫助。接著再依照圖說的內容，設計最能呈現其意義的圖像。這樣的流程可以幫助你確認插圖是否符合原本的目的。</p>
+<p>一個好的圖說應該具備以下幾個特點：</p>
+<ul>
+<li><strong>簡潔扼要</strong>：通常只需要幾個字就夠了。</li>
+<li><strong>說明重點</strong>：讀者看完這張圖後，應該記住什麼？</li>
+<li><strong>引導讀者聚焦</strong>：尤其當照片或圖表包含大量細節時，圖說可以幫助讀者掌握重點。</li>
+</ul>
+<p><strong>注意：</strong> 依照慣例，圖說通常放在圖表的下方。</p>
+<section id="ex1" class="level3">
+<h3 class="anchored" data-anchor-id="ex1">練習</h3>
+<p>目標讀者：正在修習「資料結構導論」課程的資工系大學生。</p>
+<p>請看以下三張圖，每一張都使用了相同的圖說。</p>
+<p><br></p>
+<p><img src="images/caption_exercise_chain_a.png" class="img-fluid" alt="Multicolored chain" width="500"></p>
+<p><strong>圖說 A. 單向鏈結串列的節點會儲存資料內容，以及指向下一個節點的參考。</strong></p>
+<p><br><br></p>
+<p><img src="images/caption_exercise_drawing_b.png" class="img-fluid" alt="Four boxes connected by three arrows" width="480"></p>
+<p><strong>圖說 B. 單向鏈結串列的節點會儲存資料內容，以及指向下一個節點的參考。</strong></p>
+<p><br></p>
+<p><img src="images/caption_exercise_drawing_c.svg" class="img-fluid" alt="Four boxes (each with content and a pointer) connected by three arrows." width="700"></p>
+<p><strong>圖說 C. 單向鏈結串列的節點會儲存資料內容，以及指向下一個節點的參考。</strong></p>
+<p><br></p>
+<p>上述三張圖中，哪一張最能清楚表現其圖說？</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>點我看答案
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>圖 A</strong> 很差。鏈條看起來漂亮，但沒有提供任何資訊。而且這條鏈還錯誤地暗示單向鏈結串列同時指向前後節點。</li>
+<li><strong>圖 B</strong> 還可以。插圖幫助學生理解第一個節點指向第二個，第二個節點指向第三個，依此類推。但雖然圖說提到節點包含內容和指標，這張圖只顯示了指標，卻沒有呈現內容。</li>
+<li><strong>圖 C</strong> 是最佳且最具教學意義的選擇。插圖清楚區分每個節點的內容部分與指標部分。</li>
+</ul>
+</div>
+</div>
+</div>
+<p><br></p>
+</section>
+</section>
+<section id="限制單張圖中的資訊量" class="level2">
+<h2 class="anchored" data-anchor-id="限制單張圖中的資訊量">限制單張圖中的資訊量</h2>
+<p>很少有智力活動能像欣賞一幅優秀畫作那樣令人滿足，隨著時間推移，逐步發掘出層層的洞見與意涵。人會花大錢專程到世界各地的美術館去做這件事。</p>
+<p><img src="images/van_gogh.jpg" class="img-fluid" alt="Portrait of Pere Tanguy By Vincent van Gogh - Musée Rodin"></p>
+<p><strong>圖 2. 你會很樂意細細品味這幅梵谷的畫作。</strong><br> 來源：Portrait of Pere Tanguy By Vincent van Gogh - Musée Rodin <a href="https://commons.wikimedia.org/w/index.php?curid=119599">Public domain</a></p>
+<p><br></p>
+<p>相較之下，像以下這種高度複雜的技術插圖，往往會讓大多數讀者感到卻步：</p>
+<p><img src="images/overly_complex_diagram.svg" class="img-fluid" alt="A schematic, filled with lines and small print"></p>
+<div class="center">
+<p><strong>圖 3. 複雜的方塊圖會讓讀者感到負擔過重。</strong></p>
+</div>
+<p><br></p>
+<p>就像你會避免使用過長的句子一樣，也要盡量避免視覺上的冗長複雜。一般原則是：不要在單一圖表中放入超過一段文字量的資訊。（或者採用此規則：避免使用需要超過五個重點項目才能解釋清楚的插圖。）我聽到你心裡想說：「但真實世界的技術系統通常比圖 3 更複雜得多。」你說得沒錯，不過你也不會期望用一段文字就能解釋清楚現實中複雜的系統。</p>
+<p>將視覺雜亂化繁為簡、變得有條理且有幫助的秘訣，是把複雜系統拆解成子系統，就像下面這張圖所示：</p>
+<p><img src="images/subsystems.svg" class="img-fluid" width="640"></p>
+<p><strong>圖 4. 一個複雜系統被拆解成三個子系統。</strong></p>
+<p><br></p>
+<p>在展示「整體架構」之後，請分別提供各個子系統的獨立插圖。</p>
+<p><img src="images/subsystems_zoomed.svg" class="img-fluid" width="840"></p>
+<p><strong>圖 5. 複雜系統中某個子系統的詳細展開圖。</strong></p>
+<p>另一種做法是，先從簡單的「整體架構」（big picture）開始，然後在後續的每張插圖中逐步展開細節。</p>
+</section>
+<section id="聚焦讀者注意力" class="level2">
+<h2 class="anchored" data-anchor-id="聚焦讀者注意力">聚焦讀者注意力</h2>
+<p>當面對像以下這種複雜的截圖時，讀者往往難以判斷哪些部分是重點：</p>
+<p><img src="images/unfocused_screenshot.png" class="img-fluid" width="540"></p>
+<p><strong>圖 6. 讀者不知道該聚焦在哪裡。</strong></p>
+<p><br></p>
+<p>加入視覺提示，例如下面圖中的紅色橢圓，有助於引導讀者聚焦截圖中的重點區域：</p>
+<p><img src="images/focused_screenshot.png" class="img-fluid" width="540"></p>
+<p><strong>圖 7. 讀者會聚焦在打破既有模式的形狀上。</strong></p>
+<p><br></p>
+<p><strong>標註（Callouts）</strong> 是另一種引導讀者注意力的好方法。對於照片或線條圖來說，註解能幫助我們的視線精準落在重點位置。標註通常比冗長的文字說明更有效，因為它們直接聚焦在圖中最重要的部分。這樣你在解說時，就能直接針對圖表的相關區域說明，而不用花時間描述你在講的是圖的哪一部分。</p>
+<p>如以下範例圖，標註與箭頭能迅速引導讀者理解該部分的用途。</p>
+<p><img src="images/moon_with_callout.svg" class="img-fluid" width="600"></p>
+<p><strong>圖 8. 標註能引導讀者的視線。</strong> <br> 來源：<a href="https://commons.wikimedia.org/wiki/File:Phobos_colour_2008.jpg">NASA / JPL-Caltech / University of Arizona [Public domain]</a></p>
+</section>
+<section id="繪圖就是重繪" class="level2">
+<h2 class="anchored" data-anchor-id="繪圖就是重繪">繪圖就是重繪</h2>
+<p>就像寫作一樣，插圖的第一版很少能一次到位。你需要不斷修改，讓圖像內容更清楚。在修訂插圖時，可以問自己以下幾個問題：</p>
+<ul>
+<li>我可以怎麼簡化這張圖？</li>
+<li>這張圖是否應該拆成兩張或更多簡單的圖？</li>
+<li>圖中的文字好閱讀嗎？文字與背景的對比是否足夠清楚？</li>
+<li>這張圖的重點是什麼？</li>
+</ul>
+<p>舉例來說，可以參考<a href="https://wikipedia.org/wiki/Tube_map#History">倫敦地鐵圖的演進過程</a>。1931 年以前的地鐵圖是按照實際比例繪製的，包含地面道路，地鐵線也隨著軌道彎曲而彎曲。</p>
+<p><img src="images/tube_1908.jpg" class="img-fluid"></p>
+<p><strong>圖 9. 1908 年按比例繪製的倫敦地鐵圖，包含地面道路。</strong> 來源：<a href="https://commons.wikimedia.org/wiki/File:Tube_map_1908.jpg">[Public domain]</a></p>
+<p><br></p>
+<p>1931 年，Harry Beck 開創了一種全新的大眾運輸地圖風格。他的設計大幅簡化了舊有地圖，移除了地面標示與比例尺，轉而專注於地圖使用者真正關心的事情：如何從 A 站到 B 站。即使 1931 年的地圖已經獲得成功，Beck 仍在接下來多年持續修改圖表，使其更加簡潔明瞭。看看<a href="https://www.google.com/search?tbm=isch&amp;q=london+tube+map">現在的地鐵圖</a>，儘管新增了許多路線與車站，整體設計仍大致延續 Beck 的風格。</p>
+<section id="ex2" class="level3">
+<h3 class="anchored" data-anchor-id="ex2">練習</h3>
+<p>請看以下這張原始插圖：</p>
+<p><img src="images/recursion1.svg" class="img-fluid" width="360"></p>
+<p><strong>圖 10. 一張複雜的圖表。</strong></p>
+<p><br></p>
+<p>上述圖表的重點應該是：</p>
+<blockquote class="blockquote">
+<p>對於遞迴解法，在 <code>return</code> 敘述中呼叫函式本身，直到達到基礎情況為止。</p>
+</blockquote>
+<p>圖表的複雜性是如何掩蓋這個重點的？你可以如何解決這些問題？</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>點我看答案
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>這張圖表可能存在以下幾個問題：</p>
+<ul>
+<li><p><strong>問題</strong>：亮色過於搶眼，轉移了讀者對圖表其他部分的注意力。<br> <strong>解決方式</strong>：謹慎選擇色彩，避免讓顏色主導整張圖表。</p></li>
+<li><p><strong>問題</strong>：圖表的色彩對比不足，對於視力較弱或某些色盲使用者來說，可能難以辨識。<br> <strong>解決方式</strong>：移除不必要的色彩使用，並確保所用顏色符合<a href="https://material.io/design/color/text-legibility.html#legibility-standards">標準的色彩對比建議</a>。</p></li>
+<li><p><strong>問題</strong>：箭頭指向雙向，讓圖表的流程方向變得不清楚。<br> <strong>解決方式</strong>：將箭頭分成兩組，一組表示函式的呼叫過程，另一組表示函式的回傳過程。</p></li>
+</ul>
+<p>此外，這張圖表中還有其他未被指出的問題。</p>
+</div>
+</div>
+</div>
+<p><br></p>
+<hr>
+<p>以下是一張改良後的插圖：</p>
+<p><img src="images/recursion2.svg" class="img-fluid" width="360"></p>
+<p><strong>圖 11. 前述圖表的簡化版本。</strong></p>
+<p><br></p>
+<p>你在改良後的插圖中看到了哪些缺點？</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>點我看答案
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>以下是仍然存在的兩個缺點：</p>
+<ul>
+<li>這張圖仍然過於複雜，解釋它可能需要超過一段文字。可以考慮移除多餘資訊或增加說明標籤，以簡化理解。</li>
+<li>雖然將箭頭分開有助於呈現函式何時呼叫與回傳資料，但回傳箭頭若能加上標籤說明回傳值內容，會更有幫助。</li>
+</ul>
+</div>
+</div>
+</div>
+<p><br></p>
+<hr>
+</section>
+</section>
+<section id="繪圖工具" class="level2">
+<h2 class="anchored" data-anchor-id="繪圖工具">繪圖工具</h2>
+<p>市面上有許多繪製圖表的選擇，以下三款是免費或提供免費方案的工具：</p>
+<ul>
+<li><a href="https://drawings.google.com/">Google Drawings</a></li>
+<li><a href="https://diagrams.net/">diagrams.net</a></li>
+<li><a href="https://www.lucidchart.com/pages/">LucidChart</a></li>
+</ul>
+<p>欲在文件中使用從這些工具匯出的圖片時，通常建議匯出為<a href="https://wikipedia.org/wiki/Scalable_Vector_Graphics">可縮放向量圖形</a>（SVG）格式。SVG 格式能依據空間大小調整圖像比例，不論尺寸如何，都能保持高品質。</p>
+<p><br></p>
+<p><strong>下個單元：</strong> <a href="../../two/sample-code/index.html">建立範例程式碼</a></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>主動語態 vs.&nbsp;被動語態 – Google 技術寫作課程（中文版）</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-f51c272a2f4c83fe11dbb6c50710fcd0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-d9187543ecde748190aa88f54bd3410e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-f51c272a2f4c83fe11dbb6c50710fcd0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../one/active-voice/index.html">主動語態 vs.&nbsp;被動語態 (15 分鐘)</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../../index.html" class="sidebar-logo-link">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../">技術寫作一</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../one/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">技術寫作一</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../one/introduction/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">簡介 (3 分鐘)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../one/just-enough-grammar/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">夠用的文法（選修）(10 分鐘)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../one/words/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">字詞 (10 分鐘)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../one/active-voice/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">主動語態 vs.&nbsp;被動語態 (15 分鐘)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../one/clear-sentences/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">清晰的句子 (10 分鐘)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../one/short-sentences/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">簡短的句子 (20 分鐘)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../one/lists-and-tables/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">清單與表格 (15 分鐘)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../one/paragraphs/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">段落 (10 分鐘)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../one/audience/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">目標讀者 (10 分鐘)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../one/documents/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">文件 (10 分鐘)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../one/punctuation/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">標點符號（選修）(5 分鐘)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../one/markdown/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Markdown (選修)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../one/summary/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">總結 (1 分鐘)</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#區分簡單句中的主動與被動語態" id="toc-區分簡單句中的主動與被動語態" class="nav-link active" data-scroll-target="#區分簡單句中的主動與被動語態">區分簡單句中的主動與被動語態</a>
+  <ul class="collapse">
+  <li><a href="#主動語態範例" id="toc-主動語態範例" class="nav-link" data-scroll-target="#主動語態範例">主動語態範例</a></li>
+  <li><a href="#被動語態範例" id="toc-被動語態範例" class="nav-link" data-scroll-target="#被動語態範例">被動語態範例</a></li>
+  </ul></li>
+  <li><a href="#辨識被動動詞" id="toc-辨識被動動詞" class="nav-link" data-scroll-target="#辨識被動動詞">辨識被動動詞</a>
+  <ul class="collapse">
+  <li><a href="#祈使動詞通常是主動的" id="toc-祈使動詞通常是主動的" class="nav-link" data-scroll-target="#祈使動詞通常是主動的">祈使動詞通常是主動的</a></li>
+  <li><a href="#練習" id="toc-練習" class="nav-link" data-scroll-target="#練習">練習</a></li>
+  </ul></li>
+  <li><a href="#區分複雜句子中的主動與被動語態" id="toc-區分複雜句子中的主動與被動語態" class="nav-link" data-scroll-target="#區分複雜句子中的主動與被動語態">區分複雜句子中的主動與被動語態</a>
+  <ul class="collapse">
+  <li><a href="#練習-1" id="toc-練習-1" class="nav-link" data-scroll-target="#練習-1">練習</a></li>
+  </ul></li>
+  <li><a href="#偏好使用主動語態" id="toc-偏好使用主動語態" class="nav-link" data-scroll-target="#偏好使用主動語態">偏好使用主動語態</a>
+  <ul class="collapse">
+  <li><a href="#科學研究報告選修" id="toc-科學研究報告選修" class="nav-link" data-scroll-target="#科學研究報告選修">科學研究報告（選修）</a></li>
+  <li><a href="#練習-2" id="toc-練習-2" class="nav-link" data-scroll-target="#練習-2">練習</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">主動語態 vs.&nbsp;被動語態</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p><strong>預估時間：</strong> 15 分鐘</p>
+</blockquote>
+<p>技術寫作中的絕大多數句子都應該使用主動語態。本單元將教您如何做到以下幾點：</p>
+<ul>
+<li>區分被動語態與主動語態。</li>
+<li>將被動語態轉換為主動語態，因為主動語態通常更清晰。</li>
+</ul>
+<section id="區分簡單句中的主動與被動語態" class="level2">
+<h2 class="anchored" data-anchor-id="區分簡單句中的主動與被動語態">區分簡單句中的主動與被動語態</h2>
+<div style="text-align: center;">
+<div class="quarto-video"><iframe data-external="1" src="https://www.youtube.com/embed/nG6DhoFt938" width="540" height="370" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</div>
+<p>在主動語態的句子中，一個動作者（actor）對一個目標採取行動。也就是說，一個主動語態的句子遵循以下公式：</p>
+<pre class="text"><code>主動語態句 = 動作者 + 動詞 + 目標</code></pre>
+<p>被動語態的句子則顛倒了這個公式。也就是說，一個被動語態的句子通常遵循以下公式：</p>
+<pre class="text"><code>被動語態句 = 目標 + 動詞 + 動作者</code></pre>
+<section id="主動語態範例" class="level3">
+<h3 class="anchored" data-anchor-id="主動語態範例">主動語態範例</h3>
+<p>例如，這是一個簡短的主動語態句子：</p>
+<blockquote class="blockquote">
+<p>The cat sat on the mat. (貓坐在墊子上。)</p>
+</blockquote>
+<ul>
+<li><strong>動作者：</strong> The cat (貓)</li>
+<li><strong>動詞：</strong> sat (坐)</li>
+<li><strong>目標：</strong> the mat (墊子)</li>
+</ul>
+</section>
+<section id="被動語態範例" class="level3">
+<h3 class="anchored" data-anchor-id="被動語態範例">被動語態範例</h3>
+<p>相比之下，這是同一個句子的被動語態形式：</p>
+<blockquote class="blockquote">
+<p>The mat was sat on by the cat. (墊子被貓坐著。)</p>
+</blockquote>
+<ul>
+<li><strong>目標：</strong> The mat (墊子)</li>
+<li><strong>被動動詞：</strong> was sat (被坐)</li>
+<li><strong>動作者：</strong> the cat (貓)</li>
+</ul>
+<p>有些被動語態的句子會省略動作者。例如：</p>
+<blockquote class="blockquote">
+<p>The mat was sat on. (墊子被坐著。)</p>
+</blockquote>
+<ul>
+<li><strong>動作者：</strong> 未知</li>
+<li><strong>被動動詞：</strong> was sat (被坐)</li>
+<li><strong>目標：</strong> the mat (墊子)</li>
+</ul>
+<p>是誰或什麼東西坐在墊子上？一隻貓？一隻狗？一隻暴龍？讀者只能猜測。好的技術文件會明確指出是誰對誰做了什麼。</p>
+</section>
+</section>
+<section id="辨識被動動詞" class="level2">
+<h2 class="anchored" data-anchor-id="辨識被動動詞">辨識被動動詞</h2>
+<p>被動動詞通常具有以下公式：</p>
+<pre><code>被動動詞 = be 的一種形式 + 過去分詞</code></pre>
+<p>雖然前面的公式看起來令人生畏，但實際上非常簡單：</p>
+<ul>
+<li>被動動詞中 <em>be 的形式</em> 通常是以下單詞之一：
+<ul>
+<li>is / are</li>
+<li>was / were</li>
+</ul></li>
+<li>過去分詞動詞通常是一個普通動詞加上後綴 <em>ed</em>。例如，以下是過去分詞動詞：
+<ul>
+<li>interpreted</li>
+<li>generated</li>
+<li>formed</li>
+</ul></li>
+</ul>
+<p>不幸的是，有些過去分詞動詞是不規則的；也就是說，過去分詞形式不以 <em>ed</em> 結尾。例如：</p>
+<ul>
+<li>sat</li>
+<li>known</li>
+<li>frozen</li>
+</ul>
+<p>將 <em>be</em> 的形式和過去分詞放在一起，就產生了被動動詞，例如：</p>
+<ul>
+<li>was interpreted</li>
+<li>is generated</li>
+<li>was formed</li>
+<li>is frozen</li>
+</ul>
+<p>如果片語中包含動作者，通常會在被動動詞後面跟一個介詞。（該介詞通常是幫助您發現被動語態的關鍵線索。）以下範例結合了被動動詞和介詞：</p>
+<ul>
+<li>was interpreted as</li>
+<li>is generated by</li>
+<li>was formed by</li>
+<li>is frozen by</li>
+</ul>
+<section id="祈使動詞通常是主動的" class="level3">
+<h3 class="anchored" data-anchor-id="祈使動詞通常是主動的">祈使動詞通常是主動的</h3>
+<p>人們很容易將以祈使動詞開頭的句子誤歸類為被動句。<strong>祈使動詞</strong> (imperative verb) 是命令。編號列表中的許多項目都以祈使動詞開頭。例如，以下列表中的 <strong>Open</strong> 和 <strong>Set</strong> 都是祈使動詞：</p>
+<ol type="1">
+<li>Open the configuration file. (打開設定檔。)</li>
+<li>Set the <code>Frombus</code> variable to <code>False</code>. (將 <code>Frombus</code> 變數設為 <code>False</code>。)</li>
+</ol>
+<p>以祈使動詞開頭的句子通常是主動語態，即使它們沒有明確提及動作者。相反，以祈使動詞開頭的句子暗示了一個動作者。這個被暗示的動作者就是<strong>你</strong>。</p>
+</section>
+<section id="練習" class="level3">
+<h3 class="anchored" data-anchor-id="練習">練習</h3>
+<p>將以下每個句子標記為<strong>被動語態</strong>或<strong>主動語態</strong>：</p>
+<ol type="1">
+<li>MutableInput provides read-only access.</li>
+<li>Read-only access is provided by MutableInput.</li>
+<li>Performance was measured.</li>
+<li>Python was invented by Guido van Rossum in the twentieth century.</li>
+<li>David Korn discovered the KornShell quite by accident.</li>
+<li>This information is used by the policy enforcement team.</li>
+<li>Click the Submit button.</li>
+<li>The orbit was calculated by Katherine Johnson.</li>
+</ol>
+<p><br></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>點我看答案
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><strong>[主動]</strong> MutableInput provides read-only access.</li>
+<li><strong>[被動]</strong> Read-only access is provided by MutableInput.</li>
+<li><strong>[被動]</strong> Performance was measured.</li>
+<li><strong>[被動]</strong> Python was invented by Guido van Rossum in the twentieth century.</li>
+<li><strong>[主動]</strong> David Korn discovered the KornShell quite by accident.</li>
+<li><strong>[被動]</strong> This information is used by the policy enforcement team.</li>
+<li><strong>[主動]</strong> Click the Submit button.</li>
+<li><strong>[被動]</strong> The orbit was calculated by Katherine Johnson.</li>
+</ol>
+</div>
+</div>
+</div>
+<p><br></p>
+</section>
+</section>
+<section id="區分複雜句子中的主動與被動語態" class="level2">
+<h2 class="anchored" data-anchor-id="區分複雜句子中的主動與被動語態">區分複雜句子中的主動與被動語態</h2>
+<p>許多句子包含多個動詞，其中一些是主動的，一些是被動的。例如，以下句子包含兩個動詞，兩者都處於被動語態：</p>
+<blockquote class="blockquote">
+<p>Code <strong>is interpreted</strong> by Python, but code <strong>is compiled</strong> by C++.</p>
+<p>(程式碼由 Python 解譯，但程式碼由 C++ 編譯。)</p>
+</blockquote>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/passive-passive.svg" class="img-fluid quarto-figure quarto-figure-center figure-img" width="730"></p>
+</figure>
+</div>
+<p>以下是相同句子，部分轉換為主動語態：</p>
+<blockquote class="blockquote">
+<p>Python <strong>interprets</strong> code, but code <strong>is compiled</strong> by C++.</p>
+<p>(Python 解譯程式碼，但程式碼由 C++ 編譯。)</p>
+</blockquote>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/active-passive.svg" class="img-fluid quarto-figure quarto-figure-center figure-img" width="710"></p>
+</figure>
+</div>
+<p>以下是相同句子，現在完全轉換為主動語態：</p>
+<blockquote class="blockquote">
+<p>Python <strong>interprets</strong> code, but C++ <strong>compiles</strong> code.</p>
+<p>(Python 解譯程式碼，但 C++ 編譯程式碼。)</p>
+</blockquote>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/all-active.svg" class="img-fluid quarto-figure quarto-figure-center figure-img" width="710"></p>
+</figure>
+</div>
+<section id="練習-1" class="level3">
+<h3 class="anchored" data-anchor-id="練習-1">練習</h3>
+<p>以下每個句子包含兩個動詞。請將每個動詞分類為主動或被動。例如，如果第一個動詞是主動，第二個是被動，請寫成「主動，被動」。</p>
+<ol type="1">
+<li>The QA team loves ice cream, but the writers prefer sorbet.</li>
+<li>Performance metrics are required by the team, though I prefer wild guesses.</li>
+<li>When software engineers attempt something new and innovative, a reward should be given.</li>
+</ol>
+<p><br></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>點我看答案
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><strong>[主動, 主動]</strong> The QA team loves ice cream, but the writers prefer sorbet.</li>
+<li><strong>[被動, 主動]</strong> Performance metrics are required by the team, though I prefer wild guesses.</li>
+<li><strong>[主動, 被動]</strong> When software engineers attempt something new and innovative, a reward should be given.</li>
+</ol>
+</div>
+</div>
+</div>
+<p><br></p>
+</section>
+</section>
+<section id="偏好使用主動語態" class="level2">
+<h2 class="anchored" data-anchor-id="偏好使用主動語態">偏好使用主動語態</h2>
+<p>大多數時候請使用主動語態。謹慎使用被動語態。主動語態具有以下優點：</p>
+<ul>
+<li><p>大多數讀者會在腦中將被動語態轉換為主動語態。為什麼要讓您的讀者花費額外的處理時間呢？堅持使用主動語態，您可以讓讀者跳過預處理階段，直接進入編譯。</p></li>
+<li><p>被動語態會混淆您的想法，使句子本末倒置。</p></li>
+<li><p>被動語態間接地報告行動。</p></li>
+<li><p>一些被動語態的句子完全省略了動作者，這迫使讀者去猜測動作者的身份。</p></li>
+<li><p>主動語態通常比被動語態更簡潔。</p></li>
+</ul>
+<p>大膽一點——使用主動語態。</p>
+<section id="科學研究報告選修" class="level3">
+<h3 class="anchored" data-anchor-id="科學研究報告選修">科學研究報告（選修）</h3>
+<p>被動語態在某些科學研究報告中氾濫成災。在那些研究報告中，實驗者和他們的設備常常消失不見，導致出現以如下方式開頭的被動句：</p>
+<ul>
+<li>It has been suggested that… (有建議曾被提出…)</li>
+<li>Data was taken… (數據被採集…)</li>
+<li>Statistics were calculated… (統計數據被計算…)</li>
+<li>Results were evaluated. (結果已被評估。)</li>
+</ul>
+<p>我們知道是誰對誰做了什麼嗎？不知道。被動語態是否以某種方式使資訊更客觀？不是。</p>
+<p>許多科學期刊已經接受了主動語態。我們鼓勵其餘的期刊也加入追求清晰的行列。</p>
+</section>
+<section id="練習-2" class="level3">
+<h3 class="anchored" data-anchor-id="練習-2">練習</h3>
+<p>將下列被動語態句子改寫為主動語態。某些句子只有部分是被動語態；請確保所有部分皆改為主動語態：</p>
+<ol type="1">
+<li>The flags weren’t parsed by the Mungifier.</li>
+<li>A wrapper is generated by the Op registration process.</li>
+<li>Only one experiment per layer is selected by the Frombus system.</li>
+<li>Quality metrics are identified by asterisks; ampersands identify bad metrics.</li>
+</ol>
+<p><br></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>點我看答案
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>The Mungifier didn’t parse the flags.</li>
+<li>The Op registration process generates a wrapper.</li>
+<li>The Frombus system selects only one experiment per layer.</li>
+<li>Asterisks identify quality metrics; ampersands identify bad metrics.</li>
+</ol>
+</div>
+</div>
+</div>
+<p><br></p>
+<p><strong>下一單元：</strong> <a href="../../one/clear-sentences/index.html">清晰的句子</a></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
