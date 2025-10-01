@@ -58,6 +58,8 @@ website:
           text: "建立範例程式碼 (10 分鐘)"
         - href: two/summary/index.qmd
           text: "總結 (1 分鐘)"
+  page-footer:
+    left: "最後更新：{{< meta date-modified >}}"
 
 format:
   html:
@@ -67,6 +69,8 @@ format:
       light: [cosmo, theme.scss]
       dark: [cosmo, theme-dark.scss]
     css: styles.css
+    date-format: "YYYY-MM-DD"
+    date-modified: last-modified
     link-external-icon: true
     link-external-newwindow: true
     code-copy: true
