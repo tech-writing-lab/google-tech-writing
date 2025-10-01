@@ -3,6 +3,16 @@ h3, .h3 {
   padding-bottom: 0.5rem;
 }
 
+/* TOC 的第二層項目內縮多少空間。預設為 1.2em。 */
+.sidebar nav[role=doc-toc] ul>li>ul>li>a {
+  padding-left: 1.8em;
+}
+
+/* sidebar 的 section 標題內縮多少空間。預設為 0.5em，改為 1em 更適用於中文字。*/
+.sidebar-section {
+    padding-left: 1em;
+}
+
 /* 調整所有表格下方距離，以免跟後續段落文字太靠近。 */
 table, table.table {
   margin-top: 2.5em;
