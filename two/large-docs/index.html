@@ -381,7 +381,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </ul></li>
   <li><a href="#逐步揭露資訊" id="toc-逐步揭露資訊" class="nav-link" data-scroll-target="#逐步揭露資訊">逐步揭露資訊</a></li>
   </ul>
-</nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/tech-writing-lab/google-tech-writing/issues" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -830,6 +830,13 @@ F@ 是一個於 2011 年由開源社群開發的程式語言。本指南
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -1148,4 +1155,4 @@ F@ 是一個於 2011 年由開源社群開發的程式語言。本指南
 
 
 
-</body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/tech-writing-lab/google-tech-writing/issues" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

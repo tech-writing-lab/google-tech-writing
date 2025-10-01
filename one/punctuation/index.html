@@ -385,7 +385,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#冒號" id="toc-冒號" class="nav-link" data-scroll-target="#冒號">冒號</a></li>
   <li><a href="#括號" id="toc-括號" class="nav-link" data-scroll-target="#括號">括號</a></li>
   </ul>
-</nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/tech-writing-lab/google-tech-writing/issues" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -748,6 +748,13 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -1066,4 +1073,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-</body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/tech-writing-lab/google-tech-writing/issues" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

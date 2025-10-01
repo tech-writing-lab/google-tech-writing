@@ -382,7 +382,7 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#盡量少用某些形容詞和副詞-選修" id="toc-盡量少用某些形容詞和副詞-選修" class="nav-link" data-scroll-target="#盡量少用某些形容詞和副詞-選修">盡量少用某些形容詞和副詞 (選修)</a></li>
   </ul>
-</nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/tech-writing-lab/google-tech-writing/issues" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -688,6 +688,13 @@ Important
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -1006,4 +1013,4 @@ Important
 
 
 
-</body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/tech-writing-lab/google-tech-writing/issues" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
