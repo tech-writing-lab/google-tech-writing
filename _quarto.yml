@@ -8,60 +8,71 @@ website:
   repo-url: "https://github.com/tech-writing-lab/google-tech-writing"
   issue-url: "https://github.com/tech-writing-lab/google-tech-writing/issues"
   repo-actions: edit # 顯示 Edit this page 和 report issue
+  back-to-top-navigation: true
   navbar:
     background: primary
     search: true
     left:
       - one/index.qmd
       - two/index.qmd
+    tools:
+      - icon: github
+        href: "https://tech-writing-lab.github.io/google-tech-writing/"
+        text: GitHub
+
   sidebar:
     - id: one
       title: "技術寫作 (一)"
       contents:
-        - href: one/index.qmd
-        - href: one/introduction/index.qmd
-          text: "簡介 (3 分鐘)"
-        - href: one/just-enough-grammar/index.qmd
-          text: "夠用的文法（選修）(10 分鐘)"
-        - href: one/words/index.qmd
-          text: "字詞 (10 分鐘)"
-        - href: one/active-voice/index.qmd
-          text: "主動語態 vs. 被動語態 (15 分鐘)"
-        - href: one/clear-sentences/index.qmd
-          text: "清晰的句子 (10 分鐘)"
-        - href: one/short-sentences/index.qmd
-          text: "簡短的句子 (20 分鐘)"
-        - href: one/lists-and-tables/index.qmd
-          text: "清單與表格 (15 分鐘)"
-        - href: one/paragraphs/index.qmd
-          text: "段落 (10 分鐘)"
-        - href: one/audience/index.qmd
-          text: "目標讀者 (10 分鐘)"
-        - href: one/documents/index.qmd
-          text: "文件 (10 分鐘)"
-        - href: one/punctuation/index.qmd
-          text: "標點符號（選修）(5 分鐘)"
-        - href: one/markdown/index.qmd
-          text: "Markdown (選修)"
-        - href: one/summary/index.qmd
-          text: "總結 (1 分鐘)"
+        - section: "技術寫作 (一)"
+          href: one/index.qmd
+          contents:
+            - href: one/introduction/index.qmd
+              text: "簡介 (3 分鐘)"
+            - href: one/just-enough-grammar/index.qmd
+              text: "夠用的文法（選修）(10 分鐘)"
+            - href: one/words/index.qmd
+              text: "字詞 (10 分鐘)"
+            - href: one/active-voice/index.qmd
+              text: "主動語態 vs. 被動語態 (15 分鐘)"
+            - href: one/clear-sentences/index.qmd
+              text: "清晰的句子 (10 分鐘)"
+            - href: one/short-sentences/index.qmd
+              text: "簡短的句子 (20 分鐘)"
+            - href: one/lists-and-tables/index.qmd
+              text: "清單與表格 (15 分鐘)"
+            - href: one/paragraphs/index.qmd
+              text: "段落 (10 分鐘)"
+            - href: one/audience/index.qmd
+              text: "目標讀者 (10 分鐘)"
+            - href: one/documents/index.qmd
+              text: "文件 (10 分鐘)"
+            - href: one/punctuation/index.qmd
+              text: "標點符號（選修）(5 分鐘)"
+            - href: one/markdown/index.qmd
+              text: "Markdown (選修)"
+            - href: one/summary/index.qmd
+              text: "總結 (1 分鐘)"
 
     - id: two
       title: "技術寫作 (二)"
       contents:
-        - href: two/index.qmd
-        - href: two/introduction/index.qmd
-          text: "簡介 (2 分鐘)"
-        - href: two/editing/index.qmd
-          text: "自我編輯 (10 分鐘)"
-        - href: two/large-docs/index.qmd
-          text: "組織大型文件 (20 分鐘)"
-        - href: two/illustrations/index.qmd
-          text: "製作插圖 (10 分鐘)"
-        - href: two/sample-code/index.qmd
-          text: "建立範例程式碼 (10 分鐘)"
-        - href: two/summary/index.qmd
-          text: "總結 (1 分鐘)"
+        - section: "技術寫作 (二)"
+          href: two/index.qmd
+          contents:
+            - href: two/index.qmd
+            - href: two/introduction/index.qmd
+              text: "簡介 (2 分鐘)"
+            - href: two/editing/index.qmd
+              text: "自我編輯 (10 分鐘)"
+            - href: two/large-docs/index.qmd
+              text: "組織大型文件 (20 分鐘)"
+            - href: two/illustrations/index.qmd
+              text: "製作插圖 (10 分鐘)"
+            - href: two/sample-code/index.qmd
+              text: "建立範例程式碼 (10 分鐘)"
+            - href: two/summary/index.qmd
+              text: "總結 (1 分鐘)"
   page-footer:
     right: "最後更新：2025-10-01"
 
@@ -72,6 +83,8 @@ format:
     theme:
       light: [cosmo, theme.scss]
       dark: [cosmo, theme-dark.scss]
+    grid:
+      sidebar-width: 300px
     css: styles.css
     date-format: "YYYY-MM-DD"
     #date-modified: last-modified
