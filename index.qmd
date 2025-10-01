@@ -80,13 +80,10 @@ Except as otherwise noted, the content of this page is licensed under the [Creat
 
 是的，當我發現原始文件有發布新版本，便會更新中文版的內容。
 
-此中文版的製作時間為 2025 年 7 月，而且每個頁面的最底下都有顯示最近一次的更新日期。原文課程的每一個頁面下方也都有標註最近更新日期，故只要比對兩邊的更新日期，就能大致判斷中文版內容是否需要更新。
-
 ::: {.callout-note}
-### Feedback
-如對此中文版有任何建議或指正，歡迎[至 GitHub Issues 提交問題單](https://github.com/tech-writing-lab/google-tech-writing/issues){target="_blank"}。
+此中文版初次發布的時間為 2025 年 7 月。原本是用 Hugo 生成網站，每個頁面的最底下都有顯示最近一次的更新日期，可以跟原文課程的每一個頁面下方的更新日期比對，便可判斷中文版內容是否需要更新。然而，後來我改用 Quarto，其[「last-modified」功能仍有問題尚待解決](https://github.com/quarto-dev/quarto-cli/issues/5967)，故暫且無法顯示每頁的最近更新時間。
 :::
 
 ## 開始課程
 
-接著，請從這裡開始學習這門課程：[技術寫作一](one/introduction/index.qmd)
+接著，請從這裡開始學習這門課程：[技術寫作 (一)](one/introduction/index.qmd)
