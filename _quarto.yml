@@ -9,6 +9,7 @@ website:
   issue-url: "https://github.com/tech-writing-lab/google-tech-writing/issues"
   repo-actions: edit # 顯示 Edit this page 和 report issue
   back-to-top-navigation: true
+  google-analytics: "G-VGGH88LLN9"
   navbar:
     background: primary
     search: true
