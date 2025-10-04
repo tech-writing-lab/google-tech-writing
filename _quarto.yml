@@ -60,7 +60,6 @@ website:
         - section: "技術寫作 (二)"
           href: two/index.qmd
           contents:
-            - href: two/index.qmd
             - href: two/introduction/index.qmd
               text: "簡介 (2 分鐘)"
             - href: two/editing/index.qmd
@@ -74,7 +73,7 @@ website:
             - href: two/summary/index.qmd
               text: "總結 (1 分鐘)"
   page-footer:
-    right: "最後更新：2025-10-01"
+    right: "最後更新： 2025-10-04"
 
 format:
   html:
@@ -87,7 +86,6 @@ format:
       sidebar-width: 300px
     css: styles.css
     date-format: "YYYY-MM-DD"
-    #date-modified: last-modified
     link-external-icon: true
     link-external-newwindow: true
     code-copy: true

@@ -1,7 +1,7 @@
 ---
 title: 字詞
 linkTitle: 字詞 (10 分鐘)
-weight: 3
+order: 3
 ---
 
 > **預估時間：** 10 分鐘

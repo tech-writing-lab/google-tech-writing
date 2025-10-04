@@ -1,6 +1,6 @@
 ---
 title: Google 技術寫作課程（中文版）
-weight: 91
+date-modified: 2025-10-04
 ---
 
 ## 簡介

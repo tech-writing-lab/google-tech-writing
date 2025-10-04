@@ -1,7 +1,15 @@
 ---
 title: 技術寫作 (二)
-weight: 2
-hide_comment: true
+order: 2
+date-modified: "2025-10-04"
+listing: 
+    type: table
+    sort: order
+    sort-ui: false
+    filter-ui: false
+    fields: [title]
+    field-display-names:
+        title: "標題"
 ---
 
 這是 [Google 技術寫作課程（中文版）](../index.qmd) 的第二部分，旨在協助技術人員提升技術溝通能力。

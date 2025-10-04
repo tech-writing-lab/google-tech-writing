@@ -1,7 +1,7 @@
 ---
 title: 製作插圖
 linkTitle: 製作插圖 (10 分鐘)
-weight: 4
+order: 4
 ---
 
 **預估時間：** 10 分鐘

@@ -1,7 +1,7 @@
 ---
 title: 總結
 linkTitle: 總結 (1 分鐘)
-weight: 19
+order: 19
 ---
 
 **預估時間：** 1 分鐘

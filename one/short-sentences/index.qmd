@@ -1,7 +1,7 @@
 ---
 title: 簡短的句子
 linkTitle: 簡短的句子 (20 分鐘)
-weight: 6
+order: 6
 ---
 
 > **預估時間：** 20 分鐘

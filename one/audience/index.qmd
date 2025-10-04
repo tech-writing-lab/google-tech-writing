@@ -1,7 +1,7 @@
 ---
 title: 目標讀者
 linkTitle: 目標讀者 (10 分鐘)
-weight: 9
+order: 9
 ---
 
 > **預估時間：** 10 分鐘

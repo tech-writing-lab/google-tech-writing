@@ -1,7 +1,7 @@
 ---
 title: 段落
 linkTitle: 段落 (10 分鐘)
-weight: 8
+order: 8
 ---
 
 > **預估時間：** 10 分鐘

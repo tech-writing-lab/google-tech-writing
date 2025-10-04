@@ -1,6 +1,15 @@
 ---
 title: 技術寫作 (一)
-weight: 1
+order: 1
+date-modified: 2025-10-04
+listing: 
+    type: table
+    sort: order
+    sort-ui: false
+    filter-ui: false
+    fields: [title]
+    field-display-names:
+        title: "標題"
 ---
 
 這是 [Google 技術寫作課程（中文版）](../) 的第一部分。此入門課程會告訴您如何撰寫更清晰的技術文件。
