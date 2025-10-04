@@ -458,42 +458,42 @@ window.Quarto = {
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-listing-file-modified-sort="1759579941258" data-listing-reading-time-sort="1" data-listing-word-count-sort="36" data-listing-title-sort="簡介" data-listing-filename-sort="index.qmd">
+<tr data-index="0" data-listing-file-modified-sort="1759580539438" data-listing-reading-time-sort="1" data-listing-word-count-sort="36" data-listing-title-sort="簡介" data-listing-filename-sort="index.qmd">
 <td>
 <a href="../two/introduction/index.html" class="title listing-title">簡介</a>
 </td>
 
 </tr>
 
-<tr data-index="1" data-listing-file-modified-sort="1759579941249" data-listing-reading-time-sort="1" data-listing-word-count-sort="173" data-listing-title-sort="自我編輯" data-listing-filename-sort="index.qmd">
+<tr data-index="1" data-listing-file-modified-sort="1759580539429" data-listing-reading-time-sort="1" data-listing-word-count-sort="173" data-listing-title-sort="自我編輯" data-listing-filename-sort="index.qmd">
 <td>
 <a href="../two/editing/index.html" class="title listing-title">自我編輯</a>
 </td>
 
 </tr>
 
-<tr data-index="2" data-listing-file-modified-sort="1759579941258" data-listing-reading-time-sort="1" data-listing-word-count-sort="189" data-listing-title-sort="組織大型文件" data-listing-filename-sort="index.qmd">
+<tr data-index="2" data-listing-file-modified-sort="1759580539438" data-listing-reading-time-sort="1" data-listing-word-count-sort="189" data-listing-title-sort="組織大型文件" data-listing-filename-sort="index.qmd">
 <td>
 <a href="../two/large-docs/index.html" class="title listing-title">組織大型文件</a>
 </td>
 
 </tr>
 
-<tr data-index="3" data-listing-file-modified-sort="1759579941258" data-listing-reading-time-sort="1" data-listing-word-count-sort="195" data-listing-title-sort="製作插圖" data-listing-filename-sort="index.qmd">
+<tr data-index="3" data-listing-file-modified-sort="1759580539438" data-listing-reading-time-sort="1" data-listing-word-count-sort="195" data-listing-title-sort="製作插圖" data-listing-filename-sort="index.qmd">
 <td>
 <a href="../two/illustrations/index.html" class="title listing-title">製作插圖</a>
 </td>
 
 </tr>
 
-<tr data-index="4" data-listing-file-modified-sort="1759579941258" data-listing-reading-time-sort="1" data-listing-word-count-sort="160" data-listing-title-sort="建立範例程式碼" data-listing-filename-sort="index.qmd">
+<tr data-index="4" data-listing-file-modified-sort="1759580539438" data-listing-reading-time-sort="1" data-listing-word-count-sort="160" data-listing-title-sort="建立範例程式碼" data-listing-filename-sort="index.qmd">
 <td>
 <a href="../two/sample-code/index.html" class="title listing-title">建立範例程式碼</a>
 </td>
 
 </tr>
 
-<tr data-index="5" data-listing-file-modified-sort="1759579941258" data-listing-reading-time-sort="1" data-listing-word-count-sort="28" data-listing-title-sort="總結" data-listing-filename-sort="index.qmd">
+<tr data-index="5" data-listing-file-modified-sort="1759580539438" data-listing-reading-time-sort="1" data-listing-word-count-sort="28" data-listing-title-sort="總結" data-listing-filename-sort="index.qmd">
 <td>
 <a href="../two/summary/index.html" class="title listing-title">總結</a>
 </td>
@@ -924,6 +924,38 @@ window.Quarto = {
     }
   });
   </script>
+<input type="hidden" id="giscus-base-theme" value="light">
+<input type="hidden" id="giscus-alt-theme" value="dark">
+<script>
+  function loadGiscus() {
+    // Function to get the theme based on body class
+    const getTheme = () => {
+      let baseTheme = document.getElementById('giscus-base-theme').value;
+      let altTheme = document.getElementById('giscus-alt-theme').value;
+      if (authorPrefersDark) {
+          [baseTheme, altTheme] = [altTheme, baseTheme];
+      }
+      return document.body.classList.contains('quarto-dark') ? altTheme : baseTheme;
+    };
+    const script = document.createElement("script");
+    script.src = "https://giscus.app/client.js";
+    script.async = true;
+    script.dataset.repo = "tech-writing-lab/google-tech-writing";
+    script.dataset.repoId = "R_kgDOP5sKEQ";
+    script.dataset.category = "General";
+    script.dataset.categoryId = "DIC_kwDOP5sKEc4CwPRy";
+    script.dataset.mapping = "title";
+    script.dataset.reactionsEnabled = "1";
+    script.dataset.emitMetadata = "0";
+    script.dataset.inputPosition = "top";
+    script.dataset.theme = getTheme();
+    script.dataset.lang = "en";
+    script.crossOrigin = "anonymous";
+    // Append the script to the desired div instead of at the end of the body
+    document.getElementById("quarto-content").appendChild(script);
+  }
+  loadGiscus();
+</script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
