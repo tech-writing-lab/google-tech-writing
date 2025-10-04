@@ -17,7 +17,7 @@ website:
       - two/index.qmd
     tools:
       - icon: github
-        href: "https://tech-writing-lab.github.io/google-tech-writing/"
+        href: "https://github.com/tech-writing-lab/google-tech-writing"
         text: GitHub
 
   sidebar:
