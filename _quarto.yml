@@ -92,3 +92,6 @@ format:
     code-overflow: wrap
     mainfont: Noto Sans TC, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif
     monofont: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
+    comments:
+      giscus: 
+        repo: tech-writing-lab/google-tech-writing
