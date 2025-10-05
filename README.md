@@ -2,7 +2,7 @@
 
 這是 Google Technical Writing One 和 Technical Writing Two 這兩個免費線上課程的中文翻譯。
 
-網址：<https://github.com/tech-writing-lab/google-tech-writing>
+👉 網站：<https://github.com/tech-writing-lab/google-tech-writing>
 
 ## Contribution
 
